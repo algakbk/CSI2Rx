@@ -58,9 +58,10 @@ COMPONENT output_line_buffer
     ena : IN STD_LOGIC;
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     addra : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-    dina : IN STD_LOGIC_VECTOR(255 DOWNTO 0);
+    dina : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
     clkb : IN STD_LOGIC;
-    addrb : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+    enb : IN STD_LOGIC;
+    addrb : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
     doutb : OUT STD_LOGIC_VECTOR(63 DOWNTO 0)
   );
 END COMPONENT;
@@ -78,6 +79,7 @@ your_instance_name : output_line_buffer
     addra => addra,
     dina => dina,
     clkb => clkb,
+    enb => enb,
     addrb => addrb,
     doutb => doutb
   );

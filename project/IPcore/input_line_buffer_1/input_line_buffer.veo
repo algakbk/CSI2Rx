@@ -58,11 +58,11 @@ input_line_buffer your_instance_name (
   .clka(clka),    // input wire clka
   .ena(ena),      // input wire ena
   .wea(wea),      // input wire [0 : 0] wea
-  .addra(addra),  // input wire [11 : 0] addra
+  .addra(addra),  // input wire [10 : 0] addra
   .dina(dina),    // input wire [63 : 0] dina
   .clkb(clkb),    // input wire clkb
   .addrb(addrb),  // input wire [9 : 0] addrb
-  .doutb(doutb)  // output wire [255 : 0] doutb
+  .doutb(doutb)  // output wire [127 : 0] doutb
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

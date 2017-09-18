@@ -43,7 +43,7 @@ entity ov13850_demo is
     cam_i2c_sck : inout std_logic;
 
    --DDR3 interface
-    ddr3_addr : out std_logic_vector(14 downto 0);
+    ddr3_addr : out std_logic_vector(13 downto 0); --14
     ddr3_ba : out std_logic_vector(2 downto 0);
     ddr3_cas_n : out std_logic;
     ddr3_ck_n : out std_logic_vector(0 downto 0);
@@ -52,11 +52,11 @@ entity ov13850_demo is
     ddr3_ras_n : out std_logic;
     ddr3_reset_n : out std_logic;
     ddr3_we_n : out std_logic;
-    ddr3_dq : inout std_logic_vector(31 downto 0);
-    ddr3_dqs_n : inout std_logic_vector(3 downto 0);
-    ddr3_dqs_p : inout std_logic_vector(3 downto 0);
-    ddr3_cs_n : out std_logic_vector(0 downto 0);
-    ddr3_dm : out std_logic_vector(3 downto 0);
+    ddr3_dq : inout std_logic_vector(15 downto 0); --31
+    ddr3_dqs_n : inout std_logic_vector(1 downto 0); --3
+    ddr3_dqs_p : inout std_logic_vector(1 downto 0); --3
+--    ddr3_cs_n : out std_logic_vector(0 downto 0);
+    ddr3_dm : out std_logic_vector(1 downto 0);
     ddr3_odt : out std_logic_vector(0 downto 0)
   );
 end ov13850_demo;
@@ -283,7 +283,7 @@ begin
         ddr3_dq => ddr3_dq,
         ddr3_dqs_n => ddr3_dqs_n,
         ddr3_dqs_p => ddr3_dqs_p,
-        ddr3_cs_n => ddr3_cs_n,
+--        ddr3_cs_n => ddr3_cs_n,
         ddr3_dm => ddr3_dm,
         ddr3_odt => ddr3_odt
      );

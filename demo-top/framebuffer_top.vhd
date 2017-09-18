@@ -31,7 +31,7 @@ entity framebuffer_top is
     output_data : out std_logic_vector(23 downto 0);
     
     --DDR3 interface
-    ddr3_addr : out std_logic_vector(14 downto 0);
+    ddr3_addr : out std_logic_vector(13 downto 0);
     ddr3_ba : out std_logic_vector(2 downto 0);
     ddr3_cas_n : out std_logic;
     ddr3_ck_n : out std_logic_vector(0 downto 0);
@@ -40,11 +40,11 @@ entity framebuffer_top is
     ddr3_ras_n : out std_logic;
     ddr3_reset_n : out std_logic;
     ddr3_we_n : out std_logic;
-    ddr3_dq : inout std_logic_vector(31 downto 0);
-    ddr3_dqs_n : inout std_logic_vector(3 downto 0);
-    ddr3_dqs_p : inout std_logic_vector(3 downto 0);
-    ddr3_cs_n : out std_logic_vector(0 downto 0);
-    ddr3_dm : out std_logic_vector(3 downto 0);
+    ddr3_dq : inout std_logic_vector(15 downto 0); --31
+    ddr3_dqs_n : inout std_logic_vector(1 downto 0); --3
+    ddr3_dqs_p : inout std_logic_vector(1 downto 0); --3
+--    ddr3_cs_n : out std_logic_vector(0 downto 0);
+    ddr3_dm : out std_logic_vector(1 downto 0); --3
     ddr3_odt : out std_logic_vector(0 downto 0)
   );
 end framebuffer_top;
@@ -54,7 +54,7 @@ architecture Behavioral of framebuffer_top is
   signal axi_resetn : std_logic;
   
   signal axi_awid : std_logic_vector(0 downto 0);
-  signal axi_awaddr : std_logic_vector(29 downto 0);
+  signal axi_awaddr : std_logic_vector(27 downto 0); --29
   signal axi_awlen : std_logic_vector(7 downto 0);
   signal axi_awsize : std_logic_vector(2 downto 0);
   signal axi_awburst : std_logic_vector(1 downto 0);
@@ -65,8 +65,8 @@ architecture Behavioral of framebuffer_top is
   signal axi_awvalid : std_logic;
   signal axi_awready : std_logic;
   
-  signal axi_wdata : std_logic_vector(255 downto 0);
-  signal axi_wstrb : std_logic_vector(31 downto 0);
+  signal axi_wdata : std_logic_vector(127 downto 0); --255
+  signal axi_wstrb : std_logic_vector(15 downto 0); --31
   signal axi_wlast : std_logic;
   signal axi_wvalid : std_logic;
   signal axi_wready : std_logic;
@@ -77,7 +77,7 @@ architecture Behavioral of framebuffer_top is
   signal axi_bready : std_logic;
   
   signal axi_arid : std_logic_vector(0 downto 0);
-  signal axi_araddr : std_logic_vector(29 downto 0);
+  signal axi_araddr : std_logic_vector(27 downto 0); --29
   signal axi_arlen : std_logic_vector(7 downto 0);
   signal axi_arsize : std_logic_vector(2 downto 0);
   signal axi_arburst : std_logic_vector(1 downto 0);
@@ -89,7 +89,7 @@ architecture Behavioral of framebuffer_top is
   signal axi_arready : std_logic;
   
   signal axi_rid : std_logic_vector(0 downto 0);
-  signal axi_rdata : std_logic_vector(255 downto 0);
+  signal axi_rdata : std_logic_vector(127 downto 0); --255
   signal axi_rresp : std_logic_vector(1 downto 0);
   signal axi_rlast : std_logic;
   signal axi_rvalid : std_logic;
@@ -103,7 +103,7 @@ architecture Behavioral of framebuffer_top is
   
   component ddr3_if is
     port(
-      ddr3_addr : out std_logic_vector(14 downto 0);
+      ddr3_addr : out std_logic_vector(13 downto 0); --14
       ddr3_ba : out std_logic_vector(2 downto 0);
       ddr3_cas_n : out std_logic;
       ddr3_ck_n : out std_logic_vector(0 downto 0);
@@ -112,12 +112,12 @@ architecture Behavioral of framebuffer_top is
       ddr3_ras_n : out std_logic;
       ddr3_reset_n : out std_logic;
       ddr3_we_n : out std_logic;
-      ddr3_dq : inout std_logic_vector(31 downto 0);
-      ddr3_dqs_n : inout std_logic_vector(3 downto 0);
-      ddr3_dqs_p : inout std_logic_vector(3 downto 0);
+      ddr3_dq : inout std_logic_vector(15 downto 0); --31
+      ddr3_dqs_n : inout std_logic_vector(1 downto 0); --3
+      ddr3_dqs_p : inout std_logic_vector(1 downto 0); --3
       init_calib_complete : out std_logic;
-      ddr3_cs_n : out std_logic_vector(0 downto 0);
-      ddr3_dm : out std_logic_vector(3 downto 0);
+--      ddr3_cs_n : out std_logic_vector(0 downto 0);
+      ddr3_dm : out std_logic_vector(1 downto 0); --3
       ddr3_odt : out std_logic_vector(0 downto 0);
       
       ui_clk : out std_logic;
@@ -132,7 +132,7 @@ architecture Behavioral of framebuffer_top is
       app_zq_ack : out std_logic;
       
       s_axi_awid : in std_logic_vector(0 downto 0);
-      s_axi_awaddr : in std_logic_vector(29 downto 0);
+      s_axi_awaddr : in std_logic_vector(27 downto 0); --29
       s_axi_awlen : in std_logic_vector(7 downto 0);
       s_axi_awsize : in std_logic_vector(2 downto 0);
       s_axi_awburst : in std_logic_vector(1 downto 0);
@@ -143,8 +143,8 @@ architecture Behavioral of framebuffer_top is
       s_axi_awvalid : in std_logic;
       s_axi_awready : out std_logic;
       
-      s_axi_wdata : in std_logic_vector(255 downto 0);
-      s_axi_wstrb : in std_logic_vector(31 downto 0);
+      s_axi_wdata : in std_logic_vector(127 downto 0); --255
+      s_axi_wstrb : in std_logic_vector(15 downto 0); --31
       s_axi_wlast : in std_logic;
       s_axi_wvalid : in std_logic;
       s_axi_wready : out std_logic;
@@ -155,7 +155,7 @@ architecture Behavioral of framebuffer_top is
       s_axi_bready : in std_logic;
       
       s_axi_arid : in std_logic_vector(0 downto 0);
-      s_axi_araddr : in std_logic_vector(29 downto 0);
+      s_axi_araddr : in std_logic_vector(27 downto 0); --29
       s_axi_arlen : in std_logic_vector(7 downto 0);
       s_axi_arsize : in std_logic_vector(2 downto 0);
       s_axi_arburst : in std_logic_vector(1 downto 0);
@@ -167,7 +167,7 @@ architecture Behavioral of framebuffer_top is
       s_axi_arready : out std_logic;
       
       s_axi_rid : out std_logic_vector(0 downto 0);
-      s_axi_rdata : out std_logic_vector(255 downto 0);
+      s_axi_rdata : out std_logic_vector(127 downto 0); --255
       s_axi_rresp : out std_logic_vector(1 downto 0);
       s_axi_rlast : out std_logic;
       s_axi_rvalid : out std_logic;
@@ -301,7 +301,7 @@ begin
         ddr3_dqs_p => ddr3_dqs_p,
         ddr3_dqs_n => ddr3_dqs_n,
         init_calib_complete => open,
-        ddr3_cs_n => ddr3_cs_n,
+--        ddr3_cs_n => ddr3_cs_n,
         ddr3_dm => ddr3_dm,
         ddr3_odt => ddr3_odt,
         

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="input_line_buffer_synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1505706675">
+<GenRun Id="input_line_buffer_synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1505709060">
   <File Type="VDS-TIMING-PB" Name="input_line_buffer_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="input_line_buffer_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="input_line_buffer.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="input_line_buffer_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="input_line_buffer_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="input_line_buffer_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="input_line_buffer.vds"/>
   <File Type="PA-TCL" Name="input_line_buffer.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="input_line_buffer_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="input_line_buffer_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="input_line_buffer_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="input_line_buffer.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/input_line_buffer">
     <File Path="$PPRDIR/../IPcore/input_line_buffer_1/input_line_buffer.xci">
       <FileInfo>

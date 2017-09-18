@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-// Date        : Mon Sep 18 09:52:24 2017
+// Date        : Mon Sep 18 10:32:07 2017
 // Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
 // Command     : write_verilog -force -mode synth_stub
 //               /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer_stub.v
@@ -15,13 +15,13 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "blk_mem_gen_v8_3_6,Vivado 2017.2" *)
 module input_line_buffer(clka, ena, wea, addra, dina, clkb, addrb, doutb)
-/* synthesis syn_black_box black_box_pad_pin="clka,ena,wea[0:0],addra[11:0],dina[63:0],clkb,addrb[9:0],doutb[255:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="clka,ena,wea[0:0],addra[10:0],dina[63:0],clkb,addrb[9:0],doutb[127:0]" */;
   input clka;
   input ena;
   input [0:0]wea;
-  input [11:0]addra;
+  input [10:0]addra;
   input [63:0]dina;
   input clkb;
   input [9:0]addrb;
-  output [255:0]doutb;
+  output [127:0]doutb;
 endmodule

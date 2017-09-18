@@ -46,7 +46,7 @@ entity framebuffer_ctrl_crop_scale is
     axi_resetn : in std_logic;
     --AXI4 write address
     axi_awid : out std_logic_vector(0 downto 0);
-    axi_awaddr : out std_logic_vector(29 downto 0);
+    axi_awaddr : out std_logic_vector(27 downto 0); --29
     axi_awlen : out std_logic_vector(7 downto 0);
     axi_awsize : out std_logic_vector(2 downto 0);
     axi_awburst : out std_logic_vector(1 downto 0);
@@ -57,8 +57,8 @@ entity framebuffer_ctrl_crop_scale is
     axi_awvalid : out std_logic;
     axi_awready : in std_logic;
     --AXI4 write data
-    axi_wdata : out std_logic_vector(255 downto 0);
-    axi_wstrb : out std_logic_vector(31 downto 0);
+    axi_wdata : out std_logic_vector(127 downto 0); --255
+    axi_wstrb : out std_logic_vector(15 downto 0); --31
     axi_wlast : out std_logic;
     axi_wvalid : out std_logic;
     axi_wready : in std_logic;
@@ -69,7 +69,7 @@ entity framebuffer_ctrl_crop_scale is
     axi_bready : out std_logic;
     --AXI4 read address
     axi_arid : out std_logic_vector(0 downto 0);
-    axi_araddr : out std_logic_vector(29 downto 0);
+    axi_araddr : out std_logic_vector(27 downto 0); --29
     axi_arlen : out std_logic_vector(7 downto 0);
     axi_arsize : out std_logic_vector(2 downto 0);
     axi_arburst : out std_logic_vector(1 downto 0);
@@ -81,7 +81,7 @@ entity framebuffer_ctrl_crop_scale is
     axi_arready : in std_logic;
     --AXI4 read data
     axi_rid : in std_logic_vector(0 downto 0);
-    axi_rdata : in std_logic_vector(255 downto 0);
+    axi_rdata : in std_logic_vector(127 downto 0); --255
     axi_rresp : in std_logic_vector(1 downto 0);
     axi_rlast : in std_logic;
     axi_rvalid : in std_logic;
@@ -99,11 +99,11 @@ architecture Behavioral of framebuffer_ctrl_crop_scale is
       clka : IN STD_LOGIC;
       ena : IN STD_LOGIC;
       wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      addra : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+      addra : IN STD_LOGIC_VECTOR(10 DOWNTO 0); --11
       dina : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
       clkb : IN STD_LOGIC;
       addrb : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-      doutb : OUT STD_LOGIC_VECTOR(255 DOWNTO 0)
+      doutb : OUT STD_LOGIC_VECTOR(127 DOWNTO 0) --255
     );
   END COMPONENT;
 
@@ -113,9 +113,9 @@ architecture Behavioral of framebuffer_ctrl_crop_scale is
       ena : IN STD_LOGIC;
       wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       addra : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
-      dina : IN STD_LOGIC_VECTOR(255 DOWNTO 0);
+      dina : IN STD_LOGIC_VECTOR(127 DOWNTO 0); --255
       clkb : IN STD_LOGIC;
-      addrb : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+      addrb : IN STD_LOGIC_VECTOR(10 DOWNTO 0); --11
       doutb : OUT STD_LOGIC_VECTOR(63 DOWNTO 0)
     );
   END COMPONENT;
@@ -134,16 +134,16 @@ architecture Behavioral of framebuffer_ctrl_crop_scale is
 
   signal input_write_y_curr, input_write_y_last, output_read_y_curr, output_read_y_last : natural range 0 to 4095;
 
-  signal input_linebuf_write_addr : std_logic_vector(11 downto 0);
+  signal input_linebuf_write_addr : std_logic_vector(10 downto 0); --11
   signal input_linebuf_read_addr : std_logic_vector(9 downto 0);
   signal output_linebuf_write_addr : std_logic_vector(9 downto 0);
-  signal output_linebuf_read_addr : std_logic_vector(11 downto 0);
+  signal output_linebuf_read_addr : std_logic_vector(10 downto 0); --11
 
   signal input_linebuf_din : std_logic_vector(63 downto 0);
   signal input_linebuf_wren : std_logic_vector(0 downto 0);
-  signal input_linebuf_q : std_logic_vector(255 downto 0);
+  signal input_linebuf_q : std_logic_vector(127 downto 0); --255
 
-  signal output_linebuf_din : std_logic_vector(255 downto 0);
+  signal output_linebuf_din : std_logic_vector(127 downto 0); --255
   signal output_linebuf_wren : std_logic_vector(0 downto 0);
   signal output_linebuf_q : std_logic_vector(63 downto 0);
 
@@ -175,10 +175,10 @@ begin
 
   global_reset <= not axi_resetn;
 
-  input_linebuf_write_addr <= input_linebuf_write_high & std_logic_vector(to_unsigned(input_write_x, 12)(11 downto 1));
+  input_linebuf_write_addr <= input_linebuf_write_high & std_logic_vector(to_unsigned(input_write_x, 12)(11 downto 2)); --11 downto 1
   input_linebuf_read_addr <= input_linebuf_read_high & std_logic_vector(to_unsigned(input_read_x, 12)(11 downto 3));
   output_linebuf_write_addr <= output_linebuf_write_high & std_logic_vector(to_unsigned(output_write_x, 12)(11 downto 3));
-  output_linebuf_read_addr <= output_linebuf_read_high & std_logic_vector(to_unsigned(output_read_x, 12)(11 downto 1));
+  output_linebuf_read_addr <= output_linebuf_read_high & std_logic_vector(to_unsigned(output_read_x, 12)(11 downto 2)); --11 downto 1
 
   fb_write_address <= std_logic_vector(to_unsigned((input_read_y * input_width) + input_read_x, 24));
 
@@ -300,8 +300,8 @@ begin
   input_linebuf_din <= input_data_odd & x"00" & input_data_even & x"00";
   input_linebuf_wren <= "" & input_den;
 
-  axi_awaddr <= "0000" & fb_write_address & "00";
-  axi_araddr <= "0000" & fb_read_address & "00";
+  axi_awaddr <= "00" & fb_write_address & "00";
+  axi_araddr <= "00" & fb_read_address & "00";
   --Write state machine
   process(axi_clock)
   begin
