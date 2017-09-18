@@ -1,0 +1,2 @@
+output_line_buffer.v,verilog,xil_defaultlib,../../../../../IPcore/output_line_buffer_1/sim/output_line_buffer.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

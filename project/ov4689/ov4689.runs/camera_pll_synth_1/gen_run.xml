@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="camera_pll_synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1505706150">
+  <File Type="RDS-DCP" Name="camera_pll.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="camera_pll_utilization_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="camera_pll_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="camera_pll_timing_summary_synth.pb"/>
+  <File Type="RDS-RDS" Name="camera_pll.vds"/>
+  <File Type="PA-TCL" Name="camera_pll.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="camera_pll_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="camera_pll_utilization_synth.rpt"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_pll">
+    <File Path="$PPRDIR/../IPcore/camera_pll_1/camera_pll.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="camera_pll"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_pll">
+    <File Path="$PPRDIR/../IPcore/camera_pll_1/camera_pll.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="camera_pll"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
