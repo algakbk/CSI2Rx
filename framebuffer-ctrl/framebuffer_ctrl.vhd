@@ -85,10 +85,10 @@ entity framebuffer_ctrl_crop_scale is
     axi_rresp : in std_logic_vector(1 downto 0);
     axi_rlast : in std_logic;
     axi_rvalid : in std_logic;
-    axi_rready : out std_logic;
+    axi_rready : out std_logic
     --Misc
-    zoom_mode : in std_logic; --0=scale, 1=crop
-    freeze : in std_logic --assert to disable writing
+--    zoom_mode : in std_logic; --0=scale, 1=crop
+--    freeze : in std_logic --assert to disable writing
   );
 end framebuffer_ctrl_crop_scale;
 
@@ -121,6 +121,8 @@ architecture Behavioral of framebuffer_ctrl_crop_scale is
   END COMPONENT;
 
   signal global_reset : std_logic;
+  signal zoom_mode  : std_logic := '0';
+  signal freeze     : std_logic := '0';
 
   signal write_state : natural range 0 to 4;
   signal write_count : natural range 0 to burst_len-1;
@@ -129,10 +131,10 @@ architecture Behavioral of framebuffer_ctrl_crop_scale is
 
   signal input_linebuf_read_high, input_linebuf_write_high, output_linebuf_read_high, output_linebuf_write_high : std_logic_vector(0 downto 0);
 
-  signal input_read_x, input_write_x, output_read_x, output_write_x : natural range 0 to 4095;
-  signal input_read_y, input_write_y, output_read_y, output_write_y : natural range 0 to 4095;
+  signal input_read_x, input_write_x, output_read_x, output_write_x : natural range 0 to 2047;
+  signal input_read_y, input_write_y, output_read_y, output_write_y : natural range 0 to 2047;
 
-  signal input_write_y_curr, input_write_y_last, output_read_y_curr, output_read_y_last : natural range 0 to 4095;
+  signal input_write_y_curr, input_write_y_last, output_read_y_curr, output_read_y_last : natural range 0 to 2047;
 
   signal input_linebuf_write_addr : std_logic_vector(10 downto 0); --11
   signal input_linebuf_read_addr : std_logic_vector(9 downto 0);
@@ -150,7 +152,7 @@ architecture Behavioral of framebuffer_ctrl_crop_scale is
   signal fb_read_address : std_logic_vector(23 downto 0);
   signal fb_write_address : std_logic_vector(23 downto 0);
 
-  signal output_write_end_x : natural range 0 to 4095;
+  signal output_write_end_x : natural range 0 to 2047;
 
   signal axi_wready_last : std_logic;
   signal input_linebuf_ready : std_logic;
@@ -192,12 +194,12 @@ begin
     if rising_edge(input_clock) then
       if input_vsync = '1' then
         input_write_x <= 0;
-        input_write_y <= 4095;
+        input_write_y <= 2047;
         input_linebuf_write_high <= "1";
       elsif input_line_start = '1' then
         input_write_x <= 0;
         input_linebuf_write_high <= not input_linebuf_write_high;
-        if input_write_y = 4095 then
+        if input_write_y = 2047 then
           input_write_y <= 0;
         else
           input_write_y <= input_write_y + 1;
@@ -213,12 +215,12 @@ begin
     if rising_edge(output_clock) then
       if output_vsync = '1' then
         output_read_x <= 0;
-        output_read_y <= 4095;
+        output_read_y <= 2047;
         output_linebuf_read_high <= "1";
       elsif output_line_start = '1' then
         output_read_x <= 0;
         output_linebuf_read_high <= not output_linebuf_read_high;
-        if output_read_y = 4095 then
+        if output_read_y = 2047 then
           output_read_y <= 0;
         else
           output_read_y <= output_read_y + 1;
@@ -270,7 +272,7 @@ begin
         if output_read_y_curr /= output_read_y_last then
           output_write_x <= 0;
         end if;
-        if output_read_y_curr = 4095 then
+        if output_read_y_curr = 2047 then
           output_write_y <= 0;
         else
           output_write_y <= output_read_y_curr + 1;

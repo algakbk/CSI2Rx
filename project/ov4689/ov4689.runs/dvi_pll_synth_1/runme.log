@@ -9,40 +9,4 @@
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
 source dvi_pll.tcl -notrace
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1209.012 ; gain = 71.996 ; free physical = 3691 ; free virtual = 24569
-INFO: [Synth 8-638] synthesizing module 'dvi_pll' [/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/dvi_pll_1/dvi_pll.v:71]
-INFO: [Synth 8-638] synthesizing module 'dvi_pll_clk_wiz' [/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/dvi_pll_1/dvi_pll_clk_wiz.v:69]
-INFO: [Synth 8-638] synthesizing module 'BUFG' [/media/baktiiar/downloads/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
-INFO: [Synth 8-256] done synthesizing module 'BUFG' (1#1) [/media/baktiiar/downloads/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
-INFO: [Synth 8-638] synthesizing module 'PLLE2_ADV' [/media/baktiiar/downloads/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:33019]
-INFO: [Synth 8-256] done synthesizing module 'PLLE2_ADV' (2#1) [/media/baktiiar/downloads/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:33019]
-INFO: [Synth 8-256] done synthesizing module 'dvi_pll_clk_wiz' (3#1) [/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/dvi_pll_1/dvi_pll_clk_wiz.v:69]
-INFO: [Synth 8-256] done synthesizing module 'dvi_pll' (4#1) [/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/dvi_pll_1/dvi_pll.v:71]
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1249.520 ; gain = 112.504 ; free physical = 3713 ; free virtual = 24592
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1249.520 ; gain = 112.504 ; free physical = 3714 ; free virtual = 24592
-INFO: [Device 21-403] Loading part xc7a100tcsg324-2
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1553.230 ; gain = 0.004 ; free physical = 3207 ; free virtual = 24085
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1553.230 ; gain = 416.215 ; free physical = 3360 ; free virtual = 24237
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1553.230 ; gain = 416.215 ; free physical = 3361 ; free virtual = 24238
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1553.230 ; gain = 416.215 ; free physical = 3369 ; free virtual = 24246
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1553.230 ; gain = 416.215 ; free physical = 3377 ; free virtual = 24254
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1553.230 ; gain = 416.215 ; free physical = 3377 ; free virtual = 24254
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1553.230 ; gain = 416.215 ; free physical = 3126 ; free virtual = 24002
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1553.230 ; gain = 416.215 ; free physical = 3125 ; free virtual = 24001
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1557.227 ; gain = 420.211 ; free physical = 3122 ; free virtual = 23998
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1557.227 ; gain = 420.211 ; free physical = 3119 ; free virtual = 23995
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1557.227 ; gain = 420.211 ; free physical = 3119 ; free virtual = 23995
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1557.227 ; gain = 420.211 ; free physical = 3119 ; free virtual = 23995
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1557.227 ; gain = 420.211 ; free physical = 3119 ; free virtual = 23995
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1557.227 ; gain = 420.211 ; free physical = 3119 ; free virtual = 23995
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1557.227 ; gain = 420.211 ; free physical = 3119 ; free virtual = 23995
-
-Report Cell Usage: 
-+------+----------+------+
-|      |Cell      |Count |
-+------+----------+------+
-|1     |BUFG      |     4|
-|2     |PLLE2_ADV |     1|
-+------+----------+------+
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1557.227 ; gain = 420.211 ; free physical = 3119 ; free virtual = 23995
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1564.230 ; gain = 439.797 ; free physical = 3122 ; free virtual = 23998
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dvi_pll, cache-ID = 527b5ea45cc4db86.

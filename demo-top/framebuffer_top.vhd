@@ -19,8 +19,8 @@ entity framebuffer_top is
     --System/control inputs
     system_clock : in std_logic;
     system_reset : in std_logic;
-    zoom_mode : in std_logic;
-    freeze : in std_logic;
+--    zoom_mode : in std_logic;
+--    freeze : in std_logic;
     
     --Video output port
     output_pixck : in std_logic;
@@ -250,10 +250,10 @@ begin
         axi_rresp => axi_rresp,
         axi_rlast => axi_rlast,
         axi_rvalid => axi_rvalid,
-        axi_rready => axi_rready,
+        axi_rready => axi_rready
         
-        zoom_mode => zoom_mode,
-        freeze => freeze
+--        zoom_mode => zoom_mode,
+--        freeze => freeze
       );
     
     output : entity work.video_fb_output

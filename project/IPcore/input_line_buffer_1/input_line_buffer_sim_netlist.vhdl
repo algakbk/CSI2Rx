@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
 -- Date        : Mon Sep 18 10:32:07 2017
 -- Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top input_line_buffer -prefix
+--               input_line_buffer_ input_line_buffer_sim_netlist.vhdl
 -- Design      : input_line_buffer
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity input_line_buffer_blk_mem_gen_prim_wrapper is
     dina : in STD_LOGIC_VECTOR ( 17 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of input_line_buffer_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_prim_wrapper";
 end input_line_buffer_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of input_line_buffer_blk_mem_gen_prim_wrapper is
@@ -1096,8 +1094,6 @@ entity input_line_buffer_blk_mem_gen_prim_width is
     dina : in STD_LOGIC_VECTOR ( 17 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of input_line_buffer_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end input_line_buffer_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of input_line_buffer_blk_mem_gen_prim_width is
@@ -1228,8 +1224,6 @@ entity input_line_buffer_blk_mem_gen_generic_cstr is
     dina : in STD_LOGIC_VECTOR ( 63 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of input_line_buffer_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end input_line_buffer_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of input_line_buffer_blk_mem_gen_generic_cstr is
@@ -1298,8 +1292,6 @@ entity input_line_buffer_blk_mem_gen_top is
     dina : in STD_LOGIC_VECTOR ( 63 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of input_line_buffer_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end input_line_buffer_blk_mem_gen_top;
 
 architecture STRUCTURE of input_line_buffer_blk_mem_gen_top is
@@ -1331,8 +1323,6 @@ entity input_line_buffer_blk_mem_gen_v8_3_6_synth is
     dina : in STD_LOGIC_VECTOR ( 63 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of input_line_buffer_blk_mem_gen_v8_3_6_synth : entity is "blk_mem_gen_v8_3_6_synth";
 end input_line_buffer_blk_mem_gen_v8_3_6_synth;
 
 architecture STRUCTURE of input_line_buffer_blk_mem_gen_v8_3_6_synth is
@@ -1565,8 +1555,6 @@ entity input_line_buffer_blk_mem_gen_v8_3_6 is
   attribute C_WRITE_WIDTH_B of input_line_buffer_blk_mem_gen_v8_3_6 : entity is 128;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of input_line_buffer_blk_mem_gen_v8_3_6 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of input_line_buffer_blk_mem_gen_v8_3_6 : entity is "blk_mem_gen_v8_3_6";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of input_line_buffer_blk_mem_gen_v8_3_6 : entity is "yes";
 end input_line_buffer_blk_mem_gen_v8_3_6;

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="dvi_pll_synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1505706150">
+<GenRun Id="dvi_pll_synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1505741672">
+  <File Type="VDS-TIMING-PB" Name="dvi_pll_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="dvi_pll_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="dvi_pll.dcp"/>
   <File Type="RDS-UTIL-PB" Name="dvi_pll_utilization_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="dvi_pll_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="dvi_pll_timing_summary_synth.pb"/>
+  <File Type="RDS-UTIL" Name="dvi_pll_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="dvi_pll_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="dvi_pll.vds"/>
   <File Type="PA-TCL" Name="dvi_pll.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="dvi_pll_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="dvi_pll_utilization_synth.rpt"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dvi_pll">
     <File Path="$PPRDIR/../IPcore/dvi_pll_1/dvi_pll.xci">
       <FileInfo>

@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
--- Date        : Mon Sep 18 10:32:07 2017
+-- Date        : Mon Sep 18 10:32:06 2017
 -- Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top input_line_buffer -prefix
+--               input_line_buffer_ input_line_buffer_stub.vhdl
 -- Design      : input_line_buffer
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-2

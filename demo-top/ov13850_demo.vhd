@@ -20,14 +20,14 @@ entity ov13850_demo is
     hdmi_d1 : out std_logic_vector(1 downto 0);
     hdmi_d2 : out std_logic_vector(1 downto 0);
     
-    vga_hsync : out std_logic;
-    vga_vsync : out std_logic;
-    vga_r : out std_logic_vector(4 downto 0);
-    vga_g : out std_logic_vector(5 downto 0);
-    vga_b : out std_logic_vector(4 downto 0);
+--    vga_hsync : out std_logic;
+--    vga_vsync : out std_logic;
+--    vga_r : out std_logic_vector(4 downto 0);
+--    vga_g : out std_logic_vector(5 downto 0);
+--    vga_b : out std_logic_vector(4 downto 0);
 
-    zoom_mode : in std_logic;
-    freeze : in std_logic;
+--    zoom_mode : in std_logic;
+--    freeze : in std_logic;
 
     --Camera CSI port
     csi0_clk : in std_logic_vector(1 downto 0);
@@ -260,8 +260,8 @@ begin
 
         system_clock => sys_clock,
         system_reset => reset,
-        zoom_mode => zoom_mode,
-        freeze => freeze,
+--        zoom_mode => zoom_mode,
+--        freeze => freeze,
 
         output_pixck => dvi_pixel_clock,
         output_vsync => dvi_vsync,
@@ -304,9 +304,9 @@ begin
           tmds_d2 => hdmi_d2
       );
       
-    vga_hsync <= dvi_hsync;
-    vga_vsync <= dvi_vsync;
-    vga_r <= dvi_data(23 downto 19);
-    vga_g <= dvi_data(15 downto 10);
-    vga_b <= dvi_data(7 downto 3);
+--    vga_hsync <= dvi_hsync;
+--    vga_vsync <= dvi_vsync;
+--    vga_r <= dvi_data(23 downto 19);
+--    vga_g <= dvi_data(15 downto 10);
+--    vga_b <= dvi_data(7 downto 3);
 end Behavioral;

@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-// Date        : Mon Sep 18 09:43:00 2017
+// Date        : Mon Sep 18 09:42:59 2017
 // Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/dvi_pll_1/dvi_pll_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top dvi_pll -prefix
+//               dvi_pll_ dvi_pll_stub.v
 // Design      : dvi_pll
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-2

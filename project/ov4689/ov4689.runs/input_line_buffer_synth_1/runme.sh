@@ -7,20 +7,20 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/media/baktiiar/downloads/Xilinx/SDK/2017.2/bin:/media/baktiiar/downloads/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/lin64:/media/baktiiar/downloads/Xilinx/Vivado/2017.2/bin
+  PATH=/home/alga/workspace/Xilinx/SDK/2017.2/bin:/home/alga/workspace/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/lin64:/home/alga/workspace/Xilinx/Vivado/2017.2/bin
 else
-  PATH=/media/baktiiar/downloads/Xilinx/SDK/2017.2/bin:/media/baktiiar/downloads/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/lin64:/media/baktiiar/downloads/Xilinx/Vivado/2017.2/bin:$PATH
+  PATH=/home/alga/workspace/Xilinx/SDK/2017.2/bin:/home/alga/workspace/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/lin64:/home/alga/workspace/Xilinx/Vivado/2017.2/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/media/baktiiar/downloads/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=/home/alga/workspace/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=/media/baktiiar/downloads/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/home/alga/workspace/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/input_line_buffer_synth_1'
+HD_PWD='/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/input_line_buffer_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
