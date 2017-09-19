@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.xpr">
+<Project Version="7" Minor="20" Path="/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f7076c1925494a8dabf09968e51d1501"/>
@@ -227,7 +227,14 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/new/ztex.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/ztex.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
@@ -378,9 +385,7 @@
     </Run>
     <Run Id="ddr3_if_synth_1" Type="Ft3:Synth" SrcSet="ddr3_if" Part="xc7a100tcsg324-2" ConstrsSet="ddr3_if" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ddr3_if_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -469,9 +474,7 @@
     </Run>
     <Run Id="ddr3_if_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-2" ConstrsSet="ddr3_if" Description="Default settings for Implementation." SynthRun="ddr3_if_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

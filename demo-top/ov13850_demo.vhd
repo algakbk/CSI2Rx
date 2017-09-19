@@ -12,7 +12,7 @@ use UNISIM.VComponents.all;
 entity ov13850_demo is
   Port (
     clock_p : in std_logic;
-    clock_n : in std_logic;
+--    clock_n : in std_logic;
     reset_n : in std_logic;
 
     hdmi_clk : out std_logic_vector(1 downto 0);
@@ -104,16 +104,17 @@ architecture Behavioral of ov13850_demo is
 
 begin
     reset <= not reset_n;
-
-    clkbuf : IBUFGDS
-    generic map(
-        DIFF_TERM => TRUE,
-        IBUF_LOW_PWR => FALSE,
-        IOSTANDARD => "DEFAULT")
-    port map(
-        O => sys_clock,
-        I => clock_p,
-        IB => clock_n);
+    sys_clock <= clock_p;
+    
+--    clkbuf : IBUFGDS
+--    generic map(
+--        DIFF_TERM => TRUE,
+--        IBUF_LOW_PWR => FALSE,
+--        IOSTANDARD => "DEFAULT")
+--    port map(
+--        O => sys_clock,
+--        I => clock_p,
+--        IB => clock_n);
 
     pll1 : dvi_pll
     port map(

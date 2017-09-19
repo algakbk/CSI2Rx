@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="dvi_pll_synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1505741672">
+<GenRun Id="dvi_pll_synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1505793552">
   <File Type="VDS-TIMING-PB" Name="dvi_pll_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="dvi_pll_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="dvi_pll.dcp"/>
