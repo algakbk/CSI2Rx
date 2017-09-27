@@ -174,6 +174,7 @@ architecture Behavioral of framebuffer_top is
       s_axi_rready : in std_logic;
       
       sys_clk_i : in std_logic;
+      clk_ref_i : in std_logic;
       sys_rst : in std_logic
     );
   end component;
@@ -359,6 +360,7 @@ begin
         s_axi_rready => axi_rready,
         
         sys_clk_i => system_clock,
+        clk_ref_i => system_clock,
         sys_rst => '1');
 
 end Behavioral;

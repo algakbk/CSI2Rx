@@ -1,0 +1,464 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Sep 27 23:35:28 2017
+| Host         : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file ov13850_demo_timing_summary_routed.rpt -rpx ov13850_demo_timing_summary_routed.rpx
+| Design       : ov13850_demo
+| Device       : 7a100t-csg324
+| Speed File   : -2  PRODUCTION 1.17 2017-05-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 6570 register/latch pins with no clock driven by root clock pin: clock_p (HIGH)
+
+ There are 493 register/latch pins with no clock driven by root clock pin: csi0_clk[1] (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 17412 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 4 pins that are not constrained for maximum delay due to constant clock. (MEDIUM)
+
+
+5. checking no_input_delay
+--------------------------
+ There are 23 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 51 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      2.994        0.000                      0                   14           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**default**                                     2.994        0.000                      0                   14                                                                        
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **default**
+From Clock:  
+  To Clock:  
+
+Setup :            0  Failing Endpoints,  Worst Slack        2.994ns,  Total Violation        0.000ns
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             2.994ns  (required time - arrival time)
+  Source:                 fbtest/memctl/u_ddr3_if_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            fbtest/memctl/u_ddr3_if_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/phy_control_i/RESET
+  Path Group:             **default**
+  Path Type:              Max at Slow Process Corner
+  Requirement:            5.000ns  (MaxDelay Path 5.000ns)
+  Data Path Delay:        2.006ns  (logic 0.379ns (18.896%)  route 1.627ns (81.104%))
+  Logic Levels:           1  (FDPE=1)
+  Output Delay:           0.000ns
+  Timing Exception:       MaxDelay Path 5.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y127        FDPE                         0.000     0.000 r  fbtest/memctl/u_ddr3_if_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/C
+    SLICE_X57Y127        FDPE (Prop_fdpe_C_Q)         0.379     0.379 r  fbtest/memctl/u_ddr3_if_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/Q
+                         net (fo=50, routed)          1.627     2.006    fbtest/memctl/u_ddr3_if_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/in0
+    PHY_CONTROL_X1Y2     PHY_CONTROL                                  r  fbtest/memctl/u_ddr3_if_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/phy_control_i/RESET
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                    5.000     5.000    
+    PHY_CONTROL_X1Y2     PHY_CONTROL                  0.000     5.000    fbtest/memctl/u_ddr3_if_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/phy_control_i
+                         output delay                -0.000     5.000    
+  -------------------------------------------------------------------
+                         required time                          5.000    
+                         arrival time                          -2.006    
+  -------------------------------------------------------------------
+                         slack                                  2.994    
+
+Slack (MET) :             18.865ns  (required time - arrival time)
+  Source:                 fbtest/memctl/u_ddr3_if_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.rst_r1_reg/D
+  Path Group:             **default**
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (MaxDelay Path 20.000ns)
+  Data Path Delay:        1.060ns  (logic 0.379ns (35.753%)  route 0.681ns (64.247%))
+  Logic Levels:           1  (FDPE=1)
+  Timing Exception:       MaxDelay Path 20.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X57Y127        FDPE                         0.000     0.000 r  fbtest/memctl/u_ddr3_if_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/C
+    SLICE_X57Y127        FDPE (Prop_fdpe_C_Q)         0.379     0.379 r  fbtest/memctl/u_ddr3_if_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/Q
+                         net (fo=50, routed)          0.681     1.060    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/in0
+    SLICE_X40Y126        FDRE                                         r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.rst_r1_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   20.000    20.000    
+    SLICE_X40Y126        FDRE (Setup_fdre_C_D)       -0.075    19.925    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.rst_r1_reg
+  -------------------------------------------------------------------
+                         required time                         19.925    
+                         arrival time                          -1.060    
+  -------------------------------------------------------------------
+                         slack                                 18.865    
+
+Slack (MET) :             18.973ns  (required time - arrival time)
+  Source:                 fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[9]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[9]/D
+  Path Group:             **default**
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (MaxDelay Path 20.000ns)
+  Data Path Delay:        0.995ns  (logic 0.433ns (43.528%)  route 0.562ns (56.472%))
+  Logic Levels:           1  (FDRE=1)
+  Timing Exception:       MaxDelay Path 20.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X34Y125        FDRE                         0.000     0.000 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[9]/C
+    SLICE_X34Y125        FDRE (Prop_fdre_C_Q)         0.433     0.433 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[9]/Q
+                         net (fo=1, routed)           0.562     0.995    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_lcl[9]
+    SLICE_X40Y121        FDRE                                         r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   20.000    20.000    
+    SLICE_X40Y121        FDRE (Setup_fdre_C_D)       -0.032    19.968    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[9]
+  -------------------------------------------------------------------
+                         required time                         19.968    
+                         arrival time                          -0.995    
+  -------------------------------------------------------------------
+                         slack                                 18.973    
+
+Slack (MET) :             18.992ns  (required time - arrival time)
+  Source:                 fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[4]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[4]/D
+  Path Group:             **default**
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (MaxDelay Path 20.000ns)
+  Data Path Delay:        0.976ns  (logic 0.433ns (44.352%)  route 0.543ns (55.648%))
+  Logic Levels:           1  (FDRE=1)
+  Timing Exception:       MaxDelay Path 20.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X34Y125        FDRE                         0.000     0.000 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[4]/C
+    SLICE_X34Y125        FDRE (Prop_fdre_C_Q)         0.433     0.433 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[4]/Q
+                         net (fo=1, routed)           0.543     0.976    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_lcl[4]
+    SLICE_X37Y123        FDRE                                         r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   20.000    20.000    
+    SLICE_X37Y123        FDRE (Setup_fdre_C_D)       -0.032    19.968    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[4]
+  -------------------------------------------------------------------
+                         required time                         19.968    
+                         arrival time                          -0.976    
+  -------------------------------------------------------------------
+                         slack                                 18.992    
+
+Slack (MET) :             18.998ns  (required time - arrival time)
+  Source:                 fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[2]/D
+  Path Group:             **default**
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (MaxDelay Path 20.000ns)
+  Data Path Delay:        0.998ns  (logic 0.433ns (43.393%)  route 0.565ns (56.607%))
+  Logic Levels:           1  (FDRE=1)
+  Timing Exception:       MaxDelay Path 20.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X34Y125        FDRE                         0.000     0.000 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[2]/C
+    SLICE_X34Y125        FDRE (Prop_fdre_C_Q)         0.433     0.433 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[2]/Q
+                         net (fo=1, routed)           0.565     0.998    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_lcl[2]
+    SLICE_X38Y120        FDRE                                         r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   20.000    20.000    
+    SLICE_X38Y120        FDRE (Setup_fdre_C_D)       -0.004    19.996    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[2]
+  -------------------------------------------------------------------
+                         required time                         19.996    
+                         arrival time                          -0.998    
+  -------------------------------------------------------------------
+                         slack                                 18.998    
+
+Slack (MET) :             19.040ns  (required time - arrival time)
+  Source:                 fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[1]/D
+  Path Group:             **default**
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (MaxDelay Path 20.000ns)
+  Data Path Delay:        0.928ns  (logic 0.379ns (40.829%)  route 0.549ns (59.171%))
+  Logic Levels:           1  (FDRE=1)
+  Timing Exception:       MaxDelay Path 20.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X33Y124        FDRE                         0.000     0.000 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[1]/C
+    SLICE_X33Y124        FDRE (Prop_fdre_C_Q)         0.379     0.379 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[1]/Q
+                         net (fo=1, routed)           0.549     0.928    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_lcl[1]
+    SLICE_X44Y122        FDRE                                         r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   20.000    20.000    
+    SLICE_X44Y122        FDRE (Setup_fdre_C_D)       -0.032    19.968    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[1]
+  -------------------------------------------------------------------
+                         required time                         19.968    
+                         arrival time                          -0.928    
+  -------------------------------------------------------------------
+                         slack                                 19.040    
+
+Slack (MET) :             19.048ns  (required time - arrival time)
+  Source:                 fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[5]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[5]/D
+  Path Group:             **default**
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (MaxDelay Path 20.000ns)
+  Data Path Delay:        0.920ns  (logic 0.379ns (41.214%)  route 0.541ns (58.786%))
+  Logic Levels:           1  (FDRE=1)
+  Timing Exception:       MaxDelay Path 20.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y124        FDRE                         0.000     0.000 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[5]/C
+    SLICE_X32Y124        FDRE (Prop_fdre_C_Q)         0.379     0.379 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[5]/Q
+                         net (fo=1, routed)           0.541     0.920    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_lcl[5]
+    SLICE_X41Y121        FDRE                                         r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   20.000    20.000    
+    SLICE_X41Y121        FDRE (Setup_fdre_C_D)       -0.032    19.968    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[5]
+  -------------------------------------------------------------------
+                         required time                         19.968    
+                         arrival time                          -0.920    
+  -------------------------------------------------------------------
+                         slack                                 19.048    
+
+Slack (MET) :             19.053ns  (required time - arrival time)
+  Source:                 fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[8]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[8]/D
+  Path Group:             **default**
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (MaxDelay Path 20.000ns)
+  Data Path Delay:        0.915ns  (logic 0.379ns (41.424%)  route 0.536ns (58.576%))
+  Logic Levels:           1  (FDRE=1)
+  Timing Exception:       MaxDelay Path 20.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y124        FDRE                         0.000     0.000 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[8]/C
+    SLICE_X32Y124        FDRE (Prop_fdre_C_Q)         0.379     0.379 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[8]/Q
+                         net (fo=1, routed)           0.536     0.915    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_lcl[8]
+    SLICE_X39Y123        FDRE                                         r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   20.000    20.000    
+    SLICE_X39Y123        FDRE (Setup_fdre_C_D)       -0.032    19.968    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[8]
+  -------------------------------------------------------------------
+                         required time                         19.968    
+                         arrival time                          -0.915    
+  -------------------------------------------------------------------
+                         slack                                 19.053    
+
+Slack (MET) :             19.075ns  (required time - arrival time)
+  Source:                 fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[6]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[6]/D
+  Path Group:             **default**
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (MaxDelay Path 20.000ns)
+  Data Path Delay:        0.921ns  (logic 0.379ns (41.163%)  route 0.542ns (58.837%))
+  Logic Levels:           1  (FDRE=1)
+  Timing Exception:       MaxDelay Path 20.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y124        FDRE                         0.000     0.000 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[6]/C
+    SLICE_X32Y124        FDRE (Prop_fdre_C_Q)         0.379     0.379 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[6]/Q
+                         net (fo=1, routed)           0.542     0.921    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_lcl[6]
+    SLICE_X38Y126        FDRE                                         r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   20.000    20.000    
+    SLICE_X38Y126        FDRE (Setup_fdre_C_D)       -0.004    19.996    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[6]
+  -------------------------------------------------------------------
+                         required time                         19.996    
+                         arrival time                          -0.921    
+  -------------------------------------------------------------------
+                         slack                                 19.075    
+
+Slack (MET) :             19.075ns  (required time - arrival time)
+  Source:                 fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[0]/D
+  Path Group:             **default**
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (MaxDelay Path 20.000ns)
+  Data Path Delay:        0.893ns  (logic 0.379ns (42.459%)  route 0.514ns (57.541%))
+  Logic Levels:           1  (FDRE=1)
+  Timing Exception:       MaxDelay Path 20.000ns -datapath_only
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y125        FDRE                         0.000     0.000 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[0]/C
+    SLICE_X35Y125        FDRE (Prop_fdre_C_Q)         0.379     0.379 r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/xadc_supplied_temperature.temperature_reg[0]/Q
+                         net (fo=1, routed)           0.514     0.893    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_lcl[0]
+    SLICE_X36Y126        FDRE                                         r  fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         max delay                   20.000    20.000    
+    SLICE_X36Y126        FDRE (Setup_fdre_C_D)       -0.032    19.968    fbtest/memctl/u_ddr3_if_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[0]
+  -------------------------------------------------------------------
+                         required time                         19.968    
+                         arrival time                          -0.893    
+  -------------------------------------------------------------------
+                         slack                                 19.075    
+
+
+
+
+

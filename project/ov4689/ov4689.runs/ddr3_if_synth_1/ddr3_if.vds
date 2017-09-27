@@ -2,12 +2,344 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Tue Sep 19 09:59:25 2017
-# Process ID: 7504
-# Current directory: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/ddr3_if_synth_1
+# Start of session at: Wed Sep 27 23:25:43 2017
+# Process ID: 12349
+# Current directory: /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/ddr3_if_synth_1
 # Command line: vivado -log ddr3_if.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddr3_if.tcl
-# Log file: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/ddr3_if_synth_1/ddr3_if.vds
-# Journal file: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/ddr3_if_synth_1/vivado.jou
+# Log file: /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/ddr3_if_synth_1/ddr3_if.vds
+# Journal file: /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/ddr3_if_synth_1/vivado.jou
 #-----------------------------------------------------------
 source ddr3_if.tcl -notrace
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ddr3_if, cache-ID = 6a895c0ba0732d20.
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1252.770 ; gain = 70.996 ; free physical = 9511 ; free virtual = 27085
+INFO: [Synth 8-638] synthesizing module 'ddr3_if' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ddr3_if.v:70]
+INFO: [Synth 8-638] synthesizing module 'ddr3_if_mig' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ddr3_if_mig.v:75]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_tempmon' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/clocking/mig_7series_v4_0_tempmon.v:69]
+INFO: [Synth 8-638] synthesizing module 'XADC' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:45495]
+INFO: [Synth 8-256] done synthesizing module 'XADC' (1#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:45495]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_tempmon' (2#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/clocking/mig_7series_v4_0_tempmon.v:69]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_iodelay_ctrl' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/clocking/mig_7series_v4_0_iodelay_ctrl.v:80]
+INFO: [Synth 8-638] synthesizing module 'IDELAYCTRL' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:16506]
+INFO: [Synth 8-256] done synthesizing module 'IDELAYCTRL' (3#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:16506]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_iodelay_ctrl' (4#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/clocking/mig_7series_v4_0_iodelay_ctrl.v:80]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_clk_ibuf' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/clocking/mig_7series_v4_0_clk_ibuf.v:68]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_clk_ibuf' (5#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/clocking/mig_7series_v4_0_clk_ibuf.v:68]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_infrastructure' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:78]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:20759]
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (6#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:20759]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (7#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'PLLE2_ADV' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:33019]
+INFO: [Synth 8-256] done synthesizing module 'PLLE2_ADV' (8#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:33019]
+INFO: [Synth 8-638] synthesizing module 'BUFH' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (9#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_infrastructure' (10#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v:78]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_memc_ui_top_axi' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ip_top/mig_7series_v4_0_memc_ui_top_axi.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_mem_intfc' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ip_top/mig_7series_v4_0_mem_intfc.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_mc' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_mc.v:73]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_rank_mach' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_rank_mach.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_rank_cntrl' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_rank_cntrl.v:79]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:43823]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (11#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:43823]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_rank_cntrl' (12#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_rank_cntrl.v:79]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_rank_common' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_rank_common.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb' (13#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized0' (13#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_rank_common' (14#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_rank_common.v:72]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_rank_mach' (15#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_rank_mach.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_mach' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_mach.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_compare' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_compare.v:74]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_compare' (16#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_compare.v:74]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state' (17#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue' (18#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl' (19#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state__parameterized0' (19#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue__parameterized0' (19#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized0' (19#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized1' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state__parameterized1' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state__parameterized1' (19#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue__parameterized1' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue__parameterized1' (19#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized1' (19#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized2' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_state__parameterized2' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_state__parameterized2' (19#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_state.v:141]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_queue__parameterized2' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_queue__parameterized2' (19#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v:174]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_cntrl__parameterized2' (19#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_bank_common' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_common.v:73]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_common' (20#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_common.v:73]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_arb_mux' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_arb_mux.v:69]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_arb_row_col' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_arb_row_col.v:83]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized1' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_round_robin_arb__parameterized1' (20#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v:121]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_arb_row_col' (21#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_arb_row_col.v:83]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_arb_select' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_arb_select.v:75]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_arb_select' (22#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_arb_select.v:75]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_arb_mux' (23#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_arb_mux.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_bank_mach' (24#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_bank_mach.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_col_mach' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_col_mach.v:88]
+INFO: [Synth 8-638] synthesizing module 'RAM32M' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:37094]
+INFO: [Synth 8-256] done synthesizing module 'RAM32M' (25#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:37094]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_col_mach' (26#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_col_mach.v:88]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_mc' (27#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/controller/mig_7series_v4_0_mc.v:73]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_top' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_top.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_mc_phy_wrapper' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy_wrapper.v:71]
+INFO: [Synth 8-638] synthesizing module 'OBUF' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:22272]
+INFO: [Synth 8-256] done synthesizing module 'OBUF' (28#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:22272]
+INFO: [Synth 8-638] synthesizing module 'OBUFT' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:22488]
+INFO: [Synth 8-256] done synthesizing module 'OBUFT' (29#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:22488]
+INFO: [Synth 8-638] synthesizing module 'IOBUF_INTERMDISABLE' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:18271]
+INFO: [Synth 8-256] done synthesizing module 'IOBUF_INTERMDISABLE' (30#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:18271]
+INFO: [Synth 8-638] synthesizing module 'IOBUFDS_DIFF_OUT_INTERMDISABLE' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:17818]
+INFO: [Synth 8-256] done synthesizing module 'IOBUFDS_DIFF_OUT_INTERMDISABLE' (31#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:17818]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_poc_pd' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_poc_pd.v:70]
+INFO: [Synth 8-638] synthesizing module 'IDDR' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:16384]
+INFO: [Synth 8-256] done synthesizing module 'IDDR' (32#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:16384]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_poc_pd' (33#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_poc_pd.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo' (34#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized0' (34#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_mc_phy' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_4lanes' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_4lanes.v:72]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_if_post_fifo' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_if_post_fifo.v:68]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_if_post_fifo' (35#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_if_post_fifo.v:68]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized1' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_of_pre_fifo__parameterized1' (35#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-638] synthesizing module 'PHASER_IN_PHY' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:32705]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_IN_PHY' (36#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:32705]
+INFO: [Synth 8-638] synthesizing module 'IN_FIFO' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:17589]
+INFO: [Synth 8-256] done synthesizing module 'IN_FIFO' (37#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:17589]
+INFO: [Synth 8-638] synthesizing module 'PHASER_OUT_PHY' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:32842]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_OUT_PHY' (38#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:32842]
+INFO: [Synth 8-638] synthesizing module 'OUT_FIFO' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:26338]
+INFO: [Synth 8-256] done synthesizing module 'OUT_FIFO' (39#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:26338]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-638] synthesizing module 'IDELAYE2' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:16519]
+INFO: [Synth 8-256] done synthesizing module 'IDELAYE2' (40#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:16519]
+INFO: [Synth 8-638] synthesizing module 'ISERDESE2' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:20009]
+INFO: [Synth 8-256] done synthesizing module 'ISERDESE2' (41#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:20009]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:26223]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2' (42#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:26223]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized0' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:26223]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized0' (42#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:26223]
+INFO: [Synth 8-638] synthesizing module 'ODDR' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:25650]
+INFO: [Synth 8-256] done synthesizing module 'ODDR' (43#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:25650]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io' (44#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane' (45#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized0' (45#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized0' (45#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized1' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'OBUFDS' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:22286]
+INFO: [Synth 8-256] done synthesizing module 'OBUFDS' (46#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:22286]
+INFO: [Synth 8-638] synthesizing module 'PHASER_OUT_PHY__parameterized0' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:32842]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_OUT_PHY__parameterized0' (46#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:32842]
+INFO: [Synth 8-638] synthesizing module 'OUT_FIFO__parameterized0' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:26338]
+INFO: [Synth 8-256] done synthesizing module 'OUT_FIFO__parameterized0' (46#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:26338]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized1' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-638] synthesizing module 'OSERDESE2__parameterized1' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:26223]
+INFO: [Synth 8-256] done synthesizing module 'OSERDESE2__parameterized1' (46#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:26223]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized1' (46#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized1' (46#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized2' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized2' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_group_io__parameterized2' (46#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_byte_lane__parameterized2' (46#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v:70]
+INFO: [Synth 8-638] synthesizing module 'BUFIO' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:831]
+INFO: [Synth 8-256] done synthesizing module 'BUFIO' (47#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:831]
+INFO: [Synth 8-638] synthesizing module 'PHY_CONTROL' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:32933]
+INFO: [Synth 8-256] done synthesizing module 'PHY_CONTROL' (48#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:32933]
+INFO: [Synth 8-638] synthesizing module 'PHASER_REF' [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:32917]
+INFO: [Synth 8-256] done synthesizing module 'PHASER_REF' (49#1) [/home/alga/workspace/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:32917]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_4lanes' (50#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_4lanes.v:72]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_mc_phy' (51#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_mc_phy_wrapper' (52#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy_wrapper.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_calib_top' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_calib_top.v:82]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_wrlvl' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrlvl.v:90]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_wrlvl' (53#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrlvl.v:90]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay.v:68]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay' (54#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay.v:68]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_dqs_found_cal_hr' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal_hr.v:79]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_dqs_found_cal_hr' (55#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal_hr.v:79]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_rdlvl' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_rdlvl.v:81]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_rdlvl' (56#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_rdlvl.v:81]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_prbs_rdlvl' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_prbs_rdlvl.v:79]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_prbs_rdlvl' (57#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_prbs_rdlvl.v:79]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_prbs_gen' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_prbs_gen.v:92]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_prbs_gen' (58#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_prbs_gen.v:92]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_init' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_init.v:89]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_init' (59#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_init.v:89]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_wrcal' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrcal.v:77]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_wrcal' (60#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrcal.v:77]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_phy_tempmon' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_tempmon.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_tempmon' (61#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_tempmon.v:69]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_calib_top' (62#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_calib_top.v:82]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_phy_top' (63#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_top.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_mem_intfc' (64#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ip_top/mig_7series_v4_0_mem_intfc.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_top' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ui/mig_7series_v4_0_ui_top.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_cmd' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ui/mig_7series_v4_0_ui_cmd.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_cmd' (65#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ui/mig_7series_v4_0_ui_cmd.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_wr_data' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ui/mig_7series_v4_0_ui_wr_data.v:131]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_wr_data' (66#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ui/mig_7series_v4_0_ui_wr_data.v:131]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ui_rd_data' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ui/mig_7series_v4_0_ui_rd_data.v:140]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_rd_data' (67#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ui/mig_7series_v4_0_ui_rd_data.v:140]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ui_top' (68#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ui/mig_7series_v4_0_ui_top.v:71]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc.v:90]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_axi_register_slice' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_ddr_axi_register_slice.v:63]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_axic_register_slice' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_ddr_axic_register_slice.v:61]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_axic_register_slice' (69#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_ddr_axic_register_slice.v:61]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_axic_register_slice__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_ddr_axic_register_slice.v:61]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_axic_register_slice__parameterized0' (69#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_ddr_axic_register_slice.v:61]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_axic_register_slice__parameterized1' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_ddr_axic_register_slice.v:61]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_axic_register_slice__parameterized1' (69#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_ddr_axic_register_slice.v:61]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_ddr_axic_register_slice__parameterized2' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_ddr_axic_register_slice.v:61]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_axic_register_slice__parameterized2' (69#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_ddr_axic_register_slice.v:61]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_ddr_axi_register_slice' (70#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_ddr_axi_register_slice.v:63]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_aw_channel' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_aw_channel.v:57]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_cmd_translator' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_cmd_translator.v:62]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_incr_cmd' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_incr_cmd.v:64]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_incr_cmd' (71#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_incr_cmd.v:64]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_wrap_cmd' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_wrap_cmd.v:97]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_wrap_cmd' (72#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_wrap_cmd.v:97]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_cmd_translator' (73#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_cmd_translator.v:62]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_wr_cmd_fsm' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_wr_cmd_fsm.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_wr_cmd_fsm' (74#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_wr_cmd_fsm.v:76]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_aw_channel' (75#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_aw_channel.v:57]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_w_channel' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_w_channel.v:64]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_w_channel' (76#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_w_channel.v:64]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_b_channel' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_b_channel.v:83]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_fifo' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_fifo.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_fifo' (77#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_fifo.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_b_channel' (78#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_b_channel.v:83]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_ar_channel' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_ar_channel.v:57]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_cmd_translator__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_cmd_translator.v:62]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_incr_cmd__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_incr_cmd.v:64]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_incr_cmd__parameterized0' (78#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_incr_cmd.v:64]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_wrap_cmd__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_wrap_cmd.v:97]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_wrap_cmd__parameterized0' (78#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_wrap_cmd.v:97]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_cmd_translator__parameterized0' (78#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_cmd_translator.v:62]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_cmd_fsm' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_cmd_fsm.v:72]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_cmd_fsm' (79#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_cmd_fsm.v:72]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_ar_channel' (80#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_ar_channel.v:57]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_r_channel' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_r_channel.v:67]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_fifo__parameterized0' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_fifo.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_fifo__parameterized0' (80#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_fifo.v:70]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_fifo__parameterized1' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_fifo.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_fifo__parameterized1' (80#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_fifo.v:70]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_r_channel' (81#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_r_channel.v:67]
+INFO: [Synth 8-638] synthesizing module 'mig_7series_v4_0_axi_mc_cmd_arbiter' [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_cmd_arbiter.v:61]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc_cmd_arbiter' (82#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc_cmd_arbiter.v:61]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_axi_mc' (83#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/axi/mig_7series_v4_0_axi_mc.v:90]
+INFO: [Synth 8-256] done synthesizing module 'mig_7series_v4_0_memc_ui_top_axi' (84#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ip_top/mig_7series_v4_0_memc_ui_top_axi.v:72]
+INFO: [Synth 8-256] done synthesizing module 'ddr3_if_mig' (85#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ddr3_if_mig.v:75]
+INFO: [Synth 8-256] done synthesizing module 'ddr3_if' (86#1) [/home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/rtl/ddr3_if.v:70]
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1454.410 ; gain = 272.637 ; free physical = 9373 ; free virtual = 26951
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1454.410 ; gain = 272.637 ; free physical = 9415 ; free virtual = 26993
+INFO: [Device 21-403] Loading part xc7a100tcsg324-2
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1838.629 ; gain = 0.000 ; free physical = 9019 ; free virtual = 26607
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1838.629 ; gain = 656.855 ; free physical = 9141 ; free virtual = 26728
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1838.629 ; gain = 656.855 ; free physical = 9141 ; free virtual = 26728
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1838.629 ; gain = 656.855 ; free physical = 9142 ; free virtual = 26729
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 1838.629 ; gain = 656.855 ; free physical = 9133 ; free virtual = 26720
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1906.699 ; gain = 724.926 ; free physical = 8799 ; free virtual = 26462
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------------------+------------+---------------+----------------+
+|Module Name                   | RTL Object | Depth x Width | Implemented As | 
++------------------------------+------------+---------------+----------------+
+|mig_7series_v4_0_ddr_prbs_gen | mem_out    | 256x18        | LUT            | 
+|mig_7series_v4_0_ddr_prbs_gen | mem_out    | 256x18        | LUT            | 
++------------------------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                                                                            | Inference | Size (Depth x Width) | Primitives    | 
++------------+---------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|ddr3_if     | of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg                                             | Implied   | 16 x 80              | RAM32M x 14   | 
+|ddr3_if     | ddr_byte_lane_A.ddr_byte_lane_A/dq_gen_40.if_post_fifo_gen.u_ddr_if_post_fifo/mem_reg | Implied   | 4 x 80               | RAM32M x 14   | 
+|ddr3_if     | ddr_byte_lane_A.ddr_byte_lane_A/of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg             | Implied   | 16 x 80              | RAM32M x 14   | 
+|ddr3_if     | ddr_byte_lane_B.ddr_byte_lane_B/dq_gen_40.if_post_fifo_gen.u_ddr_if_post_fifo/mem_reg | Implied   | 4 x 80               | RAM32M x 14   | 
+|ddr3_if     | ddr_byte_lane_B.ddr_byte_lane_B/of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg             | Implied   | 16 x 80              | RAM32M x 14   | 
+|ddr3_if     | ddr_byte_lane_D.ddr_byte_lane_D/of_pre_fifo_gen.u_ddr_of_pre_fifo/mem_reg             | Implied   | 16 x 80              | RAM32M x 14   | 
++------------+---------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:45 ; elapsed = 00:01:47 . Memory (MB): peak = 1988.988 ; gain = 807.215 ; free physical = 8683 ; free virtual = 26348
+Finished Timing Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1993.988 ; gain = 812.215 ; free physical = 8678 ; free virtual = 26343
+Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:01:58 . Memory (MB): peak = 1995.988 ; gain = 814.215 ; free physical = 8905 ; free virtual = 26567
+Finished IO Insertion : Time (s): cpu = 00:01:57 ; elapsed = 00:01:59 . Memory (MB): peak = 1995.988 ; gain = 814.215 ; free physical = 8906 ; free virtual = 26567
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:57 ; elapsed = 00:01:59 . Memory (MB): peak = 1995.988 ; gain = 814.215 ; free physical = 8906 ; free virtual = 26567
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:59 ; elapsed = 00:02:01 . Memory (MB): peak = 1995.988 ; gain = 814.215 ; free physical = 8908 ; free virtual = 26569
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:59 ; elapsed = 00:02:01 . Memory (MB): peak = 1995.988 ; gain = 814.215 ; free physical = 8908 ; free virtual = 26569
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:59 ; elapsed = 00:02:01 . Memory (MB): peak = 1995.988 ; gain = 814.215 ; free physical = 8907 ; free virtual = 26569
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:59 ; elapsed = 00:02:01 . Memory (MB): peak = 1995.988 ; gain = 814.215 ; free physical = 8907 ; free virtual = 26569
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |BUFG                           |     3|
+|2     |BUFH                           |     1|
+|3     |BUFIO                          |     1|
+|4     |CARRY4                         |   129|
+|5     |IDDR                           |     2|
+|6     |IDELAYCTRL                     |     1|
+|7     |IDELAYE2                       |    16|
+|8     |IN_FIFO                        |     2|
+|9     |ISERDESE2                      |    16|
+|10    |LUT1                           |   462|
+|11    |LUT2                           |   483|
+|12    |LUT3                           |  1243|
+|13    |LUT4                           |   997|
+|14    |LUT5                           |  1579|
+|15    |LUT6                           |  1668|
+|16    |MMCME2_ADV                     |     1|
+|17    |MUXF7                          |    19|
+|18    |ODDR                           |     5|
+|19    |OSERDESE2                      |    22|
+|20    |OSERDESE2_1                    |     2|
+|21    |OSERDESE2_2                    |    18|
+|22    |OUT_FIFO                       |     2|
+|23    |OUT_FIFO_1                     |     2|
+|24    |PHASER_IN_PHY                  |     2|
+|25    |PHASER_OUT_PHY                 |     2|
+|26    |PHASER_OUT_PHY_1               |     2|
+|27    |PHASER_REF                     |     1|
+|28    |PHY_CONTROL                    |     1|
+|29    |PLLE2_ADV                      |     1|
+|30    |RAM32M                         |   127|
+|31    |SRL16E                         |    18|
+|32    |SRLC32E                        |   131|
+|33    |XADC                           |     1|
+|34    |XORCY                          |     6|
+|35    |FDCE                           |     2|
+|36    |FDPE                           |    75|
+|37    |FDRE                           |  4428|
+|38    |FDSE                           |   291|
+|39    |IOBUFDS_DIFF_OUT_INTERMDISABLE |     2|
+|40    |IOBUF_INTERMDISABLE            |    16|
+|41    |OBUF                           |    23|
+|42    |OBUFDS                         |     1|
+|43    |OBUFT                          |     2|
++------+-------------------------------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:59 ; elapsed = 00:02:01 . Memory (MB): peak = 1995.988 ; gain = 814.215 ; free physical = 8907 ; free virtual = 26569
+synth_design: Time (s): cpu = 00:02:03 ; elapsed = 00:02:05 . Memory (MB): peak = 2028.004 ; gain = 858.816 ; free physical = 8950 ; free virtual = 26611
