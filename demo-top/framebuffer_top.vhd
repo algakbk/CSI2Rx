@@ -18,6 +18,7 @@ entity framebuffer_top is
     
     --System/control inputs
     system_clock : in std_logic;
+    clk_ref : in std_logic;
     system_reset : in std_logic;
 --    zoom_mode : in std_logic;
 --    freeze : in std_logic;
@@ -360,7 +361,7 @@ begin
         s_axi_rready => axi_rready,
         
         sys_clk_i => system_clock,
-        clk_ref_i => system_clock,
+        clk_ref_i => clk_ref,
         sys_rst => '1');
 
 end Behavioral;

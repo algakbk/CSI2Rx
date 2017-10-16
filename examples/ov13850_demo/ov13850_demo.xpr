@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2016.3 (64-bit)              -->
+<!-- Product Version: Vivado v2017.2 (64-bit)              -->
 <!--                                                         -->
-<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
+<!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="/home/dave/ip/examples/ov13850_demo/ov13850_demo.xpr">
+<Project Version="7" Minor="20" Path="/home/alga/workspace/github/CSI2Rx/examples/ov13850_demo/ov13850_demo.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="ce26a670edcf4f108890c5336ddf6753"/>
@@ -24,8 +24,8 @@
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
-    <Option Name="IPUserFilesDir" Val="$PPRDIR/ov13850_demo.ip_user_files"/>
-    <Option Name="IPStaticSourceDir" Val="$PPRDIR/ov13850_demo.ip_user_files/ipstatic"/>
+    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
+    <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
     <Option Name="WTXSimLaunchSim" Val="1"/>
@@ -51,7 +51,76 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_line_buffer.vhd">
+      <File Path="$PSRCDIR/sources_1/ip/ddr3_if_1/ddr3_if.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/ddr3_if_1/ddr3_if.xci"/>
+          <Attr Name="ImportTime" Val="1479202446"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/output_line_buffer_1/output_line_buffer.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/output_line_buffer_1/output_line_buffer.xci"/>
+          <Attr Name="ImportTime" Val="1479202446"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/input_line_buffer_1/input_line_buffer.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/input_line_buffer_1/input_line_buffer.xci"/>
+          <Attr Name="ImportTime" Val="1479202446"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/camera_pll_1/camera_pll.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/camera_pll_1/camera_pll.xci"/>
+          <Attr Name="ImportTime" Val="1479202446"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/dvi_pll_1/dvi_pll.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/dvi_pll_1/dvi_pll.xci"/>
+          <Attr Name="ImportTime" Val="1479202446"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_10bit_unpack.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_hs_clk_phy.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_clock_det.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_hs_lane_phy.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_byte_align.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -69,13 +138,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_hs_lane_phy.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_hs_clk_phy.vhd">
+      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_4_lane_link.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -87,49 +150,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_clock_det.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_byte_align.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../video-misc/video_timing_ctrl.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../framebuffer-ctrl/framebuffer_ctrl.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../dvi-tx/dvi_tx_tmds_phy.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../dvi-tx/dvi_tx_tmds_enc.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../dvi-tx/dvi_tx_clk_drv.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_video_output.vhd">
+      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_line_buffer.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -141,31 +162,37 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_4_lane_link.vhd">
+      <File Path="$PPRDIR/../../video-misc/video_timing_ctrl.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_10bit_unpack.vhd">
+      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_video_output.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../video-misc/video_fb_output.vhd">
+      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_top.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ov-cam-control/ov_i2c_control.vhd">
+      <File Path="$PPRDIR/../../dvi-tx/dvi_tx_clk_drv.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ov-cam-control/ov13850_4k_regs.vhd">
+      <File Path="$PPRDIR/../../dvi-tx/dvi_tx_tmds_enc.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../dvi-tx/dvi_tx_tmds_phy.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -177,7 +204,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_top.vhd">
+      <File Path="$PPRDIR/../../framebuffer-ctrl/framebuffer_ctrl.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../video-misc/video_fb_output.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -195,13 +228,25 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../video-misc/simple_debayer.vhd">
+      <File Path="$PPRDIR/../../ov-cam-control/ov13850_4k_regs.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../ov-cam-control/ov_i2c_control.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../../ov-cam-control/ov13850_control_top.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../video-misc/simple_debayer.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -238,13 +283,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/ddr3_if/mig_b.prj"/>
           <Attr Name="ImportTime" Val="1479202614"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/ip/ddr3_if_1/mig_a.prj">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/ddr3_if_1/mig_a.prj"/>
-          <Attr Name="ImportTime" Val="1479202446"/>
           <Attr Name="UsedIn" Val="synthesis"/>
         </FileInfo>
       </File>
@@ -291,81 +329,6 @@
         <Option Name="NLNetlistMode" Val="funcsim"/>
       </Config>
     </FileSet>
-    <FileSet Name="input_line_buffer" Type="BlockSrcs" RelSrcDir="$PSRCDIR/input_line_buffer">
-      <File Path="$PSRCDIR/sources_1/ip/input_line_buffer_1/input_line_buffer.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/input_line_buffer_1/input_line_buffer.xci"/>
-          <Attr Name="ImportTime" Val="1479202446"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="input_line_buffer"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="output_line_buffer" Type="BlockSrcs" RelSrcDir="$PSRCDIR/output_line_buffer">
-      <File Path="$PSRCDIR/sources_1/ip/output_line_buffer_1/output_line_buffer.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/output_line_buffer_1/output_line_buffer.xci"/>
-          <Attr Name="ImportTime" Val="1479202446"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="output_line_buffer"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="dvi_pll" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dvi_pll">
-      <File Path="$PSRCDIR/sources_1/ip/dvi_pll_1/dvi_pll.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/dvi_pll_1/dvi_pll.xci"/>
-          <Attr Name="ImportTime" Val="1479202446"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="dvi_pll"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="camera_pll" Type="BlockSrcs" RelSrcDir="$PSRCDIR/camera_pll">
-      <File Path="$PSRCDIR/sources_1/ip/camera_pll_1/camera_pll.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/camera_pll_1/camera_pll.xci"/>
-          <Attr Name="ImportTime" Val="1479202446"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="camera_pll"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="ddr3_if" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ddr3_if">
-      <File Path="$PSRCDIR/sources_1/ip/ddr3_if_1/ddr3_if.xci">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../framebuffer_test/framebuffer_test.srcs/sources_1/ip/ddr3_if_1/ddr3_if.xci"/>
-          <Attr Name="ImportTime" Val="1479202446"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <Config>
-        <Option Name="TopModule" Val="ddr3_if"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -397,46 +360,7 @@
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="input_line_buffer_synth_1" Type="Ft3:Synth" SrcSet="input_line_buffer" Part="xc7k325tffg900-2" ConstrsSet="input_line_buffer" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/input_line_buffer_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="output_line_buffer_synth_1" Type="Ft3:Synth" SrcSet="output_line_buffer" Part="xc7k325tffg900-2" ConstrsSet="output_line_buffer" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/output_line_buffer_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="dvi_pll_synth_1" Type="Ft3:Synth" SrcSet="dvi_pll" Part="xc7k325tffg900-2" ConstrsSet="dvi_pll" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/dvi_pll_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="camera_pll_synth_1" Type="Ft3:Synth" SrcSet="camera_pll" Part="xc7k325tffg900-2" ConstrsSet="camera_pll" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/camera_pll_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ddr3_if_synth_1" Type="Ft3:Synth" SrcSet="ddr3_if" Part="xc7k325tffg900-2" ConstrsSet="ddr3_if" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/ddr3_if_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
@@ -453,81 +377,7 @@
         <Step Id="write_bitstream"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="input_line_buffer_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="input_line_buffer" Description="Default settings for Implementation." SynthRun="input_line_buffer_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="output_line_buffer_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="output_line_buffer" Description="Default settings for Implementation." SynthRun="output_line_buffer_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="dvi_pll_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="dvi_pll" Description="Default settings for Implementation." SynthRun="dvi_pll_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="camera_pll_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="camera_pll" Description="Default settings for Implementation." SynthRun="camera_pll_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="ddr3_if_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="ddr3_if" Description="Default settings for Implementation." SynthRun="ddr3_if_synth_1" IncludeInArchive="false">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
+      <ReportStrategy/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
   </Runs>

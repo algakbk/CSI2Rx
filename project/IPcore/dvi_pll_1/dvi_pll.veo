@@ -55,13 +55,13 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// pixel_clock___148.000______0.000______50.0______111.449____139.507
-// dvi_bit_clock___740.000______0.000______50.0_______87.091____139.507
+// pixel_clock___148.200______0.000______50.0______144.069____206.670
+// dvi_bit_clock___741.000______0.000______50.0______122.346____206.670
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_____________200____________0.010
+// __primary______________26____________0.010
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections

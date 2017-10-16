@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date                      : Wed Sep 27 23:34:44 2017
+| Date                      : Mon Oct 16 00:52:29 2017
 | Host                      : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
 | Command                   : report_io -file ov13850_demo_io_placed.rpt
 | Design                    : ov13850_demo
@@ -315,7 +315,7 @@ Table of Contents
 | T8         |               | High Range | IO_L24N_T3_34                | User IO     |             |      34 |            |      |                      |                      |         |            |           |          |          |                  |
 | T9         |               | High Range | IO_L24P_T3_A01_D17_14        | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |
 | T10        |               | High Range | IO_L24N_T3_A00_D16_14        | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |
-| T11        | reset_n       | High Range | IO_L19P_T3_A10_D26_14        | INPUT       | LVCMOS25    |      14 |            |      |                      |                 NONE |         | FIXED      |           |          |          | NONE             |
+| T11        |               | High Range | IO_L19P_T3_A10_D26_14        | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |
 | T12        |               | High Range | VCCO_14                      | VCCO        |             |      14 |            |      |                      |                      |    2.50 |            |           |          |          |                  |
 | T13        |               | High Range | IO_L23P_T3_A03_D19_14        | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |
 | T14        |               | High Range | IO_L14P_T2_SRCC_14           | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |
@@ -331,7 +331,7 @@ Table of Contents
 | U6         |               | High Range | IO_L22N_T3_34                | User IO     |             |      34 |            |      |                      |                      |         |            |           |          |          |                  |
 | U7         |               | High Range | IO_L22P_T3_34                | User IO     |             |      34 |            |      |                      |                      |         |            |           |          |          |                  |
 | U8         |               | High Range | IO_25_34                     | User IO     |             |      34 |            |      |                      |                      |         |            |           |          |          |                  |
-| U9         |               | High Range | IO_L21P_T3_DQS_34            | User IO     |             |      34 |            |      |                      |                      |         |            |           |          |          |                  |
+| U9         | reset_n       | High Range | IO_L21P_T3_DQS_34            | INPUT       | LVCMOS25    |      34 |            |      |                      |                 NONE |         | FIXED      | PULLUP    |          |          | NONE             |
 | U10        |               |            | GND                          | GND         |             |         |            |      |                      |                      |     0.0 |            |           |          |          |                  |
 | U11        |               | High Range | IO_L19N_T3_A09_D25_VREF_14   | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |
 | U12        |               | High Range | IO_L20P_T3_A08_D24_14        | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |

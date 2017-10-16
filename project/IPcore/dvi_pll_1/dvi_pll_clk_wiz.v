@@ -56,13 +56,13 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// pixel_clock___148.000______0.000______50.0______111.449____139.507
-// dvi_bit_clock___740.000______0.000______50.0_______87.091____139.507
+// pixel_clock___148.200______0.000______50.0______144.069____206.670
+// dvi_bit_clock___741.000______0.000______50.0______122.346____206.670
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_____________200____________0.010
+// __primary______________26____________0.010
 
 `timescale 1ps/1ps
 
@@ -117,8 +117,8 @@ wire clk_in2_dvi_pll;
   #(.BANDWIDTH            ("OPTIMIZED"),
     .COMPENSATION         ("ZHOLD"),
     .STARTUP_WAIT         ("FALSE"),
-    .DIVCLK_DIVIDE        (5),
-    .CLKFBOUT_MULT        (37),
+    .DIVCLK_DIVIDE        (1),
+    .CLKFBOUT_MULT        (57),
     .CLKFBOUT_PHASE       (0.000),
     .CLKOUT0_DIVIDE       (10),
     .CLKOUT0_PHASE        (0.000),
@@ -126,7 +126,7 @@ wire clk_in2_dvi_pll;
     .CLKOUT1_DIVIDE       (2),
     .CLKOUT1_PHASE        (0.000),
     .CLKOUT1_DUTY_CYCLE   (0.500),
-    .CLKIN1_PERIOD        (5.000))
+    .CLKIN1_PERIOD        (38.462))
   plle2_adv_inst
     // Output clocks
    (

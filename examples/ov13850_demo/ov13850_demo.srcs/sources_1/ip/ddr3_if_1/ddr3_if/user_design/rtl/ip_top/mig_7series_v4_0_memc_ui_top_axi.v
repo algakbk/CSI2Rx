@@ -523,7 +523,8 @@ module mig_7series_v4_0_memc_ui_top_axi #
   wire [BANK_WIDTH-1:0]                  bank;
   wire [2*nCK_PER_CLK*PAYLOAD_WIDTH-1:0] wr_data;
   wire [2*nCK_PER_CLK*PAYLOAD_WIDTH/8-1:0]  wr_data_mask;
-  wire [APP_DATA_WIDTH-1:0]              app_rd_data;
+  wire [APP_DATA_WIDTH-1:0]              app_rd_data; 
+  wire [C_MC_DATA_WIDTH_LCL-1:0]         app_rd_data_to_axi; 
   wire                                   app_rd_data_end;
   wire                                   app_rd_data_valid;
   wire                                   app_rdy;
@@ -865,17 +866,32 @@ module mig_7series_v4_0_memc_ui_top_axi #
       .dbg_poc                          (dbg_poc[1023:0])
       );
 
-
+  genvar o; 
   generate
     if(ECC_TEST == "ON") begin
       if(DQ_WIDTH == 72) begin
-        assign app_wdf_data = {app_wdf_data_axi_o[0+:(8*2*nCK_PER_CLK)],app_wdf_data_axi_o} ;
-        assign app_wdf_mask = {app_wdf_mask_axi_o[0+:(2*nCK_PER_CLK)],app_wdf_mask_axi_o} ;
+	for(o=0;o<8;o=o+1) begin	      
+       		 assign app_wdf_data[o*72+:72] = {app_wdf_data_axi_o[o*64+:8],app_wdf_data_axi_o[o*64+:64]} ;
+      		 assign app_wdf_mask[o*9+:9] = {app_wdf_mask_axi_o[o*8],app_wdf_mask_axi_o[o*8+:8]} ;
+	end	 
       end else begin
       end
     end else begin
       assign app_wdf_data = app_wdf_data_axi_o ;
       assign app_wdf_mask = app_wdf_mask_axi_o ;
+    end
+  endgenerate 
+  
+  genvar e; 
+  generate 
+    if(ECC_TEST == "ON") begin
+      if(DQ_WIDTH == 72) begin 
+	for(e=0;e<8;e=e+1) begin		
+	     assign app_rd_data_to_axi[e*64+:64] = app_rd_data[e*72+:64];
+	end 
+      end
+    end else begin   
+    	assign app_rd_data_to_axi = app_rd_data;
     end
   endgenerate
 
@@ -1040,7 +1056,7 @@ module mig_7series_v4_0_memc_ui_top_axi #
            .mc_app_wdf_rdy                         (app_wdf_rdy),
 
            .mc_app_rd_valid                        (app_rd_data_valid),
-           .mc_app_rd_data                         (app_rd_data),
+           .mc_app_rd_data                         (app_rd_data_to_axi),
            .mc_app_rd_end                          (app_rd_data_end),
            .mc_app_ecc_multiple_err                (app_ecc_multiple_err_o)
            );
@@ -1103,13 +1119,15 @@ module mig_7series_v4_0_memc_ui_top_axi #
       dbg_rddata_r <= dbg_rddata;
     end
 
-    if(ECC_TEST == "ON") begin
-      assign app_raw_not_ecc = {2*nCK_PER_CLK{1'b1}};
-      assign app_correct_en_i = 'b0 ;
-    end else begin
-      assign app_raw_not_ecc = {2*nCK_PER_CLK{1'b0}};
-      assign app_correct_en_i = app_correct_en ;
-    end
+    //if(ECC_TEST == "ON") begin
+    //  assign app_raw_not_ecc = {2*nCK_PER_CLK{1'b1}};
+    //  assign app_correct_en_i = 'b0 ;
+    //end else begin
+    //  assign app_raw_not_ecc = {2*nCK_PER_CLK{1'b0}};
+    //  assign app_correct_en_i = app_correct_en ;
+    //end
+    assign app_raw_not_ecc = {2*nCK_PER_CLK{1'b0}};
+    assign app_correct_en_i = app_correct_en ;
   end
   else begin : gen_no_axi_ctrl_top
     assign s_axi_ctrl_awready = 1'b0;

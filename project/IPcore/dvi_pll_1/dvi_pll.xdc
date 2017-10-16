@@ -52,8 +52,8 @@
 # input clocks. You can use these to time your system. If required
 # commented constraints can be used in the top level xdc 
 #----------------------------------------------------------------
-#create_clock -period 5.000 [get_ports sysclk]
-#set_input_jitter [get_clocks -of_objects [get_ports sysclk]] 0.05
+#create_clock -period 38.462 [get_ports sysclk]
+#set_input_jitter [get_clocks -of_objects [get_ports sysclk]] 0.38461
 
 
 set_property PHASESHIFT_MODE WAVEFORM [get_cells -hierarchical *adv*]

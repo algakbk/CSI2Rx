@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-// Date        : Wed Sep 27 23:24:45 2017
+// Date        : Wed Sep 27 23:24:44 2017
 // Host        : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
-// Command     : write_verilog -force -mode funcsim
-//               /home/alga/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/output_line_buffer_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top output_line_buffer -prefix
+//               output_line_buffer_ output_line_buffer_sim_netlist.v
 // Design      : output_line_buffer
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -201,7 +201,6 @@ module output_line_buffer
         .web(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module output_line_buffer_blk_mem_gen_generic_cstr
    (doutb,
     clka,
@@ -267,7 +266,6 @@ module output_line_buffer_blk_mem_gen_generic_cstr
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module output_line_buffer_blk_mem_gen_prim_width
    (doutb,
     clka,
@@ -423,7 +421,6 @@ module output_line_buffer_blk_mem_gen_prim_width__parameterized2
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module output_line_buffer_blk_mem_gen_prim_wrapper
    (doutb,
     clka,
@@ -1431,7 +1428,6 @@ module output_line_buffer_blk_mem_gen_prim_wrapper__parameterized2
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module output_line_buffer_blk_mem_gen_top
    (doutb,
     clka,
@@ -1494,7 +1490,7 @@ endmodule
 (* C_USE_URAM = "0" *) (* C_WEA_WIDTH = "1" *) (* C_WEB_WIDTH = "1" *) 
 (* C_WRITE_DEPTH_A = "1024" *) (* C_WRITE_DEPTH_B = "2048" *) (* C_WRITE_MODE_A = "NO_CHANGE" *) 
 (* C_WRITE_MODE_B = "WRITE_FIRST" *) (* C_WRITE_WIDTH_A = "128" *) (* C_WRITE_WIDTH_B = "64" *) 
-(* C_XDEVICEFAMILY = "artix7" *) (* ORIG_REF_NAME = "blk_mem_gen_v8_3_6" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* C_XDEVICEFAMILY = "artix7" *) (* downgradeipidentifiedwarnings = "yes" *) 
 module output_line_buffer_blk_mem_gen_v8_3_6
    (clka,
     rsta,
@@ -1884,7 +1880,6 @@ module output_line_buffer_blk_mem_gen_v8_3_6
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_3_6_synth" *) 
 module output_line_buffer_blk_mem_gen_v8_3_6_synth
    (doutb,
     clka,

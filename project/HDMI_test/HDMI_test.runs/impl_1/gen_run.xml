@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1508075719">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="VHDL_test.drc"/>
+  <File Type="BG-BGN" Name="VHDL_test.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="VHDL_test.sysdef"/>
+  <File Type="BITSTR-MMI" Name="VHDL_test.mmi"/>
+  <File Type="BITSTR-BMM" Name="VHDL_test_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="VHDL_test.nky"/>
+  <File Type="BITSTR-RBT" Name="VHDL_test.rbt"/>
+  <File Type="BITSTR-MSK" Name="VHDL_test.msk"/>
+  <File Type="BG-BIN" Name="VHDL_test.bin"/>
+  <File Type="BG-BIT" Name="VHDL_test.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="VHDL_test_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="VHDL_test_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="VHDL_test_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="VHDL_test_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="VHDL_test_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="VHDL_test_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="VHDL_test_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="VHDL_test_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="VHDL_test_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="VHDL_test_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="VHDL_test_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="VHDL_test_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="VHDL_test_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="VHDL_test_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="VHDL_test_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="VHDL_test_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="VHDL_test_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="VHDL_test_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="VHDL_test_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="VHDL_test_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="VHDL_test_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="VHDL_test_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="VHDL_test_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="VHDL_test_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="VHDL_test_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="VHDL_test_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="VHDL_test_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="VHDL_test_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="RDI-RDI" Name="VHDL_test.vdi"/>
+  <File Type="PLACE-TIMING" Name="VHDL_test_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="VHDL_test_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="VHDL_test_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="VHDL_test_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="VHDL_test_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="VHDL_test_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="VHDL_test_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="VHDL_test_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="VHDL_test_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="VHDL_test_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="VHDL_test_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="VHDL_test_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="VHDL_test_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="VHDL_test.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="VHDL_test_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="VHDL_test_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="VHDL_test_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="VHDL_test_timing_summary_init.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="VHDL_test_postplace_pwropt.dcp"/>
+  <File Type="PA-TCL" Name="VHDL_test.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/dvi-tx/dvi_tx_tmds_enc.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/dvi-tx/dvi_tx_tmds_phy.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/dvi-tx/dvi_tx_clk_drv.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/dvi-tx/dvi_tx_top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/video-misc/video_timing_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/video-misc/test_pattern_gen.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/VHDL_test.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="VHDL_test"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/test.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

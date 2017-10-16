@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1506533568">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1508093346">
   <File Type="VDS-TIMING-PB" Name="ov13850_demo_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="ov13850_demo_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="ov13850_demo.dcp"/>
@@ -10,6 +10,34 @@
   <File Type="PA-TCL" Name="ov13850_demo.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../IPcore/ddr3_if/ddr3_if.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../IPcore/output_line_buffer_1/output_line_buffer.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../IPcore/input_line_buffer_1/input_line_buffer.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../IPcore/camera_pll_1/camera_pll.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_10bit_unpack.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -207,9 +235,4 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="output_line_buffer"/>
-  <BlockFileSet Type="BlockSrcs" Name="input_line_buffer"/>
-  <BlockFileSet Type="BlockSrcs" Name="dvi_pll"/>
-  <BlockFileSet Type="BlockSrcs" Name="ddr3_if"/>
-  <BlockFileSet Type="BlockSrcs" Name="camera_pll"/>
 </GenRun>

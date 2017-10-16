@@ -1,6 +1,69 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Oct  1 04:22:08 2017
+| Host         : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'output_line_buffer'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of output_line_buffer (xilinx.com:ip:blk_mem_gen:8.3) from (Rev. 3) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Oct  1 04:22:07 2017
+| Host         : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'input_line_buffer'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of input_line_buffer (xilinx.com:ip:blk_mem_gen:8.3) from (Rev. 3) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sun Oct  1 04:21:47 2017
+| Host         : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ddr3_if'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ddr3_if (xilinx.com:ip:mig_7series:4.0) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
 | Date         : Mon Sep 18 09:51:22 2017
 | Host         : Alga running 64-bit Ubuntu 14.04.5 LTS
 | Command      : upgrade_ip

@@ -14,31 +14,83 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12866 
+INFO: Helper process launched with PID 12481 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1241.008 ; gain = 55.973 ; free physical = 9368 ; free virtual = 27032
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1241.012 ; gain = 57.973 ; free physical = 6317 ; free virtual = 24499
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'ov13850_demo' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:64]
-INFO: [Synth 8-3491] module 'dvi_pll' declared at '/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/dvi_pll_stub.v:5' bound to instance 'pll1' of component 'dvi_pll' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:119]
-INFO: [Synth 8-638] synthesizing module 'dvi_pll' [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/dvi_pll_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'dvi_pll' (1#1) [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/dvi_pll_stub.v:5]
-INFO: [Synth 8-3491] module 'camera_pll' declared at '/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/camera_pll_stub.v:5' bound to instance 'pll2' of component 'camera_pll' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:126]
-INFO: [Synth 8-638] synthesizing module 'camera_pll' [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/camera_pll_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'camera_pll' (2#1) [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/camera_pll_stub.v:5]
+INFO: [Synth 8-113] binding component instance 'BUFG_inst0' to cell 'BUFG' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:127]
+INFO: [Synth 8-113] binding component instance 'BUFG_inst1' to cell 'BUFG' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:133]
+INFO: [Synth 8-113] binding component instance 'BUFG_inst2' to cell 'BUFG' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:139]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 31 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 38.460000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 2 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'PLLE2_DDR' to cell 'PLLE2_BASE' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:145]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 35 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 38.460000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 18 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-113] binding component instance 'PLLE2_DVI' to cell 'PLLE2_BASE' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:195]
+INFO: [Synth 8-3491] module 'camera_pll' declared at '/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/camera_pll_stub.v:5' bound to instance 'pll2' of component 'camera_pll' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'camera_pll' [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/camera_pll_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'camera_pll' (1#1) [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/camera_pll_stub.v:5]
 	Parameter BUFR_DIVIDE bound to: 8 - type: string 
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
-INFO: [Synth 8-113] binding component instance 'i2c_clkdiv' to cell 'BUFR' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:135]
+INFO: [Synth 8-113] binding component instance 'i2c_clkdiv' to cell 'BUFR' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:305]
 	Parameter BUFR_DIVIDE bound to: 4 - type: string 
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
-INFO: [Synth 8-113] binding component instance 'i2c_clkdiv2' to cell 'BUFR' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:145]
+INFO: [Synth 8-113] binding component instance 'i2c_clkdiv2' to cell 'BUFR' [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:315]
 INFO: [Synth 8-638] synthesizing module 'ov13850_control_top' [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov13850_control_top.vhd:19]
 INFO: [Synth 8-638] synthesizing module 'ov_i2c_control' [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov_i2c_control.vhd:24]
 	Parameter slave_addr bound to: 8'b00100000 
-INFO: [Synth 8-256] done synthesizing module 'ov_i2c_control' (3#1) [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov_i2c_control.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'ov_i2c_control' (2#1) [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov_i2c_control.vhd:24]
 INFO: [Synth 8-638] synthesizing module 'ov13850_4k_regs' [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov13850_4k_regs.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'ov13850_4k_regs' (4#1) [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov13850_4k_regs.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ov13850_4k_regs' (3#1) [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov13850_4k_regs.vhd:18]
 WARNING: [Synth 8-6014] Unused sequential element statecntr_sub_reg was removed.  [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov13850_control_top.vhd:84]
-INFO: [Synth 8-256] done synthesizing module 'ov13850_control_top' (5#1) [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov13850_control_top.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'ov13850_control_top' (4#1) [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov13850_control_top.vhd:19]
 INFO: [Synth 8-638] synthesizing module 'csi_rx_4lane' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_top.vhd:98]
 	Parameter fpga_series bound to: 7SERIES - type: string 
 	Parameter dphy_term_en bound to: 1 - type: bool 
@@ -89,9 +141,9 @@ INFO: [Synth 8-113] binding component instance 'iclkbufio' to cell 'BUFIO' [/hom
 	Parameter BUFR_DIVIDE bound to: 4 - type: string 
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
 INFO: [Synth 8-113] binding component instance 'clkdiv' to cell 'BUFR' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_hs_clk_phy.vhd:56]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_hs_clk_phy' (6#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_hs_clk_phy.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_hs_clk_phy' (5#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_hs_clk_phy.vhd:29]
 INFO: [Synth 8-638] synthesizing module 'csi_rx_clock_det' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_clock_det.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_clock_det' (7#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_clock_det.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_clock_det' (6#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_clock_det.vhd:22]
 INFO: [Synth 8-638] synthesizing module 'csi_rx_hs_lane_phy' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_hs_lane_phy.vhd:35]
 	Parameter series bound to: 7SERIES - type: string 
 	Parameter invert bound to: 0 - type: bool 
@@ -142,28 +194,28 @@ INFO: [Synth 8-113] binding component instance 'indelay' to cell 'IDELAYE2' [/ho
 	Parameter SRVAL_Q3 bound to: 1'b0 
 	Parameter SRVAL_Q4 bound to: 1'b0 
 INFO: [Synth 8-113] binding component instance 'ideser' to cell 'ISERDESE2' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_hs_lane_phy.vhd:94]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_hs_lane_phy' (8#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_hs_lane_phy.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_hs_lane_phy' (7#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_hs_lane_phy.vhd:35]
 INFO: [Synth 8-638] synthesizing module 'csi_rx_byte_align' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_byte_align.vhd:32]
 WARNING: [Synth 8-6014] Unused sequential element sync_reg was removed.  [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_byte_align.vhd:75]
 WARNING: [Synth 8-6014] Unused sequential element offset_reg was removed.  [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_byte_align.vhd:72]
 WARNING: [Synth 8-6014] Unused sequential element was_found_reg was removed.  [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_byte_align.vhd:73]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_byte_align' (9#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_byte_align.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_byte_align' (8#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_byte_align.vhd:32]
 INFO: [Synth 8-638] synthesizing module 'csi_rx_word_align' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_word_align.vhd:30]
 WARNING: [Synth 8-6014] Unused sequential element next_valid_int_reg was removed.  [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_word_align.vhd:79]
 WARNING: [Synth 8-6014] Unused sequential element is_triggered_reg was removed.  [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_word_align.vhd:81]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_word_align' (10#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_word_align.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_word_align' (9#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_word_align.vhd:30]
 INFO: [Synth 8-638] synthesizing module 'csi_rx_idelayctrl_gen' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_idelayctrl_gen.vhd:21]
 	Parameter fpga_series bound to: 7SERIES - type: string 
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
 INFO: [Synth 8-113] binding component instance 'delayctrl' to cell 'IDELAYCTRL' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_idelayctrl_gen.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_idelayctrl_gen' (11#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_idelayctrl_gen.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_4_lane_link' (12#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_4_lane_link.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_idelayctrl_gen' (10#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_idelayctrl_gen.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_4_lane_link' (11#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_4_lane_link.vhd:51]
 INFO: [Synth 8-638] synthesizing module 'csi_rx_packet_handler' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_packet_handler.vhd:30]
 INFO: [Synth 8-638] synthesizing module 'csi_rx_hdr_ecc' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_hdr_ecc.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_hdr_ecc' (13#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_hdr_ecc.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_packet_handler' (14#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_packet_handler.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_hdr_ecc' (12#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_hdr_ecc.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_packet_handler' (13#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_packet_handler.vhd:30]
 INFO: [Synth 8-638] synthesizing module 'csi_rx_10bit_unpack' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_10bit_unpack.vhd:28]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_10bit_unpack' (15#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_10bit_unpack.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_10bit_unpack' (14#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_10bit_unpack.vhd:28]
 INFO: [Synth 8-638] synthesizing module 'csi_rx_video_output' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_video_output.vhd:57]
 	Parameter video_hlength bound to: 4041 - type: integer 
 	Parameter video_vlength bound to: 2992 - type: integer 
@@ -189,14 +241,14 @@ INFO: [Synth 8-638] synthesizing module 'video_timing_ctrl' [/home/alga/workspac
 	Parameter video_v_visible bound to: 2160 - type: integer 
 	Parameter sync_v_pos bound to: 25 - type: integer 
 	Parameter sync_h_pos bound to: 2015 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'video_timing_ctrl' (16#1) [/home/alga/workspace/github/CSI2Rx/video-misc/video_timing_ctrl.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'video_timing_ctrl' (15#1) [/home/alga/workspace/github/CSI2Rx/video-misc/video_timing_ctrl.vhd:52]
 INFO: [Synth 8-638] synthesizing module 'csi_rx_line_buffer' [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_line_buffer.vhd:26]
 	Parameter line_width bound to: 3840 - type: integer 
 	Parameter pixels_per_clock bound to: 2 - type: integer 
 WARNING: [Synth 8-3936] Found unconnected internal register 'read_address_lat_reg' and it is trimmed from '11' to '3' bits. [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_line_buffer.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_line_buffer' (17#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_line_buffer.vhd:26]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_video_output' (18#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_video_output.vhd:57]
-INFO: [Synth 8-256] done synthesizing module 'csi_rx_4lane' (19#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_top.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_line_buffer' (16#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_line_buffer.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_video_output' (17#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_video_output.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'csi_rx_4lane' (18#1) [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_top.vhd:98]
 INFO: [Synth 8-638] synthesizing module 'simple_debayer' [/home/alga/workspace/github/CSI2Rx/video-misc/simple_debayer.vhd:34]
 WARNING: [Synth 8-6014] Unused sequential element pixel_0_R_reg was removed.  [/home/alga/workspace/github/CSI2Rx/video-misc/simple_debayer.vhd:62]
 WARNING: [Synth 8-6014] Unused sequential element pixel_0_G_reg was removed.  [/home/alga/workspace/github/CSI2Rx/video-misc/simple_debayer.vhd:63]
@@ -204,13 +256,13 @@ WARNING: [Synth 8-6014] Unused sequential element pixel_0_B_reg was removed.  [/
 WARNING: [Synth 8-6014] Unused sequential element pixel_1_R_reg was removed.  [/home/alga/workspace/github/CSI2Rx/video-misc/simple_debayer.vhd:66]
 WARNING: [Synth 8-6014] Unused sequential element pixel_1_G_reg was removed.  [/home/alga/workspace/github/CSI2Rx/video-misc/simple_debayer.vhd:67]
 WARNING: [Synth 8-6014] Unused sequential element pixel_1_B_reg was removed.  [/home/alga/workspace/github/CSI2Rx/video-misc/simple_debayer.vhd:68]
-INFO: [Synth 8-256] done synthesizing module 'simple_debayer' (20#1) [/home/alga/workspace/github/CSI2Rx/video-misc/simple_debayer.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'simple_debayer' (19#1) [/home/alga/workspace/github/CSI2Rx/video-misc/simple_debayer.vhd:34]
 INFO: [Synth 8-638] synthesizing module 'image_gain_wb' [/home/alga/workspace/github/CSI2Rx/video-misc/image_gain_wb.vhd:39]
 	Parameter red_gain bound to: 10 - type: integer 
 	Parameter green_gain bound to: 7 - type: integer 
 	Parameter blue_gain bound to: 9 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'image_gain_wb' (21#1) [/home/alga/workspace/github/CSI2Rx/video-misc/image_gain_wb.vhd:39]
-INFO: [Synth 8-638] synthesizing module 'framebuffer_top' [/home/alga/workspace/github/CSI2Rx/demo-top/framebuffer_top.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'image_gain_wb' (20#1) [/home/alga/workspace/github/CSI2Rx/video-misc/image_gain_wb.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'framebuffer_top' [/home/alga/workspace/github/CSI2Rx/demo-top/framebuffer_top.vhd:53]
 INFO: [Synth 8-638] synthesizing module 'framebuffer_ctrl_crop_scale' [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:95]
 	Parameter burst_len bound to: 16 - type: integer 
 	Parameter input_width bound to: 3840 - type: integer 
@@ -222,14 +274,14 @@ INFO: [Synth 8-638] synthesizing module 'framebuffer_ctrl_crop_scale' [/home/alg
 	Parameter scale_xoffset bound to: 0 - type: integer 
 	Parameter scale_yoffset bound to: 0 - type: integer 
 WARNING: [Synth 8-3512] assigned value '3840' out of range [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:190]
-INFO: [Synth 8-3491] module 'input_line_buffer' declared at '/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/input_line_buffer_stub.v:6' bound to instance 'inbuf' of component 'input_line_buffer' [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:382]
-INFO: [Synth 8-638] synthesizing module 'input_line_buffer' [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/input_line_buffer_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'input_line_buffer' (22#1) [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/input_line_buffer_stub.v:6]
-INFO: [Synth 8-3491] module 'output_line_buffer' declared at '/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/output_line_buffer_stub.v:6' bound to instance 'outbuf' of component 'output_line_buffer' [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:395]
-INFO: [Synth 8-638] synthesizing module 'output_line_buffer' [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/output_line_buffer_stub.v:6]
-INFO: [Synth 8-256] done synthesizing module 'output_line_buffer' (23#1) [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/output_line_buffer_stub.v:6]
+INFO: [Synth 8-3491] module 'input_line_buffer' declared at '/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/input_line_buffer_stub.v:6' bound to instance 'inbuf' of component 'input_line_buffer' [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:382]
+INFO: [Synth 8-638] synthesizing module 'input_line_buffer' [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/input_line_buffer_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'input_line_buffer' (21#1) [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/input_line_buffer_stub.v:6]
+INFO: [Synth 8-3491] module 'output_line_buffer' declared at '/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/output_line_buffer_stub.v:6' bound to instance 'outbuf' of component 'output_line_buffer' [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:395]
+INFO: [Synth 8-638] synthesizing module 'output_line_buffer' [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/output_line_buffer_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'output_line_buffer' (22#1) [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/output_line_buffer_stub.v:6]
 WARNING: [Synth 8-6014] Unused sequential element axi_wready_last_reg was removed.  [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:311]
-INFO: [Synth 8-256] done synthesizing module 'framebuffer_ctrl_crop_scale' (24#1) [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'framebuffer_ctrl_crop_scale' (23#1) [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:95]
 INFO: [Synth 8-638] synthesizing module 'video_fb_output' [/home/alga/workspace/github/CSI2Rx/video-misc/video_fb_output.vhd:47]
 	Parameter video_hlength bound to: 2200 - type: integer 
 	Parameter video_vlength bound to: 1125 - type: integer 
@@ -254,18 +306,18 @@ INFO: [Synth 8-638] synthesizing module 'video_timing_ctrl__parameterized0' [/ho
 	Parameter video_v_visible bound to: 1080 - type: integer 
 	Parameter sync_v_pos bound to: 132 - type: integer 
 	Parameter sync_h_pos bound to: 1079 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'video_timing_ctrl__parameterized0' (24#1) [/home/alga/workspace/github/CSI2Rx/video-misc/video_timing_ctrl.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'video_fb_output' (25#1) [/home/alga/workspace/github/CSI2Rx/video-misc/video_fb_output.vhd:47]
-INFO: [Synth 8-3491] module 'ddr3_if' declared at '/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/ddr3_if_stub.v:5' bound to instance 'memctl' of component 'ddr3_if' [/home/alga/workspace/github/CSI2Rx/demo-top/framebuffer_top.vhd:290]
-INFO: [Synth 8-638] synthesizing module 'ddr3_if' [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/ddr3_if_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'ddr3_if' (26#1) [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/realtime/ddr3_if_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'framebuffer_top' (27#1) [/home/alga/workspace/github/CSI2Rx/demo-top/framebuffer_top.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'video_timing_ctrl__parameterized0' (23#1) [/home/alga/workspace/github/CSI2Rx/video-misc/video_timing_ctrl.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'video_fb_output' (24#1) [/home/alga/workspace/github/CSI2Rx/video-misc/video_fb_output.vhd:47]
+INFO: [Synth 8-3491] module 'ddr3_if' declared at '/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/ddr3_if_stub.v:5' bound to instance 'memctl' of component 'ddr3_if' [/home/alga/workspace/github/CSI2Rx/demo-top/framebuffer_top.vhd:291]
+INFO: [Synth 8-638] synthesizing module 'ddr3_if' [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/ddr3_if_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ddr3_if' (25#1) [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/realtime/ddr3_if_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'framebuffer_top' (26#1) [/home/alga/workspace/github/CSI2Rx/demo-top/framebuffer_top.vhd:53]
 INFO: [Synth 8-638] synthesizing module 'dvi_tx' [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_top.vhd:27]
 INFO: [Synth 8-638] synthesizing module 'dvi_tx_tmds_enc' [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_tmds_enc.vhd:22]
 INFO: [Synth 8-226] default block is never used [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_tmds_enc.vhd:98]
 WARNING: [Synth 8-6014] Unused sequential element q_m_reg was removed.  [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_tmds_enc.vhd:90]
 WARNING: [Synth 8-6014] Unused sequential element tmds_int_reg was removed.  [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_tmds_enc.vhd:69]
-INFO: [Synth 8-256] done synthesizing module 'dvi_tx_tmds_enc' (28#1) [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_tmds_enc.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'dvi_tx_tmds_enc' (27#1) [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_tmds_enc.vhd:22]
 INFO: [Synth 8-638] synthesizing module 'dvi_tx_tmds_phy' [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_tmds_phy.vhd:24]
 	Parameter DATA_RATE_OQ bound to: DDR - type: string 
 	Parameter DATA_RATE_TQ bound to: SDR - type: string 
@@ -323,7 +375,7 @@ INFO: [Synth 8-113] binding component instance 'slave_oserdes' to cell 'OSERDESE
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: FAST - type: string 
 INFO: [Synth 8-113] binding component instance 'outbuf' to cell 'OBUFDS' [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_tmds_phy.vhd:118]
-INFO: [Synth 8-256] done synthesizing module 'dvi_tx_tmds_phy' (29#1) [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_tmds_phy.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'dvi_tx_tmds_phy' (28#1) [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_tmds_phy.vhd:24]
 INFO: [Synth 8-638] synthesizing module 'dvi_tx_clk_drv' [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_clk_drv.vhd:18]
 	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
 	Parameter INIT bound to: 1'b0 
@@ -336,9 +388,9 @@ INFO: [Synth 8-113] binding component instance 'clk_oddr' to cell 'ODDR' [/home/
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: FAST - type: string 
 INFO: [Synth 8-113] binding component instance 'clk_obuf' to cell 'OBUFDS' [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_clk_drv.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'dvi_tx_clk_drv' (30#1) [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_clk_drv.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'dvi_tx' (31#1) [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_top.vhd:27]
-INFO: [Synth 8-256] done synthesizing module 'ov13850_demo' (32#1) [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'dvi_tx_clk_drv' (29#1) [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_clk_drv.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'dvi_tx' (30#1) [/home/alga/workspace/github/CSI2Rx/dvi-tx/dvi_tx_top.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'ov13850_demo' (31#1) [/home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd:64]
 WARNING: [Synth 8-3331] design framebuffer_ctrl_crop_scale has unconnected port axi_bid[0]
 WARNING: [Synth 8-3331] design framebuffer_ctrl_crop_scale has unconnected port axi_bresp[1]
 WARNING: [Synth 8-3331] design framebuffer_ctrl_crop_scale has unconnected port axi_bresp[0]
@@ -348,7 +400,7 @@ WARNING: [Synth 8-3331] design framebuffer_ctrl_crop_scale has unconnected port 
 WARNING: [Synth 8-3331] design framebuffer_ctrl_crop_scale has unconnected port axi_rresp[0]
 WARNING: [Synth 8-3331] design csi_rx_video_output has unconnected port csi_vsync
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1287.508 ; gain = 102.473 ; free physical = 9365 ; free virtual = 27029
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1288.512 ; gain = 105.473 ; free physical = 6335 ; free virtual = 24517
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -358,150 +410,150 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1287.508 ; gain = 102.473 ; free physical = 9367 ; free virtual = 27031
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1288.512 ; gain = 105.473 ; free physical = 6340 ; free virtual = 24522
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7a100tcsg324-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp11/camera_pll_in_context.xdc] for cell 'pll2'
-Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp11/camera_pll_in_context.xdc] for cell 'pll2'
-Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp13/dvi_pll_in_context.xdc] for cell 'pll1'
-Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp13/dvi_pll_in_context.xdc] for cell 'pll1'
-Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp15/input_line_buffer_in_context.xdc] for cell 'fbtest/fbctl/inbuf'
-Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp15/input_line_buffer_in_context.xdc] for cell 'fbtest/fbctl/inbuf'
-Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp17/output_line_buffer_in_context.xdc] for cell 'fbtest/fbctl/outbuf'
-Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp17/output_line_buffer_in_context.xdc] for cell 'fbtest/fbctl/outbuf'
-Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc] for cell 'fbtest/memctl'
-Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc] for cell 'fbtest/memctl'
+Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc] for cell 'fbtest/memctl'
+Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc] for cell 'fbtest/memctl'
+Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp11/output_line_buffer_in_context.xdc] for cell 'fbtest/fbctl/outbuf'
+Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp11/output_line_buffer_in_context.xdc] for cell 'fbtest/fbctl/outbuf'
+Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp13/input_line_buffer_in_context.xdc] for cell 'fbtest/fbctl/inbuf'
+Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp13/input_line_buffer_in_context.xdc] for cell 'fbtest/fbctl/inbuf'
+Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp15/camera_pll_in_context.xdc] for cell 'pll2'
+Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp15/camera_pll_in_context.xdc] for cell 'pll2'
 Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc]
 Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ov13850_demo_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/ov13850_demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
+  A total of 6 instances were transformed.
   OBUFDS => OBUFDS: 4 instances
+  PLLE2_BASE => PLLE2_ADV: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1688.797 ; gain = 0.000 ; free physical = 9051 ; free virtual = 26715
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1689.801 ; gain = 0.000 ; free physical = 6044 ; free virtual = 24231
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'fbtest/fbctl/inbuf' at clock pin 'clkb' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'fbtest/fbctl/outbuf' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1688.797 ; gain = 503.762 ; free physical = 9192 ; free virtual = 26856
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1689.801 ; gain = 506.762 ; free physical = 6165 ; free virtual = 24347
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1688.797 ; gain = 503.762 ; free physical = 9192 ; free virtual = 26856
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1689.801 ; gain = 506.762 ; free physical = 6165 ; free virtual = 24347
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 2).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 3).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 5).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 6).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 7).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 8).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 9).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 10).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 11).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 12).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 13).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 14).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 15).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 16).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 17).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 18).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 19).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 20).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 21).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 22).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 23).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 24).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 25).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 26).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 27).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 28).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 29).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 30).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 31).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 32).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 33).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 34).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 35).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 36).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 37).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 38).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 39).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 40).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 41).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 42).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 43).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 44).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 45).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 46).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 47).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 48).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 49).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 50).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 51).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 52).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 53).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 54).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 55).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 56).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 57).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 58).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 59).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 60).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 61).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 62).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 63).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 64).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 65).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 66).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 67).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 68).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 69).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 70).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 71).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 72).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 73).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 74).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 75).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 76).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 77).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 78).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 79).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 80).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 81).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 82).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 83).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 84).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 85).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 86).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 87).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 88).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 89).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 90).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12852-alga-satellite/dcp19/ddr3_if_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt[0]. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/.Xil/Vivado-12463-alga-satellite/dcp9/ddr3_if_in_context.xdc, line 91).
 Applied set_property DONT_TOUCH = true for fbtest/fbctl/inbuf. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for fbtest/fbctl/outbuf. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for fbtest/memctl. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for pll1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for pll2. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1688.797 ; gain = 503.762 ; free physical = 9193 ; free virtual = 26858
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1689.801 ; gain = 506.762 ; free physical = 6164 ; free virtual = 24347
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element state_cntr_reg was removed.  [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov_i2c_control.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element state_cntr_reg was removed.  [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov_i2c_control.vhd:59]
 WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov13850_4k_regs.vhd:25]
 WARNING: [Synth 8-6014] Unused sequential element statecntr_reg was removed.  [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov13850_control_top.vhd:57]
 WARNING: [Synth 8-6014] Unused sequential element count_value_reg was removed.  [/home/alga/workspace/github/CSI2Rx/mipi-csi-rx/csi_rx_clock_det.vhd:32]
@@ -578,7 +630,7 @@ WARNING: [Synth 8-6014] Unused sequential element write_state_reg was removed.  
 INFO: [Synth 8-3354] encoded FSM with state register 'write_state_reg' using encoding 'sequential' in module 'framebuffer_ctrl_crop_scale'
 WARNING: [Synth 8-6014] Unused sequential element write_state_reg was removed.  [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:246]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1688.797 ; gain = 503.762 ; free physical = 9183 ; free virtual = 26848
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1689.801 ; gain = 506.762 ; free physical = 6157 ; free virtual = 24339
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -960,7 +1012,7 @@ INFO: [Synth 8-5544] ROM "dvi_tx/gen_lane[1].lane_enc/" won't be mapped to Block
 INFO: [Synth 8-5546] ROM "fbtest/output/fbc_vsync" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element cam_ctl/regs/data_reg was removed.  [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov13850_4k_regs.vhd:25]
 WARNING: [Synth 8-6014] Unused sequential element fbtest/fbctl/input_read_y_reg was removed.  [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:185]
-WARNING: [Synth 8-6014] Unused sequential element cam_ctl/i2c_if/state_cntr_reg was removed.  [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov_i2c_control.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element cam_ctl/i2c_if/state_cntr_reg was removed.  [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov_i2c_control.vhd:59]
 WARNING: [Synth 8-6014] Unused sequential element cam_ctl/statecntr_reg was removed.  [/home/alga/workspace/github/CSI2Rx/ov-cam-control/ov13850_control_top.vhd:57]
 WARNING: [Synth 8-6014] Unused sequential element fbtest/fbctl/input_read_x_reg was removed.  [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:181]
 WARNING: [Synth 8-6014] Unused sequential element fbtest/fbctl/output_write_x_reg was removed.  [/home/alga/workspace/github/CSI2Rx/framebuffer-ctrl/framebuffer_ctrl.vhd:273]
@@ -1072,7 +1124,7 @@ INFO: [Synth 8-3886] merging instance 'db/output_data_even_reg[7]' (FD) to 'db/o
 INFO: [Synth 8-3886] merging instance 'db/output_data_even_reg[8]' (FD) to 'db/output_data_odd_reg[8]'
 INFO: [Synth 8-3886] merging instance 'db/output_data_even_reg[9]' (FD) to 'db/output_data_odd_reg[9]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1688.797 ; gain = 503.762 ; free physical = 9105 ; free virtual = 26770
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1689.801 ; gain = 506.762 ; free physical = 6076 ; free virtual = 24257
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1118,21 +1170,22 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5578] Moved timing constraint from pin 'pll2/camera_mclk' to pin 'pll2/bbstub_camera_mclk/O'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'pll2/camera_pixel_clock' to pin 'pll2/bbstub_camera_pixel_clock/O'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'pll2/i2c_clkin' to pin 'pll2/bbstub_i2c_clkin/O'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'pll1/dvi_bit_clock' to pin 'pll1/bbstub_dvi_bit_clock/O'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'pll1/pixel_clock' to pin 'pll1/bbstub_pixel_clock/O'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'fbtest/memctl/ui_clk' to pin 'fbtest/memctl/bbstub_ui_clk/O'
-INFO: [Synth 8-5819] Moved 6 constraints on hierarchical pins to their respective driving/loading pins
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pll2/camera_mclk' to pin 'pll2/bbstub_camera_mclk/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'pll2/sysclk' to 'i_30/csi_rx/link/clkdet/clk_fail_count_reg[0]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pll2/camera_pixel_clock' to pin 'pll2/bbstub_camera_pixel_clock/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'pll2/sysclk' to 'i_30/csi_rx/link/clkdet/clk_fail_count_reg[0]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'pll2/i2c_clkin' to pin 'pll2/bbstub_i2c_clkin/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'pll2/sysclk' to 'i_30/csi_rx/link/clkdet/clk_fail_count_reg[0]/C'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1716.781 ; gain = 531.746 ; free physical = 8952 ; free virtual = 26617
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1717.785 ; gain = 534.746 ; free physical = 5921 ; free virtual = 24101
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1729.797 ; gain = 544.762 ; free physical = 8947 ; free virtual = 26612
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1730.801 ; gain = 547.762 ; free physical = 5918 ; free virtual = 24098
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1151,7 +1204,7 @@ INFO: [Synth 8-4480] The timing for the instance csi_rx/vout/odd_linebuf/linebuf
 INFO: [Synth 8-4480] The timing for the instance cam_ctl/regs/data_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-4480] The timing for the instance cam_ctl/regs/data_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1758.117 ; gain = 573.082 ; free physical = 8927 ; free virtual = 26592
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1759.113 ; gain = 576.074 ; free physical = 5902 ; free virtual = 24082
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1175,7 +1228,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1758.117 ; gain = 573.082 ; free physical = 8929 ; free virtual = 26594
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1759.113 ; gain = 576.074 ; free physical = 5901 ; free virtual = 24081
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1188,7 +1241,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1758.117 ; gain = 573.082 ; free physical = 8929 ; free virtual = 26594
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1759.113 ; gain = 576.074 ; free physical = 5901 ; free virtual = 24081
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1200,25 +1253,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1758.117 ; gain = 573.082 ; free physical = 8929 ; free virtual = 26594
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1759.113 ; gain = 576.074 ; free physical = 5901 ; free virtual = 24081
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1758.117 ; gain = 573.082 ; free physical = 8929 ; free virtual = 26594
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1759.113 ; gain = 576.074 ; free physical = 5901 ; free virtual = 24082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1758.117 ; gain = 573.082 ; free physical = 8929 ; free virtual = 26594
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1759.113 ; gain = 576.074 ; free physical = 5901 ; free virtual = 24081
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1758.117 ; gain = 573.082 ; free physical = 8929 ; free virtual = 26594
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1759.113 ; gain = 576.074 ; free physical = 5901 ; free virtual = 24081
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1244,11 +1297,10 @@ Report BlackBoxes:
 +------+-------------------+----------+
 |      |BlackBox name      |Instances |
 +------+-------------------+----------+
-|1     |dvi_pll            |         1|
-|2     |camera_pll         |         1|
-|3     |ddr3_if            |         1|
-|4     |input_line_buffer  |         1|
-|5     |output_line_buffer |         1|
+|1     |camera_pll         |         1|
+|2     |ddr3_if            |         1|
+|3     |input_line_buffer  |         1|
+|4     |output_line_buffer |         1|
 +------+-------------------+----------+
 
 Report Cell Usage: 
@@ -1257,29 +1309,29 @@ Report Cell Usage:
 +------+-------------------+------+
 |1     |camera_pll         |     1|
 |2     |ddr3_if            |     1|
-|3     |dvi_pll            |     1|
-|4     |input_line_buffer  |     1|
-|5     |output_line_buffer |     1|
-|6     |BUFG               |     1|
-|7     |BUFIO              |     1|
-|8     |BUFR               |     2|
-|9     |BUFR_1             |     1|
-|10    |CARRY4             |   104|
-|11    |DSP48E1            |     2|
-|12    |IDELAYCTRL         |     1|
-|13    |IDELAYE2           |     4|
-|14    |ISERDESE2          |     4|
-|15    |LUT1               |   152|
-|16    |LUT2               |   248|
-|17    |LUT3               |   266|
-|18    |LUT4               |   197|
-|19    |LUT5               |   211|
-|20    |LUT6               |   396|
-|21    |MUXF7              |     2|
-|22    |MUXF8              |     1|
-|23    |ODDR               |     1|
-|24    |OSERDESE2          |     3|
-|25    |OSERDESE2_1        |     3|
+|3     |input_line_buffer  |     1|
+|4     |output_line_buffer |     1|
+|5     |BUFG               |     4|
+|6     |BUFIO              |     1|
+|7     |BUFR               |     2|
+|8     |BUFR_1             |     1|
+|9     |CARRY4             |   104|
+|10    |DSP48E1            |     2|
+|11    |IDELAYCTRL         |     1|
+|12    |IDELAYE2           |     4|
+|13    |ISERDESE2          |     4|
+|14    |LUT1               |   152|
+|15    |LUT2               |   266|
+|16    |LUT3               |   273|
+|17    |LUT4               |   183|
+|18    |LUT5               |   192|
+|19    |LUT6               |   402|
+|20    |MUXF7              |     2|
+|21    |MUXF8              |     1|
+|22    |ODDR               |     1|
+|23    |OSERDESE2          |     3|
+|24    |OSERDESE2_1        |     3|
+|25    |PLLE2_BASE         |     2|
 |26    |RAMB18E1           |     2|
 |27    |RAMB18E1_1         |     1|
 |28    |RAMB36E1           |     2|
@@ -1299,14 +1351,14 @@ Report Instance Areas:
 +------+----------------------------+----------------------------------+------+
 |      |Instance                    |Module                            |Cells |
 +------+----------------------------+----------------------------------+------+
-|1     |top                         |                                  |  2998|
+|1     |top                         |                                  |  2999|
 |2     |  cam_ctl                   |ov13850_control_top               |   121|
 |3     |    i2c_if                  |ov_i2c_control                    |    40|
 |4     |    regs                    |ov13850_4k_regs                   |    31|
-|5     |  csi_rx                    |csi_rx_4lane                      |  1224|
+|5     |  csi_rx                    |csi_rx_4lane                      |  1226|
 |6     |    depacket                |csi_rx_packet_handler             |   187|
 |7     |      ecc                   |csi_rx_hdr_ecc                    |    15|
-|8     |    link                    |csi_rx_4_lane_link                |   546|
+|8     |    link                    |csi_rx_4_lane_link                |   548|
 |9     |      clkdet                |csi_rx_clock_det                  |    34|
 |10    |      clkphy                |csi_rx_hs_clk_phy                 |     3|
 |11    |      d0phy                 |csi_rx_hs_lane_phy                |     4|
@@ -1316,7 +1368,7 @@ Report Instance Areas:
 |15    |      \gen_bytealign[0].ba  |csi_rx_byte_align                 |    74|
 |16    |      \gen_bytealign[1].ba  |csi_rx_byte_align_8               |    73|
 |17    |      \gen_bytealign[2].ba  |csi_rx_byte_align_9               |    73|
-|18    |      \gen_bytealign[3].ba  |csi_rx_byte_align_10              |    73|
+|18    |      \gen_bytealign[3].ba  |csi_rx_byte_align_10              |    75|
 |19    |      \gen_idctl.idctrl     |csi_rx_idelayctrl_gen             |     1|
 |20    |      wordalign             |csi_rx_word_align                 |   202|
 |21    |    unpack10                |csi_rx_10bit_unpack               |   245|
@@ -1325,38 +1377,39 @@ Report Instance Areas:
 |24    |      odd_linebuf           |csi_rx_line_buffer_4              |     3|
 |25    |      output_timing         |video_timing_ctrl                 |   101|
 |26    |  db                        |simple_debayer                    |   237|
-|27    |  dvi_tx                    |dvi_tx                            |   492|
+|27    |  dvi_tx                    |dvi_tx                            |   487|
 |28    |    clock_phy               |dvi_tx_clk_drv                    |     2|
-|29    |    \gen_lane[0].lane_enc   |dvi_tx_tmds_enc                   |   164|
+|29    |    \gen_lane[0].lane_enc   |dvi_tx_tmds_enc                   |   167|
 |30    |    \gen_lane[0].lane_phy   |dvi_tx_tmds_phy                   |     4|
-|31    |    \gen_lane[1].lane_enc   |dvi_tx_tmds_enc_0                 |   156|
+|31    |    \gen_lane[1].lane_enc   |dvi_tx_tmds_enc_0                 |   154|
 |32    |    \gen_lane[1].lane_phy   |dvi_tx_tmds_phy_1                 |     3|
-|33    |    \gen_lane[2].lane_enc   |dvi_tx_tmds_enc_2                 |   160|
+|33    |    \gen_lane[2].lane_enc   |dvi_tx_tmds_enc_2                 |   154|
 |34    |    \gen_lane[2].lane_phy   |dvi_tx_tmds_phy_3                 |     3|
-|35    |  fbtest                    |framebuffer_top                   |   809|
+|35    |  fbtest                    |framebuffer_top                   |   810|
 |36    |    fbctl                   |framebuffer_ctrl_crop_scale       |   516|
 |37    |    \output                 |video_fb_output                   |   107|
 |38    |      tmg_gen               |video_timing_ctrl__parameterized0 |   107|
 |39    |  wb                        |image_gain_wb                     |    98|
 +------+----------------------------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1758.117 ; gain = 573.082 ; free physical = 8929 ; free virtual = 26594
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1759.113 ; gain = 576.074 ; free physical = 5901 ; free virtual = 24081
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 108 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1758.117 ; gain = 171.793 ; free physical = 8997 ; free virtual = 26662
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1758.125 ; gain = 573.082 ; free physical = 8999 ; free virtual = 26664
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1759.113 ; gain = 174.785 ; free physical = 5971 ; free virtual = 24152
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1759.121 ; gain = 576.074 ; free physical = 5973 ; free virtual = 24154
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 134 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 136 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 4 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 4 instances were transformed.
+  A total of 6 instances were transformed.
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 4 instances
+  PLLE2_BASE => PLLE2_ADV: 2 instances
 
-215 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
+218 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1790.133 ; gain = 617.707 ; free physical = 9028 ; free virtual = 26693
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1791.129 ; gain = 620.699 ; free physical = 5996 ; free virtual = 24176
 INFO: [Common 17-1381] The checkpoint '/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/ov13850_demo.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1814.145 ; gain = 0.000 ; free physical = 9028 ; free virtual = 26692
-INFO: [Common 17-206] Exiting Vivado at Wed Sep 27 23:33:40 2017...
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1815.141 ; gain = 0.000 ; free physical = 5996 ; free virtual = 24177
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 16 00:49:58 2017...

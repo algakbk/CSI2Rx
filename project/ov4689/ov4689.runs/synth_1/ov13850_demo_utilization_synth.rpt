@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date         : Wed Sep 27 23:33:39 2017
+| Date         : Mon Oct 16 00:49:58 2017
 | Host         : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
 | Command      : report_utilization -file ov13850_demo_utilization_synth.rpt -pb ov13850_demo_utilization_synth.pb
 | Design       : ov13850_demo
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 1266 |     0 |     63400 |  2.00 |
-|   LUT as Logic             | 1263 |     0 |     63400 |  1.99 |
+| Slice LUTs*                | 1258 |     0 |     63400 |  1.98 |
+|   LUT as Logic             | 1255 |     0 |     63400 |  1.98 |
 |   LUT as Memory            |    3 |     0 |     19000 |  0.02 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
 |     LUT as Shift Register  |    3 |     0 |           |       |
@@ -121,11 +121,11 @@ Table of Contents
 +--------------+------+-------+-----------+-------+
 |   Site Type  | Used | Fixed | Available | Util% |
 +--------------+------+-------+-----------+-------+
-| BUFGCTRL     |    1 |     0 |        32 |  3.13 |
+| BUFGCTRL     |    4 |     0 |        32 | 12.50 |
 | BUFIO        |    1 |     0 |        24 |  4.17 |
 |   BUFIO only |    1 |     0 |           |       |
 | MMCME2_ADV   |    0 |     0 |         6 |  0.00 |
-| PLLE2_ADV    |    0 |     0 |         6 |  0.00 |
+| PLLE2_ADV    |    2 |     0 |         6 | 33.33 |
 | BUFMRCE      |    0 |     0 |        12 |  0.00 |
 | BUFHCE       |    0 |     0 |        96 |  0.00 |
 | BUFR         |    3 |     0 |        24 | 12.50 |
@@ -157,11 +157,11 @@ Table of Contents
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
 | FDRE       |  855 |        Flop & Latch |
-| LUT6       |  396 |                 LUT |
-| LUT3       |  266 |                 LUT |
-| LUT2       |  248 |                 LUT |
-| LUT5       |  211 |                 LUT |
-| LUT4       |  197 |                 LUT |
+| LUT6       |  402 |                 LUT |
+| LUT3       |  273 |                 LUT |
+| LUT2       |  266 |                 LUT |
+| LUT5       |  192 |                 LUT |
+| LUT4       |  183 |                 LUT |
 | LUT1       |  151 |                 LUT |
 | CARRY4     |  104 |          CarryLogic |
 | FDCE       |   76 |        Flop & Latch |
@@ -173,10 +173,12 @@ Table of Contents
 | ISERDESE2  |    4 |                  IO |
 | INV        |    4 |                 LUT |
 | IDELAYE2   |    4 |                  IO |
+| BUFG       |    4 |               Clock |
 | SRL16E     |    3 |  Distributed Memory |
 | RAMB18E1   |    3 |        Block Memory |
 | BUFR       |    3 |               Clock |
 | RAMB36E1   |    2 |        Block Memory |
+| PLLE2_ADV  |    2 |               Clock |
 | OBUFT      |    2 |                  IO |
 | MUXF7      |    2 |               MuxFx |
 | IBUF       |    2 |                  IO |
@@ -186,7 +188,6 @@ Table of Contents
 | MUXF8      |    1 |               MuxFx |
 | IDELAYCTRL |    1 |                  IO |
 | BUFIO      |    1 |               Clock |
-| BUFG       |    1 |               Clock |
 +------------+------+---------------------+
 
 
@@ -198,7 +199,6 @@ Table of Contents
 +--------------------+------+
 | output_line_buffer |    1 |
 | input_line_buffer  |    1 |
-| dvi_pll            |    1 |
 | ddr3_if            |    1 |
 | camera_pll         |    1 |
 +--------------------+------+

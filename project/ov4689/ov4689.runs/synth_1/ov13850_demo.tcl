@@ -44,30 +44,24 @@ read_vhdl -library xil_defaultlib {
   /home/alga/workspace/github/CSI2Rx/video-misc/simple_debayer.vhd
   /home/alga/workspace/github/CSI2Rx/demo-top/ov13850_demo.vhd
 }
-read_ip -quiet /home/alga/workspace/github/CSI2Rx/project/IPcore/camera_pll_1/camera_pll.xci
-set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/camera_pll_1/camera_pll_board.xdc]
-set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/camera_pll_1/camera_pll.xdc]
-set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/camera_pll_1/camera_pll_ooc.xdc]
-set_property is_locked true [get_files /home/alga/workspace/github/CSI2Rx/project/IPcore/camera_pll_1/camera_pll.xci]
-
-read_ip -quiet /home/alga/workspace/github/CSI2Rx/project/IPcore/dvi_pll_1/dvi_pll.xci
-set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/dvi_pll_1/dvi_pll_board.xdc]
-set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/dvi_pll_1/dvi_pll.xdc]
-set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/dvi_pll_1/dvi_pll_ooc.xdc]
-set_property is_locked true [get_files /home/alga/workspace/github/CSI2Rx/project/IPcore/dvi_pll_1/dvi_pll.xci]
-
-read_ip -quiet /home/alga/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer.xci
-set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer_ooc.xdc]
-set_property is_locked true [get_files /home/alga/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer.xci]
+read_ip -quiet /home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if.xci
+set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/constraints/ddr3_if.xdc]
+set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/constraints/ddr3_if_ooc.xdc]
+set_property is_locked true [get_files /home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if.xci]
 
 read_ip -quiet /home/alga/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/output_line_buffer.xci
 set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/output_line_buffer_ooc.xdc]
 set_property is_locked true [get_files /home/alga/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/output_line_buffer.xci]
 
-read_ip -quiet /home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if.xci
-set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/constraints/ddr3_if.xdc]
-set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/constraints/ddr3_if_ooc.xdc]
-set_property is_locked true [get_files /home/alga/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if.xci]
+read_ip -quiet /home/alga/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer.xci
+set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer_ooc.xdc]
+set_property is_locked true [get_files /home/alga/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer.xci]
+
+read_ip -quiet /home/alga/workspace/github/CSI2Rx/project/IPcore/camera_pll_1/camera_pll.xci
+set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/camera_pll_1/camera_pll_board.xdc]
+set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/camera_pll_1/camera_pll.xdc]
+set_property used_in_implementation false [get_files -all /home/alga/workspace/github/CSI2Rx/project/IPcore/camera_pll_1/camera_pll_ooc.xdc]
+set_property is_locked true [get_files /home/alga/workspace/github/CSI2Rx/project/IPcore/camera_pll_1/camera_pll.xci]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -80,6 +74,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc
 set_property used_in_implementation false [get_files /home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 
 synth_design -top ov13850_demo -part xc7a100tcsg324-2
 

@@ -1,8 +1,8 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-// Date        : Mon Sep 18 09:42:59 2017
-// Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
+// Date        : Sun Oct  1 16:36:09 2017
+// Host        : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
 // Command     : write_verilog -force -mode funcsim -rename_top dvi_pll -prefix
 //               dvi_pll_ dvi_pll_sim_netlist.v
 // Design      : dvi_pll
@@ -74,9 +74,9 @@ module dvi_pll_dvi_pll_clk_wiz
   (* BOX_TYPE = "PRIMITIVE" *) 
   PLLE2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT(37),
+    .CLKFBOUT_MULT(57),
     .CLKFBOUT_PHASE(0.000000),
-    .CLKIN1_PERIOD(5.000000),
+    .CLKIN1_PERIOD(38.462002),
     .CLKIN2_PERIOD(0.000000),
     .CLKOUT0_DIVIDE(10),
     .CLKOUT0_DUTY_CYCLE(0.500000),
@@ -97,7 +97,7 @@ module dvi_pll_dvi_pll_clk_wiz
     .CLKOUT5_DUTY_CYCLE(0.500000),
     .CLKOUT5_PHASE(0.000000),
     .COMPENSATION("BUF_IN"),
-    .DIVCLK_DIVIDE(5),
+    .DIVCLK_DIVIDE(1),
     .IS_CLKINSEL_INVERTED(1'b0),
     .IS_PWRDWN_INVERTED(1'b0),
     .IS_RST_INVERTED(1'b0),

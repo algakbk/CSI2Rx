@@ -1,0 +1,595 @@
+
+*** Running vivado
+    with args -log VHDL_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source VHDL_test.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source VHDL_test.tcl -notrace
+Command: synth_design -top VHDL_test -part xc7a100tcsg324-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18074 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1195.734 ; gain = 76.988 ; free physical = 6545 ; free virtual = 24529
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'VHDL_test' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.srcs/sources_1/new/VHDL_test.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'dvi_tx' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_top.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'dvi_tx_tmds_enc' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:22]
+INFO: [Synth 8-226] default block is never used [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:98]
+WARNING: [Synth 8-6014] Unused sequential element q_m_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:90]
+WARNING: [Synth 8-6014] Unused sequential element tmds_int_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'dvi_tx_tmds_enc' (1#1) [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'dvi_tx_tmds_phy' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_phy.vhd:24]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'master_oserdes' to cell 'OSERDESE2' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_phy.vhd:36]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'slave_oserdes' to cell 'OSERDESE2' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_phy.vhd:77]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'outbuf' to cell 'OBUFDS' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_phy.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'dvi_tx_tmds_phy' (2#1) [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_phy.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'dvi_tx_clk_drv' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_clk_drv.vhd:18]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'clk_oddr' to cell 'ODDR' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_clk_drv.vhd:22]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: FAST - type: string 
+INFO: [Synth 8-113] binding component instance 'clk_obuf' to cell 'OBUFDS' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_clk_drv.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'dvi_tx_clk_drv' (3#1) [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_clk_drv.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'dvi_tx' (4#1) [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_top.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'test_pattern_gen' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/video-misc/test_pattern_gen.vhd:40]
+	Parameter video_hlength bound to: 2200 - type: integer 
+	Parameter video_vlength bound to: 1125 - type: integer 
+	Parameter video_hsync_pol bound to: 1 - type: bool 
+	Parameter video_hsync_len bound to: 44 - type: integer 
+	Parameter video_hbp_len bound to: 148 - type: integer 
+	Parameter video_h_visible bound to: 1920 - type: integer 
+	Parameter video_vsync_pol bound to: 1 - type: bool 
+	Parameter video_vsync_len bound to: 5 - type: integer 
+	Parameter video_vbp_len bound to: 36 - type: integer 
+	Parameter video_v_visible bound to: 1080 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'video_timing_ctrl' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/video-misc/video_timing_ctrl.vhd:52]
+	Parameter video_hlength bound to: 1100 - type: integer 
+	Parameter video_vlength bound to: 1125 - type: integer 
+	Parameter video_hsync_pol bound to: 1 - type: bool 
+	Parameter video_hsync_len bound to: 22 - type: integer 
+	Parameter video_hbp_len bound to: 74 - type: integer 
+	Parameter video_h_visible bound to: 960 - type: integer 
+	Parameter video_vsync_pol bound to: 1 - type: bool 
+	Parameter video_vsync_len bound to: 5 - type: integer 
+	Parameter video_vbp_len bound to: 36 - type: integer 
+	Parameter video_v_visible bound to: 1080 - type: integer 
+	Parameter sync_v_pos bound to: 132 - type: integer 
+	Parameter sync_h_pos bound to: 1079 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'video_timing_ctrl' (5#1) [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/video-misc/video_timing_ctrl.vhd:52]
+WARNING: [Synth 8-6014] Unused sequential element video_pixel_odd_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/video-misc/test_pattern_gen.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'test_pattern_gen' (6#1) [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/video-misc/test_pattern_gen.vhd:40]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 29 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN_PERIOD bound to: 38.500000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 5 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLK_FEEDBACK bound to: CLKFBOUT - type: string 
+	Parameter COMPENSATION bound to: SYSTEM_SYNCHRONOUS - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER bound to: 0.100000 - type: float 
+	Parameter RESET_ON_LOSS_OF_LOCK bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'PLL_BASE_inst' to cell 'PLL_BASE' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.srcs/sources_1/new/VHDL_test.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'VHDL_test' (7#1) [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.srcs/sources_1/new/VHDL_test.vhd:51]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1236.234 ; gain = 117.488 ; free physical = 6553 ; free virtual = 24538
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1236.234 ; gain = 117.488 ; free physical = 6554 ; free virtual = 24538
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.srcs/constrs_1/new/test.xdc]
+Finished Parsing XDC File [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.srcs/constrs_1/new/test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.srcs/constrs_1/new/test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VHDL_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/VHDL_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  OBUFDS => OBUFDS: 4 instances
+  PLL_BASE => MMCME2_ADV: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1620.523 ; gain = 0.000 ; free physical = 6302 ; free virtual = 24286
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6379 ; free virtual = 24363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6379 ; free virtual = 24363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6380 ; free virtual = 24365
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:137]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:137]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
+INFO: [Synth 8-5546] ROM "v_pos" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6373 ; free virtual = 24357
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 6     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 3     
+	   8 Input      4 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 39    
++---Registers : 
+	               18 Bit    Registers := 6     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 9     
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 11    
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 15    
+	   2 Input      8 Bit        Muxes := 9     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dvi_tx_tmds_enc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 13    
++---Registers : 
+	               18 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dvi_tx_tmds_phy 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module video_timing_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[8:0]' into 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[8:0]' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+INFO: [Synth 8-4471] merging register 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[8:0]' into 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[8:0]' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+INFO: [Synth 8-4471] merging register 'dvi_tx/gen_lane[1].lane_enc/den_lat_reg' into 'dvi_tx/gen_lane[0].lane_enc/den_lat_reg' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:62]
+INFO: [Synth 8-4471] merging register 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[8:0]' into 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[8:0]' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+INFO: [Synth 8-4471] merging register 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[8:0]' into 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[8:0]' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+INFO: [Synth 8-4471] merging register 'dvi_tx/gen_lane[1].lane_phy/reset_lat_reg' into 'dvi_tx/gen_lane[0].lane_phy/reset_lat_reg' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_phy.vhd:32]
+INFO: [Synth 8-4471] merging register 'dvi_tx/gen_lane[2].lane_enc/den_lat_reg' into 'dvi_tx/gen_lane[0].lane_enc/den_lat_reg' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:62]
+INFO: [Synth 8-4471] merging register 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[8:0]' into 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[8:0]' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+INFO: [Synth 8-4471] merging register 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[8:0]' into 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[8:0]' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+INFO: [Synth 8-4471] merging register 'dvi_tx/gen_lane[2].lane_enc/ctrl_lat_reg[1:0]' into 'dvi_tx/gen_lane[1].lane_enc/ctrl_lat_reg[1:0]' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:61]
+INFO: [Synth 8-4471] merging register 'dvi_tx/gen_lane[2].lane_phy/reset_lat_reg' into 'dvi_tx/gen_lane[0].lane_phy/reset_lat_reg' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_phy.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element dvi_tx/gen_lane[0].lane_enc/cnt_q_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element dvi_tx/gen_lane[0].lane_enc/cnt_q_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element dvi_tx/gen_lane[1].lane_enc/den_lat_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:62]
+WARNING: [Synth 8-6014] Unused sequential element dvi_tx/gen_lane[1].lane_enc/cnt_q_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element dvi_tx/gen_lane[1].lane_enc/cnt_q_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element dvi_tx/gen_lane[1].lane_phy/reset_lat_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_phy.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element dvi_tx/gen_lane[2].lane_enc/den_lat_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:62]
+WARNING: [Synth 8-6014] Unused sequential element dvi_tx/gen_lane[2].lane_enc/cnt_q_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element dvi_tx/gen_lane[2].lane_enc/cnt_q_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element dvi_tx/gen_lane[2].lane_enc/ctrl_lat_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:61]
+WARNING: [Synth 8-6014] Unused sequential element dvi_tx/gen_lane[2].lane_phy/reset_lat_reg was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_phy.vhd:32]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
+INFO: [Synth 8-5544] ROM "dvi_tx/gen_lane[0].lane_enc/" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dvi_tx/gen_lane[1].lane_enc/" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output/tmg_gen/ext_sync_curr_reg )
+INFO: [Synth 8-3886] merging instance 'B[0]__1' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'B[1]__1' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'B[2]__1' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'B[3]__1' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'B[4]__1' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'B[5]__1' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'B[6]__1' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'B[7]__1' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'B[8]__1' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/cnt_q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/ctrl_lat_reg[1]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/ctrl_lat_reg[0]'
+INFO: [Synth 8-3886] merging instance 'B[0]__0' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'B[1]__0' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'B[2]__0' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'B[3]__0' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'B[4]__0' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'B[5]__0' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'B[6]__0' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'B[7]__0' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'B[8]__0' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/cnt_q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'B[0]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'B[1]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'B[2]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'B[3]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'B[4]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'B[5]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'B[6]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'B[7]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'B[8]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/cnt_q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[1]' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[2]' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[3]' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[7]' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[0]' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[4]' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/data_lat_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[1]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[7]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[2]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[3]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[7]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[7]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[0]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[4]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/data_lat_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dvi_tx/gen_lane[1].lane_enc/ctrl_lat_reg[0] )
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[1]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[2]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[3]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[7]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[0]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[4]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/data_lat_reg[6]'
+INFO: [Synth 8-3886] merging instance 'output/tmg_gen/ext_sync_curr_reg' (FDE) to 'output/tmg_gen/ext_sync_last_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output/tmg_gen/ext_sync_last_reg )
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[2].lane_enc/tmds_reg[7]' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/tmds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[2].lane_enc/tmds_reg[6]' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/tmds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[2].lane_enc/tmds_reg[5]' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/tmds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/tmds_reg[7]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/tmds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/tmds_reg[6]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/tmds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/tmds_reg[5]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/tmds_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[0].lane_enc/tmds_reg[7]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/tmds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[0].lane_enc/tmds_reg[6]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/tmds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[0].lane_enc/tmds_reg[5]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/tmds_reg[1]'
+WARNING: [Synth 8-3332] Sequential element (dvi_tx/gen_lane[1].lane_enc/ctrl_lat_reg[0]) is unused and will be removed from module VHDL_test.
+WARNING: [Synth 8-3332] Sequential element (output/tmg_gen/ext_sync_last_reg) is unused and will be removed from module VHDL_test.
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[2].lane_enc/tmds_reg[1]' (FDR) to 'dvi_tx/gen_lane[2].lane_enc/tmds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/tmds_reg[1]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/tmds_reg[0]'
+INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[0].lane_enc/tmds_reg[1]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/tmds_reg[0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6343 ; free virtual = 24327
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6222 ; free virtual = 24207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6222 ; free virtual = 24206
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     1|
+|2     |CARRY4      |    33|
+|3     |LUT1        |    24|
+|4     |LUT2        |    20|
+|5     |LUT3        |    84|
+|6     |LUT4        |    52|
+|7     |LUT5        |    42|
+|8     |LUT6        |    75|
+|9     |ODDR        |     1|
+|10    |OSERDESE2   |     3|
+|11    |OSERDESE2_1 |     3|
+|12    |PLL_BASE    |     1|
+|13    |FDCE        |    22|
+|14    |FDRE        |    55|
+|15    |IBUF        |     2|
+|16    |OBUFDS      |     4|
++------+------------+------+
+
+Report Instance Areas: 
++------+---------------------------+------------------+------+
+|      |Instance                   |Module            |Cells |
++------+---------------------------+------------------+------+
+|1     |top                        |                  |   422|
+|2     |  dvi_tx                   |dvi_tx            |   342|
+|3     |    clock_phy              |dvi_tx_clk_drv    |     2|
+|4     |    \gen_lane[0].lane_enc  |dvi_tx_tmds_enc   |   116|
+|5     |    \gen_lane[0].lane_phy  |dvi_tx_tmds_phy   |     4|
+|6     |    \gen_lane[1].lane_enc  |dvi_tx_tmds_enc_0 |   107|
+|7     |    \gen_lane[1].lane_phy  |dvi_tx_tmds_phy_1 |     3|
+|8     |    \gen_lane[2].lane_enc  |dvi_tx_tmds_enc_2 |   107|
+|9     |    \gen_lane[2].lane_phy  |dvi_tx_tmds_phy_3 |     3|
+|10    |  \output                  |test_pattern_gen  |    76|
+|11    |    tmg_gen                |video_timing_ctrl |    76|
++------+---------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1620.523 ; gain = 117.488 ; free physical = 6268 ; free virtual = 24253
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6268 ; free virtual = 24253
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 4 instances
+  PLL_BASE => MMCME2_ADV: 1 instances
+
+110 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1645.555 ; gain = 540.402 ; free physical = 6248 ; free virtual = 24233
+INFO: [Common 17-1381] The checkpoint '/home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.runs/synth_1/VHDL_test.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1669.566 ; gain = 0.000 ; free physical = 6248 ; free virtual = 24234
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 15 19:55:54 2017...
