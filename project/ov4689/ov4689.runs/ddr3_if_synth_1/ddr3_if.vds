@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Oct 16 11:13:58 2017
+# Process ID: 11324
+# Current directory: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/ddr3_if_synth_1
+# Command line: vivado -log ddr3_if.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddr3_if.tcl
+# Log file: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/ddr3_if_synth_1/ddr3_if.vds
+# Journal file: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/ddr3_if_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ddr3_if.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ddr3_if, cache-ID = 6a895c0ba0732d20.

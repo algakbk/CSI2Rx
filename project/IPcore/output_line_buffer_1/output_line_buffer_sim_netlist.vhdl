@@ -1,8 +1,8 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
--- Date        : Wed Sep 27 23:24:44 2017
--- Host        : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
+-- Date        : Mon Sep 18 10:32:20 2017
+-- Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
 -- Command     : write_vhdl -force -mode funcsim -rename_top output_line_buffer -prefix
 --               output_line_buffer_ output_line_buffer_sim_netlist.vhdl
 -- Design      : output_line_buffer
@@ -20,6 +20,7 @@ entity output_line_buffer_blk_mem_gen_prim_wrapper is
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
     ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 35 downto 0 );
@@ -253,7 +254,7 @@ begin
       DOPBDOP(0) => doutb(8),
       ECCPARITY(7 downto 0) => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_ECCPARITY_UNCONNECTED\(7 downto 0),
       ENARDEN => ena,
-      ENBWREN => '1',
+      ENBWREN => enb,
       INJECTDBITERR => '0',
       INJECTSBITERR => '0',
       RDADDRECC(8 downto 0) => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_RDADDRECC_UNCONNECTED\(8 downto 0),
@@ -281,6 +282,7 @@ entity \output_line_buffer_blk_mem_gen_prim_wrapper__parameterized0\ is
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
     ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 35 downto 0 );
@@ -516,7 +518,7 @@ begin
       DOPBDOP(0) => doutb(8),
       ECCPARITY(7 downto 0) => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_ECCPARITY_UNCONNECTED\(7 downto 0),
       ENARDEN => ena,
-      ENBWREN => '1',
+      ENBWREN => enb,
       INJECTDBITERR => '0',
       INJECTSBITERR => '0',
       RDADDRECC(8 downto 0) => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_RDADDRECC_UNCONNECTED\(8 downto 0),
@@ -544,6 +546,7 @@ entity \output_line_buffer_blk_mem_gen_prim_wrapper__parameterized1\ is
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
     ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 35 downto 0 );
@@ -779,7 +782,7 @@ begin
       DOPBDOP(0) => doutb(8),
       ECCPARITY(7 downto 0) => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_ECCPARITY_UNCONNECTED\(7 downto 0),
       ENARDEN => ena,
-      ENBWREN => '1',
+      ENBWREN => enb,
       INJECTDBITERR => '0',
       INJECTSBITERR => '0',
       RDADDRECC(8 downto 0) => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_RDADDRECC_UNCONNECTED\(8 downto 0),
@@ -807,6 +810,7 @@ entity \output_line_buffer_blk_mem_gen_prim_wrapper__parameterized2\ is
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
     ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 19 downto 0 );
@@ -1057,7 +1061,7 @@ begin
       DOPBDOP(0) => \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_n_92\,
       ECCPARITY(7 downto 0) => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_ECCPARITY_UNCONNECTED\(7 downto 0),
       ENARDEN => ena,
-      ENBWREN => '1',
+      ENBWREN => enb,
       INJECTDBITERR => '0',
       INJECTSBITERR => '0',
       RDADDRECC(8 downto 0) => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_RDADDRECC_UNCONNECTED\(8 downto 0),
@@ -1085,6 +1089,7 @@ entity output_line_buffer_blk_mem_gen_prim_width is
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
     ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 35 downto 0 );
@@ -1103,6 +1108,7 @@ begin
       dina(35 downto 0) => dina(35 downto 0),
       doutb(17 downto 0) => doutb(17 downto 0),
       ena => ena,
+      enb => enb,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -1116,6 +1122,7 @@ entity \output_line_buffer_blk_mem_gen_prim_width__parameterized0\ is
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
     ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 35 downto 0 );
@@ -1136,6 +1143,7 @@ begin
       dina(35 downto 0) => dina(35 downto 0),
       doutb(17 downto 0) => doutb(17 downto 0),
       ena => ena,
+      enb => enb,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -1149,6 +1157,7 @@ entity \output_line_buffer_blk_mem_gen_prim_width__parameterized1\ is
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
     ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 35 downto 0 );
@@ -1169,6 +1178,7 @@ begin
       dina(35 downto 0) => dina(35 downto 0),
       doutb(17 downto 0) => doutb(17 downto 0),
       ena => ena,
+      enb => enb,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -1182,6 +1192,7 @@ entity \output_line_buffer_blk_mem_gen_prim_width__parameterized2\ is
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
     ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 19 downto 0 );
@@ -1202,6 +1213,7 @@ begin
       dina(19 downto 0) => dina(19 downto 0),
       doutb(9 downto 0) => doutb(9 downto 0),
       ena => ena,
+      enb => enb,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -1215,6 +1227,7 @@ entity output_line_buffer_blk_mem_gen_generic_cstr is
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
     ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 127 downto 0 );
@@ -1234,6 +1247,7 @@ begin
       dina(17 downto 0) => dina(17 downto 0),
       doutb(17 downto 0) => doutb(17 downto 0),
       ena => ena,
+      enb => enb,
       wea(0) => wea(0)
     );
 \ramloop[1].ram.r\: entity work.\output_line_buffer_blk_mem_gen_prim_width__parameterized0\
@@ -1246,6 +1260,7 @@ begin
       dina(17 downto 0) => dina(35 downto 18),
       doutb(17 downto 0) => doutb(35 downto 18),
       ena => ena,
+      enb => enb,
       wea(0) => wea(0)
     );
 \ramloop[2].ram.r\: entity work.\output_line_buffer_blk_mem_gen_prim_width__parameterized1\
@@ -1258,6 +1273,7 @@ begin
       dina(17 downto 0) => dina(53 downto 36),
       doutb(17 downto 0) => doutb(53 downto 36),
       ena => ena,
+      enb => enb,
       wea(0) => wea(0)
     );
 \ramloop[3].ram.r\: entity work.\output_line_buffer_blk_mem_gen_prim_width__parameterized2\
@@ -1270,6 +1286,7 @@ begin
       dina(9 downto 0) => dina(63 downto 54),
       doutb(9 downto 0) => doutb(63 downto 54),
       ena => ena,
+      enb => enb,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -1283,6 +1300,7 @@ entity output_line_buffer_blk_mem_gen_top is
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
     ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 127 downto 0 );
@@ -1301,6 +1319,7 @@ begin
       dina(127 downto 0) => dina(127 downto 0),
       doutb(63 downto 0) => doutb(63 downto 0),
       ena => ena,
+      enb => enb,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -1314,6 +1333,7 @@ entity output_line_buffer_blk_mem_gen_v8_3_6_synth is
     clka : in STD_LOGIC;
     clkb : in STD_LOGIC;
     ena : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 127 downto 0 );
@@ -1332,6 +1352,7 @@ begin
       dina(127 downto 0) => dina(127 downto 0),
       doutb(63 downto 0) => doutb(63 downto 0),
       ena => ena,
+      enb => enb,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -1460,7 +1481,7 @@ entity output_line_buffer_blk_mem_gen_v8_3_6 is
   attribute C_HAS_ENA : integer;
   attribute C_HAS_ENA of output_line_buffer_blk_mem_gen_v8_3_6 : entity is 1;
   attribute C_HAS_ENB : integer;
-  attribute C_HAS_ENB of output_line_buffer_blk_mem_gen_v8_3_6 : entity is 0;
+  attribute C_HAS_ENB of output_line_buffer_blk_mem_gen_v8_3_6 : entity is 1;
   attribute C_HAS_INJECTERR : integer;
   attribute C_HAS_INJECTERR of output_line_buffer_blk_mem_gen_v8_3_6 : entity is 0;
   attribute C_HAS_MEM_OUTPUT_REGS_A : integer;
@@ -1809,6 +1830,7 @@ inst_blk_mem_gen: entity work.output_line_buffer_blk_mem_gen_v8_3_6_synth
       dina(127 downto 0) => dina(127 downto 0),
       doutb(63 downto 0) => doutb(63 downto 0),
       ena => ena,
+      enb => enb,
       wea(0) => wea(0)
     );
 end STRUCTURE;
@@ -1824,6 +1846,7 @@ entity output_line_buffer is
     addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
     dina : in STD_LOGIC_VECTOR ( 127 downto 0 );
     clkb : in STD_LOGIC;
+    enb : in STD_LOGIC;
     addrb : in STD_LOGIC_VECTOR ( 10 downto 0 );
     doutb : out STD_LOGIC_VECTOR ( 63 downto 0 )
   );
@@ -1913,7 +1936,7 @@ architecture STRUCTURE of output_line_buffer is
   attribute C_HAS_ENA : integer;
   attribute C_HAS_ENA of U0 : label is 1;
   attribute C_HAS_ENB : integer;
-  attribute C_HAS_ENB of U0 : label is 0;
+  attribute C_HAS_ENB of U0 : label is 1;
   attribute C_HAS_INJECTERR : integer;
   attribute C_HAS_INJECTERR of U0 : label is 0;
   attribute C_HAS_MEM_OUTPUT_REGS_A : integer;
@@ -2020,7 +2043,7 @@ U0: entity work.output_line_buffer_blk_mem_gen_v8_3_6
       doutb(63 downto 0) => doutb(63 downto 0),
       eccpipece => '0',
       ena => ena,
-      enb => '0',
+      enb => enb,
       injectdbiterr => '0',
       injectsbiterr => '0',
       rdaddrecc(10 downto 0) => NLW_U0_rdaddrecc_UNCONNECTED(10 downto 0),

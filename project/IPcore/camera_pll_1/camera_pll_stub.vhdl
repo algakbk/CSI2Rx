@@ -1,8 +1,8 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
--- Date        : Sun Oct  1 16:36:34 2017
--- Host        : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
+-- Date        : Mon Sep 18 09:42:59 2017
+-- Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
 -- Command     : write_vhdl -force -mode synth_stub -rename_top camera_pll -prefix
 --               camera_pll_ camera_pll_stub.vhdl
 -- Design      : camera_pll

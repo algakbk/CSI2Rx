@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date         : Mon Oct 16 00:51:51 2017
-| Host         : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
+| Date         : Mon Oct 16 14:58:57 2017
+| Host         : Alga running 64-bit Ubuntu 14.04.5 LTS
 | Command      : report_drc -file ov13850_demo_drc_opted.rpt
 | Design       : ov13850_demo
 | Device       : xc7a100tcsg324-2
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 52
+             Violations found: 53
 +-----------+----------+-----------------------------------------------------+------------+
 | Rule      | Severity | Description                                         | Violations |
 +-----------+----------+-----------------------------------------------------+------------+
@@ -33,6 +33,7 @@ Table of Contents
 | CHECK-3   | Warning  | Report rule limit reached                           | 2          |
 | DPOP-1    | Warning  | PREG Output pipelining                              | 2          |
 | DPOP-2    | Warning  | MREG Output pipelining                              | 2          |
+| REQP-1577 | Warning  | Clock output buffering                              | 1          |
 | REQP-1709 | Warning  | Clock output buffering                              | 1          |
 | REQP-1839 | Warning  | RAMB36 async control check                          | 20         |
 | REQP-1840 | Warning  | RAMB18 async control check                          | 20         |
@@ -92,6 +93,11 @@ Related violations: <none>
 DPOP-2#2 Warning
 MREG Output pipelining  
 DSP fbtest/fbctl/fb_write_address multiplier stage fbtest/fbctl/fb_write_address/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-1577#1 Warning
+Clock output buffering  
+MMCME2_ADV connectivity violation. The signal i2c_clk_in on the MMCME2_BASE_inst/CLKOUT2 pin of MMCME2_BASE_inst does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
 Related violations: <none>
 
 REQP-1709#1 Warning
