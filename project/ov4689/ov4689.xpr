@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.xpr">
+<Project Version="7" Minor="20" Path="/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f7076c1925494a8dabf09968e51d1501"/>
