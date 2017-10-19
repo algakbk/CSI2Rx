@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sun Oct 15 19:55:20 2017
-# Process ID: 18066
+# Start of session at: Wed Oct 18 00:27:27 2017
+# Process ID: 8002
 # Current directory: /home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.runs/synth_1
 # Command line: vivado -log VHDL_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VHDL_test.tcl
 # Log file: /home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.runs/synth_1/VHDL_test.vds

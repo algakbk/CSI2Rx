@@ -103,8 +103,8 @@ begin
       PLL_BASE_inst : PLL_BASE
       generic map (
          CLKFBOUT_MULT => 29,                  
-         CLKOUT0_DIVIDE => 5,       CLKOUT0_PHASE => 0.0,  -- Output pixel clock, 1.5x original frequency
-         CLKOUT1_DIVIDE => 1,        CLKOUT1_PHASE => 0.0,
+         CLKOUT0_DIVIDE => 15,       CLKOUT0_PHASE => 0.0,  -- Output pixel clock, 1.5x original frequency
+         CLKOUT1_DIVIDE => 3,        CLKOUT1_PHASE => 0.0,
          CLK_FEEDBACK => "CLKFBOUT",                        -- Clock source to drive CLKFBIN ("CLKFBOUT" or "CLKOUT0")
          CLKIN_PERIOD => 38.5,                              -- IMPORTANT! 20.00 => 50MHz
          DIVCLK_DIVIDE => 1                                 -- Division value for all output clocks (1-52)

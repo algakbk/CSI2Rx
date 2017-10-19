@@ -40,5 +40,13 @@ set_property PACKAGE_PIN H17 [get_ports {hdmi_d1[1]}]
 set_property PACKAGE_PIN J14 [get_ports {hdmi_d2[1]}]
 set_property PACKAGE_PIN U9 [get_ports reset_n]
 
-set_property PULLUP true [get_ports reset_n]
+
+
+set_property PACKAGE_PIN B11 [get_ports sys_mclk]
+set_property IOSTANDARD LVCMOS33 [get_ports sys_mclk]
+set_property PACKAGE_PIN A14 [get_ports i2c_mclk]
+set_property IOSTANDARD LVCMOS33 [get_ports i2c_mclk]
+
+set_property PACKAGE_PIN B12 [get_ports ic_mclk]
+set_property IOSTANDARD LVCMOS33 [get_ports ic_mclk]
 

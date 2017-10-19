@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.xpr">
+<Project Version="7" Minor="20" Path="/home/alga/workspace/github/CSI2Rx/project/ov4689/ov4689.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f7076c1925494a8dabf09968e51d1501"/>
@@ -183,13 +183,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ov-cam-control/ov13850_4k_regs.vhd">
+      <File Path="$PPRDIR/../../ov-cam-control/ov_i2c_control.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../ov-cam-control/ov_i2c_control.vhd">
+      <File Path="$PPRDIR/../ov4689_regs.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -217,13 +217,6 @@
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="ScopedToCell" Val="ddr3_if"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../../ov-cam-control/ov16825_1080p120_regs.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>

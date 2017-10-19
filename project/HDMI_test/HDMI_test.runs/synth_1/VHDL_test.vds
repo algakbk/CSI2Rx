@@ -2,8 +2,8 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sun Oct 15 19:55:20 2017
-# Process ID: 18066
+# Start of session at: Wed Oct 18 00:27:27 2017
+# Process ID: 8002
 # Current directory: /home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.runs/synth_1
 # Command line: vivado -log VHDL_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VHDL_test.tcl
 # Log file: /home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.runs/synth_1/VHDL_test.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18074 
+INFO: Helper process launched with PID 8022 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1195.734 ; gain = 76.988 ; free physical = 6545 ; free virtual = 24529
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1195.738 ; gain = 75.988 ; free physical = 7032 ; free virtual = 25137
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'VHDL_test' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.srcs/sources_1/new/VHDL_test.vhd:51]
 INFO: [Synth 8-638] synthesizing module 'dvi_tx' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_top.vhd:27]
@@ -129,10 +129,10 @@ INFO: [Synth 8-256] done synthesizing module 'test_pattern_gen' (6#1) [/home/alg
 	Parameter CLKFBOUT_MULT bound to: 29 - type: integer 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKIN_PERIOD bound to: 38.500000 - type: float 
-	Parameter CLKOUT0_DIVIDE bound to: 5 - type: integer 
+	Parameter CLKOUT0_DIVIDE bound to: 15 - type: integer 
 	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
-	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DIVIDE bound to: 3 - type: integer 
 	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
@@ -155,7 +155,7 @@ INFO: [Synth 8-256] done synthesizing module 'test_pattern_gen' (6#1) [/home/alg
 INFO: [Synth 8-113] binding component instance 'PLL_BASE_inst' to cell 'PLL_BASE' [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.srcs/sources_1/new/VHDL_test.vhd:103]
 INFO: [Synth 8-256] done synthesizing module 'VHDL_test' (7#1) [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.srcs/sources_1/new/VHDL_test.vhd:51]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1236.234 ; gain = 117.488 ; free physical = 6553 ; free virtual = 24538
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1237.238 ; gain = 117.488 ; free physical = 7029 ; free virtual = 25134
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -165,7 +165,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1236.234 ; gain = 117.488 ; free physical = 6554 ; free virtual = 24538
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1237.238 ; gain = 117.488 ; free physical = 7027 ; free virtual = 25132
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -185,22 +185,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFDS => OBUFDS: 4 instances
   PLL_BASE => MMCME2_ADV: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1620.523 ; gain = 0.000 ; free physical = 6302 ; free virtual = 24286
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1620.520 ; gain = 0.000 ; free physical = 6769 ; free virtual = 24874
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6379 ; free virtual = 24363
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6849 ; free virtual = 24955
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6379 ; free virtual = 24363
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6849 ; free virtual = 24955
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6380 ; free virtual = 24365
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6850 ; free virtual = 24957
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:137]
 WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:137]
@@ -208,7 +208,7 @@ WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/alga/wor
 WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/alga/workspace/github/CSI2Rx/project/HDMI_test/dvi-tx/dvi_tx_tmds_enc.vhd:128]
 INFO: [Synth 8-5546] ROM "v_pos" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6373 ; free virtual = 24357
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6841 ; free virtual = 24949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -425,7 +425,7 @@ INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[2].lane_enc/tmds_reg[1]' 
 INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[1].lane_enc/tmds_reg[1]' (FDR) to 'dvi_tx/gen_lane[1].lane_enc/tmds_reg[0]'
 INFO: [Synth 8-3886] merging instance 'dvi_tx/gen_lane[0].lane_enc/tmds_reg[1]' (FDR) to 'dvi_tx/gen_lane[0].lane_enc/tmds_reg[0]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6343 ; free virtual = 24327
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6808 ; free virtual = 24915
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -437,13 +437,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6222 ; free virtual = 24207
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6685 ; free virtual = 24794
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6222 ; free virtual = 24206
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6685 ; free virtual = 24795
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -455,7 +455,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6676 ; free virtual = 24786
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -479,7 +479,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6675 ; free virtual = 24785
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -492,7 +492,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6675 ; free virtual = 24785
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -504,25 +504,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6675 ; free virtual = 24785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6675 ; free virtual = 24785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6675 ; free virtual = 24785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6675 ; free virtual = 24785
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -573,11 +573,11 @@ Report Instance Areas:
 |11    |    tmg_gen                |video_timing_ctrl |    76|
 +------+---------------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6215 ; free virtual = 24200
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6675 ; free virtual = 24785
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1620.523 ; gain = 117.488 ; free physical = 6268 ; free virtual = 24253
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.523 ; gain = 501.777 ; free physical = 6268 ; free virtual = 24253
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1620.520 ; gain = 117.488 ; free physical = 6730 ; free virtual = 24841
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1620.520 ; gain = 500.770 ; free physical = 6730 ; free virtual = 24841
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -590,7 +590,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 110 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1645.555 ; gain = 540.402 ; free physical = 6248 ; free virtual = 24233
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1646.551 ; gain = 540.395 ; free physical = 6690 ; free virtual = 24800
 INFO: [Common 17-1381] The checkpoint '/home/alga/workspace/github/CSI2Rx/project/HDMI_test/HDMI_test.runs/synth_1/VHDL_test.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1669.566 ; gain = 0.000 ; free physical = 6248 ; free virtual = 24234
-INFO: [Common 17-206] Exiting Vivado at Sun Oct 15 19:55:54 2017...
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1670.562 ; gain = 0.000 ; free physical = 6678 ; free virtual = 24789
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 18 00:28:02 2017...

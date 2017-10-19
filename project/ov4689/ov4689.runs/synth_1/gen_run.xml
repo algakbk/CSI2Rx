@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1508144258">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1508342987">
   <File Type="VDS-TIMING-PB" Name="ov13850_demo_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="ov13850_demo_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="ov13850_demo.dcp"/>
@@ -142,13 +142,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../ov-cam-control/ov13850_4k_regs.vhd">
+    <File Path="$PPRDIR/../../ov-cam-control/ov_i2c_control.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../ov-cam-control/ov_i2c_control.vhd">
+    <File Path="$PPRDIR/../ov4689_regs.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

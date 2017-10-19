@@ -42,7 +42,7 @@ begin
       i2c_sck => i2c_sck,
       i2c_sda => i2c_sda);
 
-  regs : entity work.ov13850_4k_regs
+  regs : entity work.ov4689_regs
     port map(
       clock => clock,
       address => cmd_addr,
