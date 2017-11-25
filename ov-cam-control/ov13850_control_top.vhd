@@ -28,6 +28,16 @@ signal i2c_done : std_logic;
 
 constant state_end : integer := 262000;
 
+attribute mark_debug : string;
+attribute keep : string;
+attribute mark_debug of current_cmd : signal is "true";
+attribute mark_debug of statecntr : signal is "true";
+attribute mark_debug of cmd_addr : signal is "true";
+attribute mark_debug of i2c_en : signal is "true";
+attribute mark_debug of i2c_start : signal is "true";
+attribute mark_debug of i2c_done : signal is "true";
+
+
 begin
 
   i2c_if : entity work.ov_i2c_control

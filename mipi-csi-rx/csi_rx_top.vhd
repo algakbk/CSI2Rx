@@ -111,6 +111,17 @@ architecture Behavioral of csi_rx_4lane is
 
   signal unpack_data : std_logic_vector(39 downto 0);
   signal unpack_data_valid : std_logic;
+  
+  attribute mark_debug : string;
+  attribute keep : string;
+  attribute mark_debug of csi_byte_clock : signal is "true";
+  attribute mark_debug of csi_vsync : signal is "true"; 
+  attribute mark_debug of dphy_clk : signal is "true";
+  attribute mark_debug of dphy_d0 : signal is "true";
+  attribute mark_debug of dphy_d1 : signal is "true";
+  attribute mark_debug of dphy_d2 : signal is "true";
+  attribute mark_debug of dphy_d3 : signal is "true";
+  
 begin
   link : entity work.csi_rx_4_lane_link
     generic map(

@@ -50,3 +50,87 @@ set_property IOSTANDARD LVCMOS33 [get_ports i2c_mclk]
 set_property PACKAGE_PIN B12 [get_ports ic_mclk]
 set_property IOSTANDARD LVCMOS33 [get_ports ic_mclk]
 
+
+
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 16384 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 18 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {cam_ctl/statecntr[0]} {cam_ctl/statecntr[1]} {cam_ctl/statecntr[2]} {cam_ctl/statecntr[3]} {cam_ctl/statecntr[4]} {cam_ctl/statecntr[5]} {cam_ctl/statecntr[6]} {cam_ctl/statecntr[7]} {cam_ctl/statecntr[8]} {cam_ctl/statecntr[9]} {cam_ctl/statecntr[10]} {cam_ctl/statecntr[11]} {cam_ctl/statecntr[12]} {cam_ctl/statecntr[13]} {cam_ctl/statecntr[14]} {cam_ctl/statecntr[15]} {cam_ctl/statecntr[16]} {cam_ctl/statecntr[17]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 24 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {cam_ctl/current_cmd[0]} {cam_ctl/current_cmd[1]} {cam_ctl/current_cmd[2]} {cam_ctl/current_cmd[3]} {cam_ctl/current_cmd[4]} {cam_ctl/current_cmd[5]} {cam_ctl/current_cmd[6]} {cam_ctl/current_cmd[7]} {cam_ctl/current_cmd[8]} {cam_ctl/current_cmd[9]} {cam_ctl/current_cmd[10]} {cam_ctl/current_cmd[11]} {cam_ctl/current_cmd[12]} {cam_ctl/current_cmd[13]} {cam_ctl/current_cmd[14]} {cam_ctl/current_cmd[15]} {cam_ctl/current_cmd[16]} {cam_ctl/current_cmd[17]} {cam_ctl/current_cmd[18]} {cam_ctl/current_cmd[19]} {cam_ctl/current_cmd[20]} {cam_ctl/current_cmd[21]} {cam_ctl/current_cmd[22]} {cam_ctl/current_cmd[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 9 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {cam_ctl/cmd_addr[0]} {cam_ctl/cmd_addr[1]} {cam_ctl/cmd_addr[2]} {cam_ctl/cmd_addr[3]} {cam_ctl/cmd_addr[4]} {cam_ctl/cmd_addr[5]} {cam_ctl/cmd_addr[6]} {cam_ctl/cmd_addr[7]} {cam_ctl/cmd_addr[8]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list cam_ctl/i2c_done]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list cam_ctl/i2c_en]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list cam_ctl/i2c_start]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list cam_ctl/i2c_if/sck_int]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list cam_ctl/i2c_if/sda_int]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list csi_rx/link/clkphy/bit_clock_int_pre]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list csi_rx/link/d0phy/in_delayed]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list csi_rx/link/d0phy/in_se]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list csi_rx/link/d1phy/in_delayed]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list csi_rx/link/d1phy/in_se]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list csi_rx/link/d2phy/in_delayed]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list csi_rx/link/d2phy/in_se]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list csi_rx/link/d3phy/in_delayed]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list csi_rx/link/d3phy/in_se]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets sys_clk]
