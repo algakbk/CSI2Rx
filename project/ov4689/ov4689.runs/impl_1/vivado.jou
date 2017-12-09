@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Dec  9 13:41:54 2017
+# Process ID: 24555
+# Current directory: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1
+# Command line: vivado -log ov13850_demo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ov13850_demo.tcl -notrace
+# Log file: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/ov13850_demo.vdi
+# Journal file: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source ov13850_demo.tcl -notrace

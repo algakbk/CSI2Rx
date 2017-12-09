@@ -1,0 +1,3 @@
+blk_mem_gen_v8_3.v,verilog,blk_mem_gen_v8_3_6,../../../ipstatic/simulation/blk_mem_gen_v8_3.v,
+output_line_buffer.v,verilog,xil_defaultlib,/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/sim/output_line_buffer.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

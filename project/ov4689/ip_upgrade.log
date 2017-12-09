@@ -1,0 +1,16 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Sat Dec  9 12:14:23 2017
+| Host         : Alga running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ddr3_if'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ddr3_if (xilinx.com:ip:mig_7series:4.0 (Rev. 4)) to Vivado generation flows.
+

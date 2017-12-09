@@ -12,7 +12,7 @@ use UNISIM.VComponents.all;
 entity ov13850_demo is
   Port (
     clock_p : in std_logic;
-    clock_n : in std_logic;
+--    clock_n : in std_logic;
     reset_n : in std_logic;
 
     hdmi_clk : out std_logic_vector(1 downto 0);
@@ -20,14 +20,14 @@ entity ov13850_demo is
     hdmi_d1 : out std_logic_vector(1 downto 0);
     hdmi_d2 : out std_logic_vector(1 downto 0);
     
-    vga_hsync : out std_logic;
-    vga_vsync : out std_logic;
-    vga_r : out std_logic_vector(4 downto 0);
-    vga_g : out std_logic_vector(5 downto 0);
-    vga_b : out std_logic_vector(4 downto 0);
+--    vga_hsync : out std_logic;
+--    vga_vsync : out std_logic;
+--    vga_r : out std_logic_vector(4 downto 0);
+--    vga_g : out std_logic_vector(5 downto 0);
+--    vga_b : out std_logic_vector(4 downto 0);
 
-    zoom_mode : in std_logic;
-    freeze : in std_logic;
+--    zoom_mode : in std_logic;
+--    freeze : in std_logic;
 
     --Camera CSI port
     csi0_clk : in std_logic_vector(1 downto 0);
@@ -43,21 +43,21 @@ entity ov13850_demo is
     cam_i2c_sck : inout std_logic;
 
    --DDR3 interface
-    ddr3_addr : out std_logic_vector(14 downto 0);
-    ddr3_ba : out std_logic_vector(2 downto 0);
-    ddr3_cas_n : out std_logic;
-    ddr3_ck_n : out std_logic_vector(0 downto 0);
-    ddr3_ck_p : out std_logic_vector(0 downto 0);
-    ddr3_cke : out std_logic_vector(0 downto 0);
-    ddr3_ras_n : out std_logic;
-    ddr3_reset_n : out std_logic;
-    ddr3_we_n : out std_logic;
-    ddr3_dq : inout std_logic_vector(31 downto 0);
-    ddr3_dqs_n : inout std_logic_vector(3 downto 0);
-    ddr3_dqs_p : inout std_logic_vector(3 downto 0);
-    ddr3_cs_n : out std_logic_vector(0 downto 0);
-    ddr3_dm : out std_logic_vector(3 downto 0);
-    ddr3_odt : out std_logic_vector(0 downto 0)
+    ddr3_addr : out std_logic_vector(13 downto 0); --14
+   ddr3_ba : out std_logic_vector(2 downto 0);
+   ddr3_cas_n : out std_logic;
+   ddr3_ck_n : out std_logic_vector(0 downto 0);
+   ddr3_ck_p : out std_logic_vector(0 downto 0);
+   ddr3_cke : out std_logic_vector(0 downto 0);
+   ddr3_ras_n : out std_logic;
+   ddr3_reset_n : out std_logic;
+   ddr3_we_n : out std_logic;
+   ddr3_dq : inout std_logic_vector(15 downto 0); --31
+   ddr3_dqs_n : inout std_logic_vector(1 downto 0); --3
+   ddr3_dqs_p : inout std_logic_vector(1 downto 0); --3
+--    ddr3_cs_n : out std_logic_vector(0 downto 0);
+   ddr3_dm : out std_logic_vector(1 downto 0);
+   ddr3_odt : out std_logic_vector(0 downto 0)
   );
 end ov13850_demo;
 
@@ -104,16 +104,16 @@ architecture Behavioral of ov13850_demo is
 
 begin
     reset <= not reset_n;
-
-    clkbuf : IBUFGDS
-    generic map(
-        DIFF_TERM => TRUE,
-        IBUF_LOW_PWR => FALSE,
-        IOSTANDARD => "DEFAULT")
-    port map(
-        O => sys_clock,
-        I => clock_p,
-        IB => clock_n);
+    sys_clock <= clock_p;
+--    clkbuf : IBUFGDS
+--    generic map(
+--        DIFF_TERM => TRUE,
+--        IBUF_LOW_PWR => FALSE,
+--        IOSTANDARD => "DEFAULT")
+--    port map(
+--        O => sys_clock,
+--        I => clock_p,
+--        IB => clock_n);
 
     pll1 : dvi_pll
     port map(
@@ -259,9 +259,10 @@ begin
         input_data_odd => fbin_data_odd,
 
         system_clock => sys_clock,
+        clk_ref => sys_clock, -- need to connect for 400 MHZ clock
         system_reset => reset,
-        zoom_mode => zoom_mode,
-        freeze => freeze,
+--        zoom_mode => zoom_mode,
+--        freeze => freeze,
 
         output_pixck => dvi_pixel_clock,
         output_vsync => dvi_vsync,
@@ -283,7 +284,7 @@ begin
         ddr3_dq => ddr3_dq,
         ddr3_dqs_n => ddr3_dqs_n,
         ddr3_dqs_p => ddr3_dqs_p,
-        ddr3_cs_n => ddr3_cs_n,
+--        ddr3_cs_n => ddr3_cs_n,
         ddr3_dm => ddr3_dm,
         ddr3_odt => ddr3_odt
      );
@@ -304,9 +305,9 @@ begin
           tmds_d2 => hdmi_d2
       );
       
-    vga_hsync <= dvi_hsync;
-    vga_vsync <= dvi_vsync;
-    vga_r <= dvi_data(23 downto 19);
-    vga_g <= dvi_data(15 downto 10);
-    vga_b <= dvi_data(7 downto 3);
+--    vga_hsync <= dvi_hsync;
+--    vga_vsync <= dvi_vsync;
+--    vga_r <= dvi_data(23 downto 19);
+--    vga_g <= dvi_data(15 downto 10);
+--    vga_b <= dvi_data(7 downto 3);
 end Behavioral;

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1512805265">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="ov13850_demo.drc"/>
+  <File Type="BG-BGN" Name="ov13850_demo.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="ov13850_demo.sysdef"/>
+  <File Type="BITSTR-MMI" Name="ov13850_demo.mmi"/>
+  <File Type="BITSTR-BMM" Name="ov13850_demo_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="ov13850_demo.nky"/>
+  <File Type="BITSTR-RBT" Name="ov13850_demo.rbt"/>
+  <File Type="BITSTR-MSK" Name="ov13850_demo.msk"/>
+  <File Type="BG-BIN" Name="ov13850_demo.bin"/>
+  <File Type="BG-BIT" Name="ov13850_demo.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ov13850_demo_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ov13850_demo_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ov13850_demo_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ov13850_demo_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ov13850_demo_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="ov13850_demo_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="ov13850_demo_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ov13850_demo_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="ov13850_demo_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ov13850_demo_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="ov13850_demo_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="ov13850_demo_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="ov13850_demo_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="ov13850_demo_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ov13850_demo_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ov13850_demo_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ov13850_demo_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ov13850_demo_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="ov13850_demo_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="ov13850_demo_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="ov13850_demo_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ov13850_demo_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="ov13850_demo_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ov13850_demo_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="ov13850_demo_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="ov13850_demo_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="ov13850_demo_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ov13850_demo_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="RDI-RDI" Name="ov13850_demo.vdi"/>
+  <File Type="PLACE-TIMING" Name="ov13850_demo_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ov13850_demo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="ov13850_demo_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="ov13850_demo_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ov13850_demo_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="ov13850_demo_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="ov13850_demo_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="ov13850_demo_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="ov13850_demo_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="ov13850_demo_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="ov13850_demo_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="ov13850_demo_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="ov13850_demo_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="ov13850_demo.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="ov13850_demo_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="ov13850_demo_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="ov13850_demo_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="ov13850_demo_timing_summary_init.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ov13850_demo_postplace_pwropt.dcp"/>
+  <File Type="PA-TCL" Name="ov13850_demo.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../IPcore/output_line_buffer_1/output_line_buffer.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../IPcore/input_line_buffer_1/input_line_buffer.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_10bit_unpack.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_hs_clk_phy.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_clock_det.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_hs_lane_phy.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_byte_align.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_word_align.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_idelayctrl_gen.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_4_lane_link.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_hdr_ecc.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_line_buffer.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_packet_handler.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../video-misc/video_timing_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_video_output.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../mipi-csi-rx/csi_rx_top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../dvi-tx/dvi_tx_clk_drv.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../dvi-tx/dvi_tx_tmds_enc.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../dvi-tx/dvi_tx_tmds_phy.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../dvi-tx/dvi_tx_top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../framebuffer-ctrl/framebuffer_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../video-misc/video_fb_output.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../demo-top/framebuffer_top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../video-misc/image_gain_wb.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ov-cam-control/ov13850_4k_regs.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ov-cam-control/ov_i2c_control.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ov-cam-control/ov13850_control_top.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../video-misc/simple_debayer.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../demo-top/ov13850_demo.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../IPcore/ddr3_if/mig_b.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="ddr3_if"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../IPcore/ddr3_if/mig_a.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="ddr3_if"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ov13850_demo"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/ztex.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="dvi_pll"/>
+  <BlockFileSet Type="BlockSrcs" Name="ddr3_if"/>
+  <BlockFileSet Type="BlockSrcs" Name="camera_pll"/>
+</GenRun>
