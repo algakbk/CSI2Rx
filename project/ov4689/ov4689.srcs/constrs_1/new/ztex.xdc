@@ -18,12 +18,6 @@ set_property PACKAGE_PIN V7 [get_ports cam_i2c_sck]
 set_property PACKAGE_PIN V6 [get_ports cam_rstn]
 set_property PACKAGE_PIN P15 [get_ports clock_p]
 
-set_property IOSTANDARD LVCMOS25 [get_ports cam_i2c_sck]
-set_property IOSTANDARD LVCMOS25 [get_ports cam_i2c_sda]
-set_property IOSTANDARD LVCMOS25 [get_ports cam_mclk]
-set_property IOSTANDARD LVCMOS25 [get_ports cam_rstn]
-set_property IOSTANDARD LVCMOS25 [get_ports clock_p]
-set_property IOSTANDARD LVCMOS25 [get_ports reset_n]
 set_property IOSTANDARD TMDS_33 [get_ports {hdmi_clk[1]}]
 set_property IOSTANDARD TMDS_33 [get_ports {hdmi_clk[0]}]
 set_property IOSTANDARD TMDS_33 [get_ports {hdmi_d0[1]}]
@@ -39,6 +33,22 @@ set_property PACKAGE_PIN G18 [get_ports {hdmi_d0[1]}]
 set_property PACKAGE_PIN H17 [get_ports {hdmi_d1[1]}]
 set_property PACKAGE_PIN J14 [get_ports {hdmi_d2[1]}]
 set_property PACKAGE_PIN U9 [get_ports reset_n]
+
+
+set_property IOSTANDARD LVCMOS25 [get_ports cam_i2c_sck]
+set_property IOSTANDARD LVCMOS25 [get_ports cam_i2c_sda]
+set_property IOSTANDARD LVCMOS25 [get_ports cam_mclk]
+set_property IOSTANDARD LVCMOS25 [get_ports cam_rstn]
+set_property IOSTANDARD LVCMOS25 [get_ports clock_p]
+set_property IOSTANDARD LVCMOS25 [get_ports reset_n]
+
+create_clock -period 2.500 -name csi -waveform {0.000 1.250} [get_ports {csi0_clk[1]}]
+create_clock -period 2.500 -name csi2 -waveform {1.250 2.500} [get_ports {csi0_clk[0]}]
+set_input_delay -clock [get_clocks csi] 1.000 [get_ports {{csi0_d0[0]} {csi0_d0[1]} {csi0_d1[0]} {csi0_d1[1]} {csi0_d2[0]} {csi0_d2[1]} {csi0_d3[0]} {csi0_d3[1]}}]
+set_input_delay -clock [get_clocks csi] -clock_fall 1.000 [get_ports {{csi0_d0[0]} {csi0_d0[1]} {csi0_d1[0]} {csi0_d1[1]} {csi0_d2[0]} {csi0_d2[1]} {csi0_d3[0]} {csi0_d3[1]}}]
+set_output_delay -clock [get_clocks [get_clocks -filter {IS_GENERATED && MASTER_CLOCK == clock_p} -of_objects [get_pins pll1/inst/plle2_adv_inst/CLKOUT1]]] 0.000 [get_ports {{hdmi_clk[0]} {hdmi_clk[1]} {hdmi_d0[0]} {hdmi_d0[1]} {hdmi_d1[0]} {hdmi_d1[1]} {hdmi_d2[0]} {hdmi_d2[1]}}]
+set_output_delay -clock [get_clocks [get_clocks -filter {IS_GENERATED && MASTER_CLOCK == clock_p} -of_objects [get_pins pll1/inst/plle2_adv_inst/CLKOUT1]]] -clock_fall 0.000 [get_ports {{hdmi_clk[0]} {hdmi_clk[1]} {hdmi_d0[0]} {hdmi_d0[1]} {hdmi_d1[0]} {hdmi_d1[1]} {hdmi_d2[0]} {hdmi_d2[1]}}]
+
 
 
 

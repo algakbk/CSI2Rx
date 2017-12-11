@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1512805265">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1512981236">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="ov13850_demo.drc"/>
   <File Type="BG-BGN" Name="ov13850_demo.bgn"/>
@@ -62,13 +62,6 @@
   <File Type="PA-TCL" Name="ov13850_demo.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../IPcore/output_line_buffer_1/output_line_buffer.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../IPcore/input_line_buffer_1/input_line_buffer.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -280,6 +273,7 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="output_line_buffer"/>
   <BlockFileSet Type="BlockSrcs" Name="dvi_pll"/>
   <BlockFileSet Type="BlockSrcs" Name="ddr3_if"/>
   <BlockFileSet Type="BlockSrcs" Name="camera_pll"/>

@@ -56,13 +56,14 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// pixel_clock___148.000______0.000______50.0______111.449____139.507
-// dvi_bit_clock___740.000______0.000______50.0_______87.091____139.507
+// pixel_clock___148.200______0.000______50.0______144.069____206.670
+// dvi_bit_clock___741.000______0.000______50.0______122.346____206.670
+// __clk400___370.500______0.000______50.0______130.942____206.670
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_____________200____________0.010
+// __primary______________26____________0.010
 
 `timescale 1ps/1ps
 
@@ -72,6 +73,7 @@ module dvi_pll_clk_wiz
   // Clock out ports
   output        pixel_clock,
   output        dvi_bit_clock,
+  output        clk400,
   input         sysclk
  );
   // Input buffering
@@ -92,7 +94,7 @@ wire clk_in2_dvi_pll;
 
   wire        pixel_clock_dvi_pll;
   wire        dvi_bit_clock_dvi_pll;
-  wire        clk_out3_dvi_pll;
+  wire        clk400_dvi_pll;
   wire        clk_out4_dvi_pll;
   wire        clk_out5_dvi_pll;
   wire        clk_out6_dvi_pll;
@@ -105,7 +107,6 @@ wire clk_in2_dvi_pll;
   wire        clkfbout_dvi_pll;
   wire        clkfbout_buf_dvi_pll;
   wire        clkfboutb_unused;
-   wire clkout2_unused;
    wire clkout3_unused;
    wire clkout4_unused;
   wire        clkout5_unused;
@@ -117,8 +118,8 @@ wire clk_in2_dvi_pll;
   #(.BANDWIDTH            ("OPTIMIZED"),
     .COMPENSATION         ("ZHOLD"),
     .STARTUP_WAIT         ("FALSE"),
-    .DIVCLK_DIVIDE        (5),
-    .CLKFBOUT_MULT        (37),
+    .DIVCLK_DIVIDE        (1),
+    .CLKFBOUT_MULT        (57),
     .CLKFBOUT_PHASE       (0.000),
     .CLKOUT0_DIVIDE       (10),
     .CLKOUT0_PHASE        (0.000),
@@ -126,14 +127,17 @@ wire clk_in2_dvi_pll;
     .CLKOUT1_DIVIDE       (2),
     .CLKOUT1_PHASE        (0.000),
     .CLKOUT1_DUTY_CYCLE   (0.500),
-    .CLKIN1_PERIOD        (5.000))
+    .CLKOUT2_DIVIDE       (4),
+    .CLKOUT2_PHASE        (0.000),
+    .CLKOUT2_DUTY_CYCLE   (0.500),
+    .CLKIN1_PERIOD        (38.462))
   plle2_adv_inst
     // Output clocks
    (
     .CLKFBOUT            (clkfbout_dvi_pll),
     .CLKOUT0             (pixel_clock_dvi_pll),
     .CLKOUT1             (dvi_bit_clock_dvi_pll),
-    .CLKOUT2             (clkout2_unused),
+    .CLKOUT2             (clk400_dvi_pll),
     .CLKOUT3             (clkout3_unused),
     .CLKOUT4             (clkout4_unused),
     .CLKOUT5             (clkout5_unused),
@@ -175,6 +179,10 @@ wire clk_in2_dvi_pll;
   BUFG clkout2_buf
    (.O   (dvi_bit_clock),
     .I   (dvi_bit_clock_dvi_pll));
+
+  BUFG clkout3_buf
+   (.O   (clk400),
+    .I   (clk400_dvi_pll));
 
 
 

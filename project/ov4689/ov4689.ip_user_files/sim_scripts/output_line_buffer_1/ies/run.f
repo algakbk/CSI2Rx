@@ -9,7 +9,7 @@
   "../../../ipstatic/simulation/blk_mem_gen_v8_3.v" \
 -endlib
 -makelib ies/xil_defaultlib \
-  "/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/sim/output_line_buffer.v" \
+  "../../../../../IPcore/output_line_buffer_1/sim/output_line_buffer.v" \
 -endlib
 -makelib ies/xil_defaultlib \
   glbl.v

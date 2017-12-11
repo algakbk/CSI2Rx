@@ -56,23 +56,25 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// pixel_clock___148.000______0.000______50.0______111.449____139.507
-// dvi_bit_clock___740.000______0.000______50.0_______87.091____139.507
+// pixel_clock___148.200______0.000______50.0______144.069____206.670
+// dvi_bit_clock___741.000______0.000______50.0______122.346____206.670
+// __clk400___370.500______0.000______50.0______130.942____206.670
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_____________200____________0.010
+// __primary______________26____________0.010
 
 `timescale 1ps/1ps
 
-(* CORE_GENERATION_INFO = "dvi_pll,clk_wiz_v5_4_1_0,{component_name=dvi_pll,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=PLL,num_out_clk=2,clkin1_period=5.000,clkin2_period=10.0,use_power_down=false,use_reset=false,use_locked=false,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *)
+(* CORE_GENERATION_INFO = "dvi_pll,clk_wiz_v5_4_1_0,{component_name=dvi_pll,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=PLL,num_out_clk=3,clkin1_period=38.462,clkin2_period=10.0,use_power_down=false,use_reset=false,use_locked=false,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *)
 
 module dvi_pll 
  (
   // Clock out ports
   output        pixel_clock,
   output        dvi_bit_clock,
+  output        clk400,
  // Clock in ports
   input         sysclk
  );
@@ -82,6 +84,7 @@ module dvi_pll
   // Clock out ports  
   .pixel_clock(pixel_clock),
   .dvi_bit_clock(dvi_bit_clock),
+  .clk400(clk400),
  // Clock in ports
   .sysclk(sysclk)
   );

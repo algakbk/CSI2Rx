@@ -56,18 +56,18 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// camera_pixel_clock___145.000______0.000______50.0______280.569____321.802
-// camera_mclk____24.399______0.000______50.0______391.507____321.802
-// i2c_clkin_____4.995______0.000______50.0______519.540____321.802
+// camera_pixel_clock___144.912______0.000______50.0______482.093____536.424
+// camera_mclk____24.635______0.000______50.0______660.995____536.424
+// i2c_clkin_____5.007______0.000______50.0______862.508____536.424
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_____________200____________0.010
+// __primary______________26____________0.010
 
 `timescale 1ps/1ps
 
-(* CORE_GENERATION_INFO = "camera_pll,clk_wiz_v5_4_1_0,{component_name=camera_pll,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=3,clkin1_period=5.000,clkin2_period=10.0,use_power_down=false,use_reset=false,use_locked=false,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *)
+(* CORE_GENERATION_INFO = "camera_pll,clk_wiz_v5_4_1_0,{component_name=camera_pll,use_phase_alignment=true,use_min_o_jitter=false,use_max_i_jitter=false,use_dyn_phase_shift=false,use_inclk_switchover=false,use_dyn_reconfig=false,enable_axi=0,feedback_source=FDBK_AUTO,PRIMITIVE=MMCM,num_out_clk=3,clkin1_period=38.462,clkin2_period=10.0,use_power_down=false,use_reset=false,use_locked=false,use_inclk_stopped=false,feedback_type=SINGLE,CLOCK_MGR_TYPE=NA,manual_override=false}" *)
 
 module camera_pll 
  (

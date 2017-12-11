@@ -3,8 +3,5 @@
 
 # XDC: new/ztex.xdc
 
-# IP: /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/output_line_buffer.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==output_line_buffer || ORIG_REF_NAME==output_line_buffer}]
-
 # IP: /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==input_line_buffer || ORIG_REF_NAME==input_line_buffer}]

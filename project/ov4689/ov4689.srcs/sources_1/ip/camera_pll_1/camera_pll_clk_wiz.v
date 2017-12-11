@@ -56,14 +56,14 @@
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
 //   Clock     Freq (MHz)  (degrees)    (%)     Jitter (ps)  Error (ps)
 //----------------------------------------------------------------------------
-// camera_pixel_clock___145.000______0.000______50.0______280.569____321.802
-// camera_mclk____24.399______0.000______50.0______391.507____321.802
-// i2c_clkin_____4.995______0.000______50.0______519.540____321.802
+// camera_pixel_clock___144.912______0.000______50.0______482.093____536.424
+// camera_mclk____24.635______0.000______50.0______660.995____536.424
+// i2c_clkin_____5.007______0.000______50.0______862.508____536.424
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
-// __primary_____________200____________0.010
+// __primary______________26____________0.010
 
 `timescale 1ps/1ps
 
@@ -123,23 +123,23 @@ wire clk_in2_camera_pll;
     .CLKOUT4_CASCADE      ("FALSE"),
     .COMPENSATION         ("ZHOLD"),
     .STARTUP_WAIT         ("FALSE"),
-    .DIVCLK_DIVIDE        (8),
-    .CLKFBOUT_MULT_F      (25.375),
+    .DIVCLK_DIVIDE        (2),
+    .CLKFBOUT_MULT_F      (47.375),
     .CLKFBOUT_PHASE       (0.000),
     .CLKFBOUT_USE_FINE_PS ("FALSE"),
-    .CLKOUT0_DIVIDE_F     (4.375),
+    .CLKOUT0_DIVIDE_F     (4.250),
     .CLKOUT0_PHASE        (0.000),
     .CLKOUT0_DUTY_CYCLE   (0.500),
     .CLKOUT0_USE_FINE_PS  ("FALSE"),
-    .CLKOUT1_DIVIDE       (26),
+    .CLKOUT1_DIVIDE       (25),
     .CLKOUT1_PHASE        (0.000),
     .CLKOUT1_DUTY_CYCLE   (0.500),
     .CLKOUT1_USE_FINE_PS  ("FALSE"),
-    .CLKOUT2_DIVIDE       (127),
+    .CLKOUT2_DIVIDE       (123),
     .CLKOUT2_PHASE        (0.000),
     .CLKOUT2_DUTY_CYCLE   (0.500),
     .CLKOUT2_USE_FINE_PS  ("FALSE"),
-    .CLKIN1_PERIOD        (5.000))
+    .CLKIN1_PERIOD        (38.462))
   mmcm_adv_inst
     // Output clocks
    (

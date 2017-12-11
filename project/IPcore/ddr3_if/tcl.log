@@ -2324,3 +2324,7 @@ MIG: 12:23:40 : IGN:         <InputClkFreq>333.333</InputClkFreq> <==>         <
 MIG: 12:23:40 : Running implementation.xit
 MIG: 12:23:40 : IGN:     <ModuleName>ddr3_if</ModuleName> <==>     <ModuleName>ddr3_if</ModuleName> 
 MIG: 12:23:40 : IGN:         <InputClkFreq>333.333</InputClkFreq> <==>         <InputClkFreq>333.333</InputClkFreq> 
+MIG: 12:17:42 : xml_input_file: mig_a.prj
+MIG: 12:17:42 : Absolute path of xml_input_file: /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/ddr3_if/mig_a.prj
+MIG: 12:17:42 : xml_input_file: mig_a.prj
+MIG: 12:17:42 : Absolute path of xml_input_file: /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/ddr3_if/mig_a.prj

@@ -64,6 +64,7 @@ end ov13850_demo;
 architecture Behavioral of ov13850_demo is
 
   signal sys_clock : std_logic;
+  signal clk400 : std_logic;
 
   signal reset : std_logic;
   signal dvi_pixel_clock, dvi_bit_clock : std_logic;
@@ -90,7 +91,8 @@ architecture Behavioral of ov13850_demo is
     port(
       sysclk : in std_logic;
       pixel_clock : out std_logic;
-      dvi_bit_clock : out std_logic);
+      dvi_bit_clock : out std_logic;
+      clk400 : out std_logic);
   end component;
 
   component camera_pll is
@@ -119,7 +121,8 @@ begin
     port map(
         sysclk => sys_clock,
         pixel_clock => dvi_pixel_clock,
-        dvi_bit_clock => dvi_bit_clock
+        dvi_bit_clock => dvi_bit_clock,
+        clk400 => clk400
     );
 
     pll2 : camera_pll
@@ -259,7 +262,7 @@ begin
         input_data_odd => fbin_data_odd,
 
         system_clock => sys_clock,
-        clk_ref => sys_clock, -- need to connect for 400 MHZ clock
+        clk_ref => clk400, -- need to connect for 400 MHZ clock
         system_reset => reset,
 --        zoom_mode => zoom_mode,
 --        freeze => freeze,

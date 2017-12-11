@@ -2,5 +2,5 @@ xpm_cdc.sv,systemverilog,xil_defaultlib,../../../../../../../../../../../media/b
 xpm_memory.sv,systemverilog,xil_defaultlib,../../../../../../../../../../../media/baktiiar/downloads/Xilinx/Vivado/2017.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
 xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../../../../media/baktiiar/downloads/Xilinx/Vivado/2017.2/data/ip/xpm/xpm_VCOMP.vhd,
 blk_mem_gen_v8_3.v,verilog,blk_mem_gen_v8_3_6,../../../ipstatic/simulation/blk_mem_gen_v8_3.v,
-output_line_buffer.v,verilog,xil_defaultlib,/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/sim/output_line_buffer.v,
+output_line_buffer.v,verilog,xil_defaultlib,../../../../../IPcore/output_line_buffer_1/sim/output_line_buffer.v,
 glbl.v,Verilog,xil_defaultlib,glbl.v

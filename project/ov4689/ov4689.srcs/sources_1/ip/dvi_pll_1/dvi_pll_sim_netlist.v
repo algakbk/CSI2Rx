@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-// Date        : Sat Dec  9 12:09:25 2017
+// Date        : Mon Dec 11 10:36:39 2017
 // Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/dvi_pll_1/dvi_pll_sim_netlist.v
@@ -16,17 +16,21 @@
 module dvi_pll
    (pixel_clock,
     dvi_bit_clock,
+    clk400,
     sysclk);
   output pixel_clock;
   output dvi_bit_clock;
+  output clk400;
   input sysclk;
 
+  wire clk400;
   wire dvi_bit_clock;
   wire pixel_clock;
   wire sysclk;
 
   dvi_pll_dvi_pll_clk_wiz inst
-       (.dvi_bit_clock(dvi_bit_clock),
+       (.clk400(clk400),
+        .dvi_bit_clock(dvi_bit_clock),
         .pixel_clock(pixel_clock),
         .sysclk(sysclk));
 endmodule
@@ -35,11 +39,15 @@ endmodule
 module dvi_pll_dvi_pll_clk_wiz
    (pixel_clock,
     dvi_bit_clock,
+    clk400,
     sysclk);
   output pixel_clock;
   output dvi_bit_clock;
+  output clk400;
   input sysclk;
 
+  wire clk400;
+  wire clk400_dvi_pll;
   wire clkfbout_buf_dvi_pll;
   wire clkfbout_dvi_pll;
   wire dvi_bit_clock;
@@ -48,7 +56,6 @@ module dvi_pll_dvi_pll_clk_wiz
   wire pixel_clock_dvi_pll;
   wire sysclk;
   wire sysclk_dvi_pll;
-  wire NLW_plle2_adv_inst_CLKOUT2_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT3_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT4_UNCONNECTED;
   wire NLW_plle2_adv_inst_CLKOUT5_UNCONNECTED;
@@ -73,11 +80,15 @@ module dvi_pll_dvi_pll_clk_wiz
        (.I(dvi_bit_clock_dvi_pll),
         .O(dvi_bit_clock));
   (* BOX_TYPE = "PRIMITIVE" *) 
+  BUFG clkout3_buf
+       (.I(clk400_dvi_pll),
+        .O(clk400));
+  (* BOX_TYPE = "PRIMITIVE" *) 
   PLLE2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT(37),
+    .CLKFBOUT_MULT(57),
     .CLKFBOUT_PHASE(0.000000),
-    .CLKIN1_PERIOD(5.000000),
+    .CLKIN1_PERIOD(38.462002),
     .CLKIN2_PERIOD(0.000000),
     .CLKOUT0_DIVIDE(10),
     .CLKOUT0_DUTY_CYCLE(0.500000),
@@ -85,7 +96,7 @@ module dvi_pll_dvi_pll_clk_wiz
     .CLKOUT1_DIVIDE(2),
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
-    .CLKOUT2_DIVIDE(1),
+    .CLKOUT2_DIVIDE(4),
     .CLKOUT2_DUTY_CYCLE(0.500000),
     .CLKOUT2_PHASE(0.000000),
     .CLKOUT3_DIVIDE(1),
@@ -98,7 +109,7 @@ module dvi_pll_dvi_pll_clk_wiz
     .CLKOUT5_DUTY_CYCLE(0.500000),
     .CLKOUT5_PHASE(0.000000),
     .COMPENSATION("BUF_IN"),
-    .DIVCLK_DIVIDE(5),
+    .DIVCLK_DIVIDE(1),
     .IS_CLKINSEL_INVERTED(1'b0),
     .IS_PWRDWN_INVERTED(1'b0),
     .IS_RST_INVERTED(1'b0),
@@ -113,7 +124,7 @@ module dvi_pll_dvi_pll_clk_wiz
         .CLKINSEL(1'b1),
         .CLKOUT0(pixel_clock_dvi_pll),
         .CLKOUT1(dvi_bit_clock_dvi_pll),
-        .CLKOUT2(NLW_plle2_adv_inst_CLKOUT2_UNCONNECTED),
+        .CLKOUT2(clk400_dvi_pll),
         .CLKOUT3(NLW_plle2_adv_inst_CLKOUT3_UNCONNECTED),
         .CLKOUT4(NLW_plle2_adv_inst_CLKOUT4_UNCONNECTED),
         .CLKOUT5(NLW_plle2_adv_inst_CLKOUT5_UNCONNECTED),
