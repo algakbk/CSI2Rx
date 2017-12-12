@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date         : Mon Dec 11 14:37:01 2017
-| Host         : Alga running 64-bit Ubuntu 14.04.5 LTS
+| Date         : Tue Dec 12 22:27:59 2017
+| Host         : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
 | Command      : report_methodology -file ov13850_demo_methodology_drc_routed.rpt -rpx ov13850_demo_methodology_drc_routed.rpx
 | Design       : ov13850_demo
 | Device       : xc7a100tcsg324-2
@@ -5301,71 +5301,71 @@ XDCB-4#1 Warning
 create_clock constraint set on both sides of diff pair port  
 Two clock definitions csi and csi2 found on differential ports csi0_clk[1] and csi0_clk[0]. It is recommended to only create a clock on port P.
 create_clock -period 2.500 -name csi -waveform {0.000 1.250} [get_ports {csi0_clk[1]}]
-/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 45)
+/home/alga/workspace/github/CSI2Rx_demo/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 45)
 create_clock -period 2.500 -name csi2 -waveform {1.250 2.500} [get_ports {csi0_clk[0]}]
-/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 46)
+/home/alga/workspace/github/CSI2Rx_demo/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 46)
 Related violations: <none>
 
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
 The option '-through : [get_pins -hier -filter {NAME =~ */u_iodelay_ctrl/sys_rst}]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '8' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/constraints/ddr3_if.xdc (Line: 336)
+Current XDC: /home/alga/workspace/github/CSI2Rx_demo/project/IPcore/ddr3_if/ddr3_if/user_design/constraints/ddr3_if.xdc (Line: 336)
 Related violations: <none>
 
 XDCH-2#1 Warning
 Same min and max delay values on IO port  
 The same input delay of 1.000 ns has been defined on port 'csi0_d0[0]' relative to clock csi for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks csi] -clock_fall 1.000 [get_ports {{csi0_d0[0]} {csi0_d0[1]} {csi0_d1[0]} {csi0_d1[1]} {csi0_d2[0]} {csi0_d2[1]} {csi0_d3[0]} {csi0_d3[1]}}]
-/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
+/home/alga/workspace/github/CSI2Rx_demo/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
 Related violations: <none>
 
 XDCH-2#2 Warning
 Same min and max delay values on IO port  
 The same input delay of 1.000 ns has been defined on port 'csi0_d0[1]' relative to clock csi for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks csi] -clock_fall 1.000 [get_ports {{csi0_d0[0]} {csi0_d0[1]} {csi0_d1[0]} {csi0_d1[1]} {csi0_d2[0]} {csi0_d2[1]} {csi0_d3[0]} {csi0_d3[1]}}]
-/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
+/home/alga/workspace/github/CSI2Rx_demo/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
 Related violations: <none>
 
 XDCH-2#3 Warning
 Same min and max delay values on IO port  
 The same input delay of 1.000 ns has been defined on port 'csi0_d1[0]' relative to clock csi for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks csi] -clock_fall 1.000 [get_ports {{csi0_d0[0]} {csi0_d0[1]} {csi0_d1[0]} {csi0_d1[1]} {csi0_d2[0]} {csi0_d2[1]} {csi0_d3[0]} {csi0_d3[1]}}]
-/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
+/home/alga/workspace/github/CSI2Rx_demo/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
 Related violations: <none>
 
 XDCH-2#4 Warning
 Same min and max delay values on IO port  
 The same input delay of 1.000 ns has been defined on port 'csi0_d1[1]' relative to clock csi for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks csi] -clock_fall 1.000 [get_ports {{csi0_d0[0]} {csi0_d0[1]} {csi0_d1[0]} {csi0_d1[1]} {csi0_d2[0]} {csi0_d2[1]} {csi0_d3[0]} {csi0_d3[1]}}]
-/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
+/home/alga/workspace/github/CSI2Rx_demo/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
 Related violations: <none>
 
 XDCH-2#5 Warning
 Same min and max delay values on IO port  
 The same input delay of 1.000 ns has been defined on port 'csi0_d2[0]' relative to clock csi for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks csi] -clock_fall 1.000 [get_ports {{csi0_d0[0]} {csi0_d0[1]} {csi0_d1[0]} {csi0_d1[1]} {csi0_d2[0]} {csi0_d2[1]} {csi0_d3[0]} {csi0_d3[1]}}]
-/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
+/home/alga/workspace/github/CSI2Rx_demo/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
 Related violations: <none>
 
 XDCH-2#6 Warning
 Same min and max delay values on IO port  
 The same input delay of 1.000 ns has been defined on port 'csi0_d2[1]' relative to clock csi for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks csi] -clock_fall 1.000 [get_ports {{csi0_d0[0]} {csi0_d0[1]} {csi0_d1[0]} {csi0_d1[1]} {csi0_d2[0]} {csi0_d2[1]} {csi0_d3[0]} {csi0_d3[1]}}]
-/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
+/home/alga/workspace/github/CSI2Rx_demo/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
 Related violations: <none>
 
 XDCH-2#7 Warning
 Same min and max delay values on IO port  
 The same input delay of 1.000 ns has been defined on port 'csi0_d3[0]' relative to clock csi for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks csi] -clock_fall 1.000 [get_ports {{csi0_d0[0]} {csi0_d0[1]} {csi0_d1[0]} {csi0_d1[1]} {csi0_d2[0]} {csi0_d2[1]} {csi0_d3[0]} {csi0_d3[1]}}]
-/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
+/home/alga/workspace/github/CSI2Rx_demo/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
 Related violations: <none>
 
 XDCH-2#8 Warning
 Same min and max delay values on IO port  
 The same input delay of 1.000 ns has been defined on port 'csi0_d3[1]' relative to clock csi for both max and min. Make sure this reflects the design intent.
 set_input_delay -clock [get_clocks csi] -clock_fall 1.000 [get_ports {{csi0_d0[0]} {csi0_d0[1]} {csi0_d1[0]} {csi0_d1[1]} {csi0_d2[0]} {csi0_d2[1]} {csi0_d3[0]} {csi0_d3[1]}}]
-/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
+/home/alga/workspace/github/CSI2Rx_demo/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc (Line: 48)
 Related violations: <none>
 
 

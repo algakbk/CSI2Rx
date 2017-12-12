@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
 // Date        : Mon Dec 11 09:47:56 2017
 // Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/camera_pll_1/camera_pll_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top camera_pll -prefix
+//               camera_pll_ camera_pll_stub.v
 // Design      : camera_pll
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-2

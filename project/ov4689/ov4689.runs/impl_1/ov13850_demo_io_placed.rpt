@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
-| Date                      : Mon Dec 11 14:35:48 2017
-| Host                      : Alga running 64-bit Ubuntu 14.04.5 LTS
+| Date                      : Tue Dec 12 22:26:39 2017
+| Host                      : alga-satellite running 64-bit Ubuntu 16.04.3 LTS
 | Command                   : report_io -file ov13850_demo_io_placed.rpt
 | Design                    : ov13850_demo
 | Device                    : xc7a100t
@@ -331,7 +331,7 @@ Table of Contents
 | U6         |               | High Range | IO_L22N_T3_34                | User IO     |             |      34 |            |      |                      |                      |         |            |           |          |          |                  |
 | U7         |               | High Range | IO_L22P_T3_34                | User IO     |             |      34 |            |      |                      |                      |         |            |           |          |          |                  |
 | U8         |               | High Range | IO_25_34                     | User IO     |             |      34 |            |      |                      |                      |         |            |           |          |          |                  |
-| U9         | reset_n       | High Range | IO_L21P_T3_DQS_34            | INPUT       | LVCMOS25    |      34 |            |      |                      |                 NONE |         | FIXED      |           |          |          | NONE             |
+| U9         | reset_n       | High Range | IO_L21P_T3_DQS_34            | INPUT       | LVCMOS25    |      34 |            |      |                      |                 NONE |         | FIXED      | PULLUP    |          |          | NONE             |
 | U10        |               |            | GND                          | GND         |             |         |            |      |                      |                      |     0.0 |            |           |          |          |                  |
 | U11        |               | High Range | IO_L19N_T3_A09_D25_VREF_14   | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |
 | U12        |               | High Range | IO_L20P_T3_A08_D24_14        | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |
@@ -347,9 +347,9 @@ Table of Contents
 | V4         |               | High Range | IO_L10N_T1_34                | User IO     |             |      34 |            |      |                      |                      |         |            |           |          |          |                  |
 | V5         |               | High Range | IO_L10P_T1_34                | User IO     |             |      34 |            |      |                      |                      |         |            |           |          |          |                  |
 | V6         | cam_rstn      | High Range | IO_L20N_T3_34                | OUTPUT      | LVCMOS25    |      34 |         12 | SLOW |                      |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |
-| V7         | cam_i2c_sck   | High Range | IO_L20P_T3_34                | BIDIR       | LVCMOS25    |      34 |         12 | SLOW |                      |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |
+| V7         | cam_i2c_sck   | High Range | IO_L20P_T3_34                | BIDIR       | LVCMOS25    |      34 |         12 | SLOW |                      |            FP_VTT_50 |         | FIXED      | PULLUP    |          |          | NONE             |
 | V8         |               | High Range | VCCO_34                      | VCCO        |             |      34 |            |      |                      |                      |    2.50 |            |           |          |          |                  |
-| V9         | cam_i2c_sda   | High Range | IO_L21N_T3_DQS_34            | BIDIR       | LVCMOS25    |      34 |         12 | SLOW |                      |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |
+| V9         | cam_i2c_sda   | High Range | IO_L21N_T3_DQS_34            | BIDIR       | LVCMOS25    |      34 |         12 | SLOW |                      |            FP_VTT_50 |         | FIXED      | PULLUP    |          |          | NONE             |
 | V10        |               | High Range | IO_L21P_T3_DQS_14            | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |
 | V11        |               | High Range | IO_L21N_T3_DQS_A06_D22_14    | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |
 | V12        |               | High Range | IO_L20N_T3_A07_D23_14        | User IO     |             |      14 |            |      |                      |                      |         |            |           |          |          |                  |

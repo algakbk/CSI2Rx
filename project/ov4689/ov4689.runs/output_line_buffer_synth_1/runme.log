@@ -9,33 +9,4 @@
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
 source output_line_buffer.tcl -notrace
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1209.012 ; gain = 72.000 ; free physical = 4903 ; free virtual = 25423
-INFO: [Synth 8-638] synthesizing module 'output_line_buffer' [/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/synth/output_line_buffer.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'output_line_buffer' (9#1) [/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/synth/output_line_buffer.vhd:72]
-Finished RTL Elaboration : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1409.414 ; gain = 272.402 ; free physical = 4885 ; free virtual = 25399
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1409.414 ; gain = 272.402 ; free physical = 4890 ; free virtual = 25404
-INFO: [Device 21-403] Loading part xc7a100tcsg324-2
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1583.297 ; gain = 0.004 ; free physical = 4586 ; free virtual = 25128
-Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4487 ; free virtual = 25087
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4487 ; free virtual = 25087
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4485 ; free virtual = 25086
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4455 ; free virtual = 25055
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4441 ; free virtual = 25042
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4051 ; free virtual = 24673
-Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4050 ; free virtual = 24673
-Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4049 ; free virtual = 24671
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4048 ; free virtual = 24671
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4048 ; free virtual = 24671
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4048 ; free virtual = 24671
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4048 ; free virtual = 24671
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4048 ; free virtual = 24671
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4048 ; free virtual = 24671
-
-Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |RAMB36E1 |     4|
-+------+---------+------+
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:55 . Memory (MB): peak = 1583.297 ; gain = 446.285 ; free physical = 4048 ; free virtual = 24671
-synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:56 . Memory (MB): peak = 1583.297 ; gain = 458.867 ; free physical = 4067 ; free virtual = 24698
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP output_line_buffer, cache-ID = d134bd0fafca0023.

@@ -59,3 +59,7 @@ set_output_delay -clock [get_clocks [get_clocks -filter {IS_GENERATED && MASTER_
 
 #set_property PACKAGE_PIN B12 [get_ports ic_mclk]
 #set_property IOSTANDARD LVCMOS33 [get_ports ic_mclk]
+
+set_property PULLUP true [get_ports cam_i2c_sck]
+set_property PULLUP true [get_ports cam_i2c_sda]
+set_property PULLUP true [get_ports reset_n]

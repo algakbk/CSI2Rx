@@ -12,9 +12,9 @@ var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "/media/baktiiar/downloads/Xilinx/SDK/2017.2/bin:/media/baktiiar/downloads/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/lin64;/media/baktiiar/downloads/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/lin64;/media/baktiiar/downloads/Xilinx/Vivado/2017.2/bin;";
+  PathVal = "/home/alga/workspace/Xilinx/SDK/2017.2/bin:/home/alga/workspace/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/lin64;/home/alga/workspace/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/lin64;/home/alga/workspace/Xilinx/Vivado/2017.2/bin;";
 } else {
-  PathVal = "/media/baktiiar/downloads/Xilinx/SDK/2017.2/bin:/media/baktiiar/downloads/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/lin64;/media/baktiiar/downloads/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/lin64;/media/baktiiar/downloads/Xilinx/Vivado/2017.2/bin;" + PathVal;
+  PathVal = "/home/alga/workspace/Xilinx/SDK/2017.2/bin:/home/alga/workspace/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/lin64;/home/alga/workspace/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/lin64;/home/alga/workspace/Xilinx/Vivado/2017.2/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;

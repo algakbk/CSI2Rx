@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc rfile:../../../ov4689.srcs/constrs_1/new/ztex.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/alga/workspace/github/CSI2Rx_demo/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc rfile:../../../ov4689.srcs/constrs_1/new/ztex.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN N5 [get_ports {csi0_clk[1]}]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

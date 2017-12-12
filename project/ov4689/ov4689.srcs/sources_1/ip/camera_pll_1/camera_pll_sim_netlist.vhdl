@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
--- Date        : Mon Dec 11 09:47:57 2017
+-- Date        : Mon Dec 11 09:47:56 2017
 -- Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/camera_pll_1/camera_pll_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top camera_pll -prefix
+--               camera_pll_ camera_pll_sim_netlist.vhdl
 -- Design      : camera_pll
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,8 +21,6 @@ entity camera_pll_camera_pll_clk_wiz is
     i2c_clkin : out STD_LOGIC;
     sysclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of camera_pll_camera_pll_clk_wiz : entity is "camera_pll_clk_wiz";
 end camera_pll_camera_pll_clk_wiz;
 
 architecture STRUCTURE of camera_pll_camera_pll_clk_wiz is

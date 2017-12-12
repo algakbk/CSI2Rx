@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
--- Date        : Sat Dec  9 12:25:44 2017
+-- Date        : Sat Dec  9 12:25:40 2017
 -- Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top ddr3_if -prefix
+--               ddr3_if_ ddr3_if_stub.vhdl
 -- Design      : ddr3_if
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-2

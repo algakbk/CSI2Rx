@@ -2328,3 +2328,29 @@ MIG: 12:17:42 : xml_input_file: mig_a.prj
 MIG: 12:17:42 : Absolute path of xml_input_file: /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/ddr3_if/mig_a.prj
 MIG: 12:17:42 : xml_input_file: mig_a.prj
 MIG: 12:17:42 : Absolute path of xml_input_file: /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/ddr3_if/mig_a.prj
+MIG: 00:54:10 : Running synthesis.xit
+MIG: 00:54:10 : ################# RUNNING MIG BATCH ###################
+MIG: 00:54:10 : Writing IN file for 'ddr3_if'...compDirPath: /home/alga/workspace/Xilinx/Vivado/2017.2/data/ip/xilinx/mig_7series_v4_0... instDirPath: /home/alga/workspace/github/CSI2Rx_demo/project/IPcore/ddr3_if
+MIG: 00:54:10 : synp_flow:  -- synthesis_mode: Other
+MIG: 00:54:10 : outputDirectory: /home/alga/workspace/github/CSI2Rx_demo/project/IPcore/ddr3_if/_tmp/
+MIG: 00:54:10 : vivado_mode: xpg_pa
+MIG: 00:54:10 :  locked false  
+MIG: 00:54:10 : HDL Language: Verilog
+MIG: 00:54:10 : compInfo: false
+MIG: 00:54:10 : Vivado Options xc7a100t csg324 -2
+MIG: 00:54:10 : 1: xc7a100t 2: csg324 3: -2
+MIG: 00:54:10 : relative mig path: coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/lin64/mig
+MIG: 00:54:10 : xilinx_path: /home/alga/workspace/Xilinx/Vivado/2017.2/ids_lite/ISE
+MIG: 00:54:10 : I am in catch area
+MIG: 00:54:11 : Running /home/alga/workspace/Xilinx/Vivado/2017.2/ids_lite/ISE/coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/lin64/mig -cg_exc_inp /home/alga/workspace/github/CSI2Rx_demo/project/IPcore/ddr3_if/xil_txt.in -cg_exc_out /home/alga/workspace/github/CSI2Rx_demo/project/IPcore/ddr3_if/xil_txt.out ... 
+MIG: 00:54:26 : XML_INPUT_FILE: /home/alga/workspace/github/CSI2Rx_demo/project/IPcore/ddr3_if/mig_a.prj
+MIG: 00:54:26 : Component_Name: ddr3_if
+MIG: 00:54:26 : Moving ddr3_if.veo ...
+MIG: 00:54:26 : Moving ddr3_if ...
+MIG: 00:54:26 : Moving ddr3_if_xmdf.tcl ...
+MIG: 00:54:26 : Running vlog_synth_rpr.xit
+MIG: 00:54:26 : IGN:     <ModuleName>ddr3_if</ModuleName> <==>     <ModuleName>ddr3_if</ModuleName> 
+MIG: 00:54:26 : IGN:         <InputClkFreq>333.333</InputClkFreq> <==>         <InputClkFreq>333.333</InputClkFreq> 
+MIG: 00:54:27 : Running implementation.xit
+MIG: 00:54:27 : IGN:     <ModuleName>ddr3_if</ModuleName> <==>     <ModuleName>ddr3_if</ModuleName> 
+MIG: 00:54:27 : IGN:         <InputClkFreq>333.333</InputClkFreq> <==>         <InputClkFreq>333.333</InputClkFreq> 
