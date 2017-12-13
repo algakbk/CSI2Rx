@@ -59,7 +59,8 @@ architecture Behavioral of csi_rx_video_output is
   signal video_fsync_pre, video_fsync : std_logic := '0';
 
   signal csi_x_pos : natural range 0 to video_h_visible - 1;
-
+    attribute mark_debug : string;
+  attribute keep : string;
   constant output_width : natural := video_h_visible / pixels_per_clock;
   constant output_tmg_hlength : natural := video_hlength / pixels_per_clock;
   constant output_hvis_begin : natural := (video_hsync_len + video_hbp_len) / pixels_per_clock;
@@ -75,6 +76,12 @@ architecture Behavioral of csi_rx_video_output is
 
   signal output_hsync, output_vsync, output_den, output_line_start, output_odd_line : std_logic;
   signal output_data, output_prev_line_data : std_logic_vector(((10 * pixels_per_clock) - 1) downto 0);
+  
+    attribute mark_debug of output_data : signal is "true";
+attribute mark_debug of output_line_start : signal is "true";
+attribute mark_debug of output_odd_line : signal is "true";
+attribute mark_debug of output_den : signal is "true";
+
 begin
 
   process(csi_byte_clock)

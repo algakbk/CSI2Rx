@@ -58,6 +58,7 @@
 // pixel_clock___148.200______0.000______50.0______144.069____206.670
 // dvi_bit_clock___741.000______0.000______50.0______122.346____206.670
 // __clk400___370.500______0.000______50.0______130.942____206.670
+// ref_clock___211.714______0.000______50.0______138.707____206.670
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -76,6 +77,7 @@
     .pixel_clock(pixel_clock),     // output pixel_clock
     .dvi_bit_clock(dvi_bit_clock),     // output dvi_bit_clock
     .clk400(clk400),     // output clk400
+    .ref_clock(ref_clock),     // output ref_clock
    // Clock in ports
     .sysclk(sysclk));      // input sysclk
 // INST_TAG_END ------ End INSTANTIATION Template ---------

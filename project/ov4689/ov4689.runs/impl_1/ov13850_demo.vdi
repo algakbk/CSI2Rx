@@ -2,67 +2,45 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Mon Dec 11 14:34:48 2017
-# Process ID: 8583
+# Start of session at: Wed Dec 13 18:47:43 2017
+# Process ID: 11222
 # Current directory: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1
 # Command line: vivado -log ov13850_demo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ov13850_demo.tcl -notrace
 # Log file: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/ov13850_demo.vdi
 # Journal file: /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source ov13850_demo.tcl -notrace
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint '/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/dvi_pll_1/dvi_pll.dcp' for cell 'pll1'
-INFO: [Project 1-454] Reading design checkpoint '/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/camera_pll_1/camera_pll.dcp' for cell 'pll2'
-INFO: [Project 1-454] Reading design checkpoint '/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if.dcp' for cell 'fbtest/memctl'
-INFO: [Project 1-454] Reading design checkpoint '/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer.dcp' for cell 'fbtest/fbctl/inbuf'
-INFO: [Project 1-454] Reading design checkpoint '/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/output_line_buffer.dcp' for cell 'fbtest/fbctl/outbuf'
+Command: open_checkpoint /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/ov13850_demo.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1089.418 ; gain = 0.000 ; free physical = 5132 ; free virtual = 24290
 INFO: [Netlist 29-17] Analyzing 467 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2017.2
 INFO: [Device 21-403] Loading part xc7a100tcsg324-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/camera_pll_1/camera_pll_board.xdc] for cell 'pll2/inst'
-Finished Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/camera_pll_1/camera_pll_board.xdc] for cell 'pll2/inst'
-Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/camera_pll_1/camera_pll.xdc] for cell 'pll2/inst'
-Finished Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/camera_pll_1/camera_pll.xdc] for cell 'pll2/inst'
-Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/dvi_pll_1/dvi_pll_board.xdc] for cell 'pll1/inst'
-Finished Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/dvi_pll_1/dvi_pll_board.xdc] for cell 'pll1/inst'
-Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/dvi_pll_1/dvi_pll.xdc] for cell 'pll1/inst'
-Finished Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/dvi_pll_1/dvi_pll.xdc] for cell 'pll1/inst'
-Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/constraints/ddr3_if.xdc] for cell 'fbtest/memctl'
-Finished Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if/user_design/constraints/ddr3_if.xdc] for cell 'fbtest/memctl'
-Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc]
-INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:49]
-INFO: [Timing 38-2] Deriving generated clocks [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:49]
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -filter {IS_GENERATED && MASTER_CLOCK == clock_p} -of_objects [get_pins pll1/inst/plle2_adv_inst/CLKOUT1]'. [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:49]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:49]
-get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2069.043 ; gain = 508.461 ; free physical = 3632 ; free virtual = 24365
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks [get_clocks -filter {IS_GENERATED && MASTER_CLOCK == clock_p} -of_objects [get_pins pll1/inst/plle2_adv_inst/CLKOUT1]]'. [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:49]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:49]
-CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks [get_clocks -filter {IS_GENERATED && MASTER_CLOCK == clock_p} -of_objects [get_pins pll1/inst/plle2_adv_inst/CLKOUT1]]]'. [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:49]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -filter {IS_GENERATED && MASTER_CLOCK == clock_p} -of_objects [get_pins pll1/inst/plle2_adv_inst/CLKOUT1]'. [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:50]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:50]
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks [get_clocks -filter {IS_GENERATED && MASTER_CLOCK == clock_p} -of_objects [get_pins pll1/inst/plle2_adv_inst/CLKOUT1]]'. [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:50]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:50]
-CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks [get_clocks -filter {IS_GENERATED && MASTER_CLOCK == clock_p} -of_objects [get_pins pll1/inst/plle2_adv_inst/CLKOUT1]]]'. [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc:50]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-Finished Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/.Xil/Vivado-11222-Alga/dcp3/ov13850_demo_board.xdc]
+Finished Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/.Xil/Vivado-11222-Alga/dcp3/ov13850_demo_board.xdc]
+Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/.Xil/Vivado-11222-Alga/dcp3/ov13850_demo_early.xdc]
+Finished Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/.Xil/Vivado-11222-Alga/dcp3/ov13850_demo_early.xdc]
+Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/.Xil/Vivado-11222-Alga/dcp3/ov13850_demo.xdc]
+Finished Parsing XDC File [/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/.Xil/Vivado-11222-Alga/dcp3/ov13850_demo.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1453.660 ; gain = 0.000 ; free physical = 4777 ; free virtual = 23941
+Restored from archive | CPU: 0.030000 secs | Memory: 0.011566 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1453.660 ; gain = 0.000 ; free physical = 4777 ; free virtual = 23941
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 150 instances were transformed.
-  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances
+  A total of 146 instances were transformed.
+  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, OBUFTDS, OBUFTDS, INV): 2 instances
   IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
-  OBUFDS => OBUFDS: 4 instances
-  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 127 instances
+  OBUFDS => OBUFDS_DUAL_BUF (OBUFDS, OBUFDS, INV): 1 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 127 instances
 
-link_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 2069.043 ; gain = 899.328 ; free physical = 3671 ; free virtual = 24381
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.2 (64-bit) build 1909853
+open_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1453.660 ; gain = 364.242 ; free physical = 4783 ; free virtual = 23942
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
@@ -75,57 +53,70 @@ report_drc (run_mandatory_drcs) completed successfully
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.85 . Memory (MB): peak = 2133.074 ; gain = 64.031 ; free physical = 3669 ; free virtual = 24385
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.55 . Memory (MB): peak = 1535.691 ; gain = 82.031 ; free physical = 4775 ; free virtual = 23933
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
 
-Phase 1 Retarget
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-318] Generating core instance : dbg_hub
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/baktiiar/downloads/Xilinx/Vivado/2017.2/data/ip'.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "3138180920b3ec19".
+INFO: [Chipscope 16-318] Generating core instance : u_ila_0
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:ila:6.2 for cell u_ila_0_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:ila:6.2", from Vivado IP cache entry "167129c9ffdf5411".
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2128.820 ; gain = 0.000 ; free physical = 4197 ; free virtual = 23412
+Phase 1 Generate And Synthesize Debug Cores | Checksum: f8b004ce
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:06 . Memory (MB): peak = 2128.820 ; gain = 172.699 ; free physical = 4196 ; free virtual = 23412
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2 Retarget
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: d8c2c577
+Phase 2 Retarget | Checksum: b7249936
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.68 . Memory (MB): peak = 2133.074 ; gain = 0.000 ; free physical = 3662 ; free virtual = 24385
-INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 225 cells
+Time (s): cpu = 00:01:11 ; elapsed = 00:01:08 . Memory (MB): peak = 2228.820 ; gain = 272.699 ; free physical = 4190 ; free virtual = 23406
+INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 337 cells
 
-Phase 2 Constant propagation
+Phase 3 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 178a7eaf2
+Phase 3 Constant propagation | Checksum: f9b4e45f
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2133.074 ; gain = 0.000 ; free physical = 3652 ; free virtual = 24377
-INFO: [Opt 31-389] Phase Constant propagation created 179 cells and removed 195 cells
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:09 . Memory (MB): peak = 2228.820 ; gain = 272.699 ; free physical = 4181 ; free virtual = 23396
+INFO: [Opt 31-389] Phase Constant propagation created 185 cells and removed 225 cells
 
-Phase 3 Sweep
-Phase 3 Sweep | Checksum: efae3755
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: f8de317c
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2133.074 ; gain = 0.000 ; free physical = 3649 ; free virtual = 24374
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 224 cells
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:10 . Memory (MB): peak = 2228.820 ; gain = 272.699 ; free physical = 4180 ; free virtual = 23396
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 304 cells
 
-Phase 4 BUFG optimization
-INFO: [Opt 31-274] Optimized connectivity to 1 cascaded buffer cells
-Phase 4 BUFG optimization | Checksum: e3f72aea
+Phase 5 BUFG optimization
+Phase 5 BUFG optimization | Checksum: c4649b0d
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2133.074 ; gain = 0.000 ; free physical = 3650 ; free virtual = 24374
-INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 2 cells
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:11 . Memory (MB): peak = 2228.820 ; gain = 272.699 ; free physical = 4180 ; free virtual = 23396
+INFO: [Opt 31-389] Phase BUFG optimization created 1 cells and removed 2 cells
 
-Phase 5 Shift Register Optimization
-Phase 5 Shift Register Optimization | Checksum: e3f72aea
+Phase 6 Shift Register Optimization
+Phase 6 Shift Register Optimization | Checksum: c4649b0d
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2133.074 ; gain = 0.000 ; free physical = 3650 ; free virtual = 24374
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:11 . Memory (MB): peak = 2228.820 ; gain = 272.699 ; free physical = 4180 ; free virtual = 23396
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2133.074 ; gain = 0.000 ; free physical = 3650 ; free virtual = 24374
-Ending Logic Optimization Task | Checksum: e3f72aea
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2228.820 ; gain = 0.000 ; free physical = 4180 ; free virtual = 23396
+Ending Logic Optimization Task | Checksum: c4649b0d
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2133.074 ; gain = 0.000 ; free physical = 3649 ; free virtual = 24373
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:11 . Memory (MB): peak = 2228.820 ; gain = 272.699 ; free physical = 4180 ; free virtual = 23396
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Pwropt 34-10] Applying ODC optimizations ...
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
@@ -133,36 +124,38 @@ WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family art
 WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family artix7. Ignoring the voltage setting.
 WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family artix7. Ignoring the voltage setting.
 WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family artix7. Ignoring the voltage setting.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 13 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 108 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 8 WE to EN ports
-Number of BRAM Ports augmented: 0 newly gated: 10 Total Ports: 26
+Number of BRAM Ports augmented: 127 newly gated: 12 Total Ports: 216
 Number of Flops added for Enable Generation: 1
 
-Ending PowerOpt Patch Enables Task | Checksum: b4e7a56b
+Ending PowerOpt Patch Enables Task | Checksum: 15530d348
 
-Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3641 ; free virtual = 24354
-Ending Power Optimization Task | Checksum: b4e7a56b
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4111 ; free virtual = 23327
+Ending Power Optimization Task | Checksum: 15530d348
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2557.051 ; gain = 423.977 ; free physical = 3650 ; free virtual = 24362
-38 Infos, 8 Warnings, 2 Critical Warnings and 0 Errors encountered.
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 2834.117 ; gain = 605.297 ; free physical = 4136 ; free virtual = 23352
+41 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2557.051 ; gain = 488.008 ; free physical = 3650 ; free virtual = 24362
+opt_design: Time (s): cpu = 00:01:45 ; elapsed = 00:01:33 . Memory (MB): peak = 2834.117 ; gain = 1380.457 ; free physical = 4136 ; free virtual = 23352
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3647 ; free virtual = 24362
+Write XDEF Complete: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4137 ; free virtual = 23354
 INFO: [Common 17-1381] The checkpoint '/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/ov13850_demo_opt.dcp' has been generated.
 Command: report_drc -file ov13850_demo_drc_opted.rpt
 INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/ov13850_demo_drc_opted.rpt.
 report_drc completed successfully
-INFO: [Chipscope 16-241] No debug cores found in the current design.
-Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
-or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
@@ -176,46 +169,46 @@ Command: report_drc (run_mandatory_drcs) for: placer_checks
 INFO: [DRC 23-27] Running DRC with 8 threads
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[6]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[6]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[6]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/data_reg_i_3_n_0) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/data_reg_i_3_n_0) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/data_reg_i_3_n_0) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/data_reg_i_3_n_0) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/data_reg_i_2_n_0) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/data_reg_i_2_n_0) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/data_reg_i_2_n_0) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/data_reg_i_2_n_0) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/data_reg_i_1_n_0) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/data_reg_i_1_n_0) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/data_reg_i_1_n_0) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/data_reg_i_1_n_0) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/data_reg_i_5_n_0) which is driven by a register (cam_ctl/statecntr_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/data_reg_i_5_n_0) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/data_reg_i_5_n_0) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/data_reg_i_5_n_0) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/data_reg_i_4_n_0) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/data_reg_i_4_n_0) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/data_reg_i_4_n_0) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/data_reg_i_4_n_0) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[3]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[3]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[3]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/sel[6]) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/sel[6]) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/sel[6]) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/sel[6]) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/sel[7]) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/sel[7]) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/sel[7]) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/sel[7]) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/sel[8]) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/sel[8]) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/sel[8]) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/sel[8]) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/sel[4]) which is driven by a register (cam_ctl/statecntr_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/sel[4]) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/sel[4]) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/sel[4]) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/sel[5]) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/sel[5]) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/sel[5]) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/sel[5]) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 report_drc (run_mandatory_drcs) completed successfully
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 42 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
@@ -226,92 +219,87 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3666 ; free virtual = 24381
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 15bf1873
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4125 ; free virtual = 23347
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d2a5e846
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3666 ; free virtual = 24381
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4125 ; free virtual = 23347
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3673 ; free virtual = 24388
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4135 ; free virtual = 23358
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e636c1ce
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e97df2fb
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3661 ; free virtual = 24375
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4106 ; free virtual = 23324
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 2aa5c0648
+Phase 1.3 Build Placer Netlist Model | Checksum: 19109ff1e
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3647 ; free virtual = 24361
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4082 ; free virtual = 23300
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 2aa5c0648
+Phase 1.4 Constrain Clocks/Macros | Checksum: 19109ff1e
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3646 ; free virtual = 24361
-Phase 1 Placer Initialization | Checksum: 2aa5c0648
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4082 ; free virtual = 23300
+Phase 1 Placer Initialization | Checksum: 19109ff1e
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3646 ; free virtual = 24361
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4082 ; free virtual = 23300
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 2b2c3ef91
+Phase 2 Global Placement | Checksum: 11c19fe7a
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:10 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3624 ; free virtual = 24339
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:21 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4064 ; free virtual = 23282
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 2b2c3ef91
+Phase 3.1 Commit Multi Column Macros | Checksum: 11c19fe7a
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:10 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3624 ; free virtual = 24339
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:21 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4065 ; free virtual = 23282
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2129ef473
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 207688d85
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3623 ; free virtual = 24338
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:23 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4061 ; free virtual = 23279
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1856e9d2d
+Phase 3.3 Area Swap Optimization | Checksum: 27d55804e
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3623 ; free virtual = 24338
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4061 ; free virtual = 23279
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 1b39e9a5e
+Phase 3.4 Pipeline Register Optimization | Checksum: 1b7d1e66d
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3623 ; free virtual = 24338
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4061 ; free virtual = 23279
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 1df7f4592
+Phase 3.5 Timing Path Optimizer | Checksum: 1f5fd0fd4
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3623 ; free virtual = 24338
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4061 ; free virtual = 23279
 
-Phase 3.6 Fast Optimization
-Phase 3.6 Fast Optimization | Checksum: 257aac053
+Phase 3.6 Small Shape Detail Placement
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:11 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3622 ; free virtual = 24336
+Phase 3.6.1 Place Remaining
+Phase 3.6.1 Place Remaining | Checksum: 12cafcc79
 
-Phase 3.7 Small Shape Detail Placement
-Phase 3.7 Small Shape Detail Placement | Checksum: 19b010807
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:29 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4036 ; free virtual = 23253
+Phase 3.6 Small Shape Detail Placement | Checksum: 12cafcc79
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:14 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3615 ; free virtual = 24329
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:29 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4040 ; free virtual = 23258
 
-Phase 3.8 Re-assign LUT pins
-Phase 3.8 Re-assign LUT pins | Checksum: 22b7f8e01
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 18b053dbf
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3615 ; free virtual = 24329
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:30 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4041 ; free virtual = 23258
 
-Phase 3.9 Pipeline Register Optimization
-Phase 3.9 Pipeline Register Optimization | Checksum: 22b7f8e01
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 18b053dbf
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3615 ; free virtual = 24329
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:30 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4041 ; free virtual = 23258
+Phase 3 Detail Placement | Checksum: 18b053dbf
 
-Phase 3.10 Fast Optimization
-Phase 3.10 Fast Optimization | Checksum: 22b7f8e01
-
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:15 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3614 ; free virtual = 24328
-Phase 3 Detail Placement | Checksum: 22b7f8e01
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:15 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3614 ; free virtual = 24328
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:30 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4041 ; free virtual = 23258
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -319,54 +307,54 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 11eef1cf3
+Post Placement Optimization Initialization | Checksum: 1de0f3662
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
 INFO: [Place 46-41] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 11eef1cf3
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1de0f3662
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3608 ; free virtual = 24322
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.439. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 18c86dd84
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:33 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4037 ; free virtual = 23254
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.634. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1696391cc
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3607 ; free virtual = 24322
-Phase 4.1 Post Commit Optimization | Checksum: 18c86dd84
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:34 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4037 ; free virtual = 23254
+Phase 4.1 Post Commit Optimization | Checksum: 1696391cc
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3607 ; free virtual = 24322
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:34 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4036 ; free virtual = 23254
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 18c86dd84
+Phase 4.2 Post Placement Cleanup | Checksum: 1696391cc
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3608 ; free virtual = 24322
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:34 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4037 ; free virtual = 23254
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 18c86dd84
+Phase 4.3 Placer Reporting | Checksum: 1696391cc
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3608 ; free virtual = 24322
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:34 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4038 ; free virtual = 23256
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 19b845538
+Phase 4.4 Final Placement Cleanup | Checksum: de7a012a
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3608 ; free virtual = 24322
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 19b845538
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:34 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4037 ; free virtual = 23255
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: de7a012a
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:17 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3608 ; free virtual = 24322
-Ending Placer Task | Checksum: 11062ae80
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:35 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4037 ; free virtual = 23255
+Ending Placer Task | Checksum: 8c5f8992
 
-Time (s): cpu = 00:00:38 ; elapsed = 00:00:18 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3626 ; free virtual = 24341
-57 Infos, 50 Warnings, 2 Critical Warnings and 0 Errors encountered.
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:35 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4063 ; free virtual = 23280
+61 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:19 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3626 ; free virtual = 24341
+place_design: Time (s): cpu = 00:01:13 ; elapsed = 00:00:37 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4063 ; free virtual = 23280
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.76 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3608 ; free virtual = 24339
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4025 ; free virtual = 23278
 INFO: [Common 17-1381] The checkpoint '/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/ov13850_demo_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3534 ; free virtual = 24254
-report_utilization: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3579 ; free virtual = 24283
-report_control_sets: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3575 ; free virtual = 24279
+report_io: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4043 ; free virtual = 23271
+report_utilization: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.42 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4049 ; free virtual = 23276
+report_control_sets: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 4048 ; free virtual = 23276
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
@@ -380,134 +368,98 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
-Checksum: PlaceDB: a34c0dc9 ConstDB: 0 ShapeSum: 6d16a0b7 RouteDB: 0
+Checksum: PlaceDB: 68f5f1ae ConstDB: 0 ShapeSum: 236997e4 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 685481d1
+Phase 1 Build RT Design | Checksum: fb91ff66
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3416 ; free virtual = 24121
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3890 ; free virtual = 23118
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 685481d1
+Phase 2.1 Create Timer | Checksum: fb91ff66
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3418 ; free virtual = 24123
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3887 ; free virtual = 23115
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 685481d1
+Phase 2.2 Fix Topology Constraints | Checksum: fb91ff66
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3384 ; free virtual = 24089
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3855 ; free virtual = 23083
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 685481d1
+Phase 2.3 Pre Route Cleanup | Checksum: fb91ff66
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3384 ; free virtual = 24090
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3855 ; free virtual = 23083
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 1e3ac18bd
+Phase 2.4 Update Timing | Checksum: f27632c2
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3390 ; free virtual = 24095
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.414  | TNS=0.000  | WHS=-0.484 | THS=-109.006|
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:23 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3830 ; free virtual = 23057
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.622  | TNS=0.000  | WHS=-0.167 | THS=-33.176|
 
-Phase 2 Router Initialization | Checksum: 1b998941f
+Phase 2 Router Initialization | Checksum: 15b0d0a77
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3390 ; free virtual = 24096
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:24 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3831 ; free virtual = 23058
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 1c38674eb
+Phase 3 Initial Routing | Checksum: e1abdeee
 
-Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3392 ; free virtual = 24098
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:26 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3828 ; free virtual = 23055
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 973
- Number of Nodes with overlaps = 33
- Number of Nodes with overlaps = 7
- Number of Nodes with overlaps = 7
- Number of Nodes with overlaps = 7
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 9
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 4
- Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.414  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-WARNING: [Route 35-447] Congestion is preventing the router from routing all nets. The router will prioritize the successful completion of routing all nets over timing optimizations.
-Phase 4.1 Global Iteration 0 | Checksum: 13ff70832
-
-Time (s): cpu = 00:01:47 ; elapsed = 00:01:01 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3298 ; free virtual = 24009
-
-Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1789
+ Number of Nodes with overlaps = 48
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.414  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.803  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 132440f40
+Phase 4.1 Global Iteration 0 | Checksum: 1021e12b9
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3297 ; free virtual = 24008
-Phase 4 Rip-up And Reroute | Checksum: 132440f40
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:30 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3824 ; free virtual = 23052
+Phase 4 Rip-up And Reroute | Checksum: 1021e12b9
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3297 ; free virtual = 24008
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:30 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3824 ; free virtual = 23052
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: 132440f40
+Phase 5.1 Delay CleanUp | Checksum: 1021e12b9
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3297 ; free virtual = 24008
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:30 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3824 ; free virtual = 23052
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 132440f40
+Phase 5.2 Clock Skew Optimization | Checksum: 1021e12b9
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3297 ; free virtual = 24008
-Phase 5 Delay and Skew Optimization | Checksum: 132440f40
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3824 ; free virtual = 23052
+Phase 5 Delay and Skew Optimization | Checksum: 1021e12b9
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3297 ; free virtual = 24008
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3824 ; free virtual = 23052
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1ed1a98a3
+Phase 6.1.1 Update Timing | Checksum: 15a58243e
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3298 ; free virtual = 24009
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.236 | TNS=-0.901 | WHS=0.082  | THS=0.000  |
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3824 ; free virtual = 23052
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.803  | TNS=0.000  | WHS=0.104  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 1ed1a98a3
+Phase 6.1 Hold Fix Iter | Checksum: 15a58243e
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3298 ; free virtual = 24009
-Phase 6 Post Hold Fix | Checksum: 1ed1a98a3
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3824 ; free virtual = 23051
+Phase 6 Post Hold Fix | Checksum: 15a58243e
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3298 ; free virtual = 24009
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:31 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3824 ; free virtual = 23051
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.80916 %
-  Global Horizontal Routing Utilization  = 2.40409 %
+  Global Vertical Routing Utilization    = 4.79497 %
+  Global Horizontal Routing Utilization  = 5.28311 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -516,48 +468,42 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Congestion Report
-North Dir 1x1 Area, Max Cong = 56.7568%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 49.5495%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 67.6471%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 58.8235%, No Congested Regions.
-Phase 7 Route finalize | Checksum: 1f043d43c
+Phase 7 Route finalize | Checksum: 1938ee214
 
-Time (s): cpu = 00:01:52 ; elapsed = 00:01:02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3308 ; free virtual = 24019
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:31 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3824 ; free virtual = 23051
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1f043d43c
+Phase 8 Verifying routed nets | Checksum: 1938ee214
 
-Time (s): cpu = 00:01:52 ; elapsed = 00:01:02 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3307 ; free virtual = 24018
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:31 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3823 ; free virtual = 23050
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 14677b0f9
+Phase 9 Depositing Routes | Checksum: 15c6eda26
 
-Time (s): cpu = 00:01:52 ; elapsed = 00:01:03 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3302 ; free virtual = 24013
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:32 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3823 ; free virtual = 23050
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.236 | TNS=-0.901 | WHS=0.082  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.803  | TNS=0.000  | WHS=0.104  | THS=0.000  |
 
-WARNING: [Route 35-328] Router estimated timing not met.
-Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 14677b0f9
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 15c6eda26
 
-Time (s): cpu = 00:01:52 ; elapsed = 00:01:03 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3303 ; free virtual = 24014
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:32 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3824 ; free virtual = 23051
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:01:53 ; elapsed = 00:01:03 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3341 ; free virtual = 24052
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:32 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3866 ; free virtual = 23093
 
 Routing Is Done.
-69 Infos, 52 Warnings, 2 Critical Warnings and 0 Errors encountered.
+73 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:01:58 ; elapsed = 00:01:05 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3338 ; free virtual = 24049
+route_design: Time (s): cpu = 00:01:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3864 ; free virtual = 23091
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2557.051 ; gain = 0.000 ; free physical = 3317 ; free virtual = 24049
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3811 ; free virtual = 23081
 INFO: [Common 17-1381] The checkpoint '/home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/ov13850_demo_routed.dcp' has been generated.
 Command: report_drc -file ov13850_demo_drc_routed.rpt -pb ov13850_demo_drc_routed.pb -rpx ov13850_demo_drc_routed.rpx
 INFO: [DRC 23-27] Running DRC with 8 threads
@@ -568,6 +514,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 8 threads
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/ov13850_demo_methodology_drc_routed.rpt.
 report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:19 ; elapsed = 00:00:05 . Memory (MB): peak = 2834.117 ; gain = 0.000 ; free physical = 3768 ; free virtual = 23008
 Command: report_power -file ov13850_demo_power_routed.rpt -pb ov13850_demo_power_summary_routed.pb -rpx ov13850_demo_power_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
@@ -577,11 +524,10 @@ WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family art
 WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family artix7. Ignoring the voltage setting.
 WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family artix7. Ignoring the voltage setting.
 WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family artix7. Ignoring the voltage setting.
-76 Infos, 56 Warnings, 2 Critical Warnings and 0 Errors encountered.
+80 Infos, 50 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
 Command: write_bitstream -force ov13850_demo.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t-csg324'
@@ -606,50 +552,51 @@ WARNING: [DRC DPOP-1] PREG Output pipelining: DSP fbtest/fbctl/fb_write_address 
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP fbtest/fbctl/axi_araddr2 multiplier stage fbtest/fbctl/axi_araddr2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP fbtest/fbctl/fb_write_address multiplier stage fbtest/fbctl/fb_write_address/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC REQP-1709] Clock output buffering: PLLE2_ADV connectivity violation. The signal fbtest/memctl/u_ddr3_if_mig/u_ddr3_infrastructure/pll_clk3_out on the fbtest/memctl/u_ddr3_if_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of fbtest/memctl/u_ddr3_if_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[6]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[6]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[6]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[11] (net: csi_rx/vout/even_linebuf/linebuf_read_address[6]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[11] (net: csi_rx/vout/even_linebuf/linebuf_read_address[6]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[11] (net: csi_rx/vout/even_linebuf/linebuf_read_address[6]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[7]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 csi_rx/vout/even_linebuf/linebuf_reg_1 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_1/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[8]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[3]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[3]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[12] (net: csi_rx/vout/even_linebuf/linebuf_read_address[3]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[13] (net: csi_rx/vout/even_linebuf/linebuf_read_address[4]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 csi_rx/vout/even_linebuf/linebuf_reg_0 has an input control pin csi_rx/vout/even_linebuf/linebuf_reg_0/ADDRBWRADDR[14] (net: csi_rx/vout/even_linebuf/linebuf_read_address[5]) which is driven by a register (csi_rx/vout/output_timing/h_pos_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/sel[6]) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/sel[6]) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/sel[6]) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[10] (net: cam_ctl/regs/sel[6]) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/sel[7]) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/sel[7]) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/sel[7]) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[11] (net: cam_ctl/regs/sel[7]) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/sel[8]) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/sel[8]) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/sel[8]) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[12] (net: cam_ctl/regs/sel[8]) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/sel[4]) which is driven by a register (cam_ctl/statecntr_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/sel[4]) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/sel[4]) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[8] (net: cam_ctl/regs/sel[4]) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/sel[5]) which is driven by a register (cam_ctl/statecntr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/sel[5]) which is driven by a register (cam_ctl/statecntr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/sel[5]) which is driven by a register (cam_ctl/statecntr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 cam_ctl/regs/data_reg has an input control pin cam_ctl/regs/data_reg/ADDRARDADDR[9] (net: cam_ctl/regs/sel[5]) which is driven by a register (cam_ctl/statecntr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port cam_i2c_sck expects both input and output buffering but the buffers are incomplete.
 WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port cam_i2c_sda expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RTSTAT-10] No routable loads: 23 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_flags[7:0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2], and dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2].
 report_drc (run_mandatory_drcs) completed successfully
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 52 Warnings
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 53 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
 INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
@@ -661,7 +608,7 @@ Creating bitmap...
 Creating bitstream...
 Writing bitstream ./ov13850_demo.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
-85 Infos, 108 Warnings, 3 Critical Warnings and 0 Errors encountered.
+89 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 2756.816 ; gain = 199.766 ; free physical = 3149 ; free virtual = 23882
-INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 14:37:17 2017...
+write_bitstream: Time (s): cpu = 00:00:40 ; elapsed = 00:00:17 . Memory (MB): peak = 2980.016 ; gain = 145.898 ; free physical = 3677 ; free virtual = 22940
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 13 18:51:33 2017...

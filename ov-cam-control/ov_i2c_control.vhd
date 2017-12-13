@@ -22,12 +22,20 @@ entity ov_i2c_control is
 end ov_i2c_control;
 
 architecture Behavioral of ov_i2c_control is
+
+    attribute mark_debug : string;
+    attribute keep : string;
+    
   signal sys_en : std_logic;
   signal sda_int : std_logic; --Internal I2C data, 0=low, 1=tristate
   signal sck_int : std_logic; --Internal I2C clock, 0=low, 1=tristate
   signal sck_force : std_logic; --Used to force I2C clock
 
   signal state_cntr : unsigned(7 downto 0); --Internal counter for keeping track of state
+
+  attribute mark_debug of sda_int : signal is "true";
+  attribute mark_debug of sck_int : signal is "true";
+
 
   constant state_done : integer := 168; --value of state_cntr when transfer finished
 

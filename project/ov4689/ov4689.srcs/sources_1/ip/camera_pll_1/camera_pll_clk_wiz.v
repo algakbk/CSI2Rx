@@ -95,7 +95,7 @@ wire clk_in2_camera_pll;
   wire        camera_pixel_clock_camera_pll;
   wire        camera_mclk_camera_pll;
   wire        i2c_clkin_camera_pll;
-  wire        clk_out4_camera_pll;
+  wire        ref_clock_camera_pll;
   wire        clk_out5_camera_pll;
   wire        clk_out6_camera_pll;
   wire        clk_out7_camera_pll;

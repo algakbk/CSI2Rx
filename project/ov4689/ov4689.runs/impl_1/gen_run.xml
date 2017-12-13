@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1512981236">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-2" LaunchTime="1513169263">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="ov13850_demo.drc"/>
   <File Type="BG-BGN" Name="ov13850_demo.bgn"/>
@@ -38,7 +38,6 @@
   <File Type="PHYSOPT-TIMING" Name="ov13850_demo_timing_summary_physopted.rpt"/>
   <File Type="PHYSOPT-DRC" Name="ov13850_demo_drc_physopted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="ov13850_demo_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="ov13850_demo_timing_summary_postplace_pwropted.rpt"/>
   <File Type="RDI-RDI" Name="ov13850_demo.vdi"/>
   <File Type="PLACE-TIMING" Name="ov13850_demo_timing_summary_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="ov13850_demo_incremental_reuse_pre_placed.rpt"/>
@@ -60,6 +59,8 @@
   <File Type="INIT-TIMING" Name="ov13850_demo_timing_summary_init.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="ov13850_demo_postplace_pwropt.dcp"/>
   <File Type="PA-TCL" Name="ov13850_demo.tcl"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="ov13850_demo_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PA-DCP" Name="ov13850_demo.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../IPcore/input_line_buffer_1/input_line_buffer.xci">
@@ -258,6 +259,7 @@
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/ztex.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

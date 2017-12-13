@@ -128,7 +128,9 @@ architecture Behavioral of framebuffer_ctrl_crop_scale is
   signal write_count : natural range 0 to burst_len-1;
   signal read_state : natural range 0 to 3;
 
-
+    attribute mark_debug : string;
+    attribute keep : string;
+    
   signal input_linebuf_read_high, input_linebuf_write_high, output_linebuf_read_high, output_linebuf_write_high : std_logic_vector(0 downto 0);
 
   signal input_read_x, input_write_x, output_read_x, output_write_x : natural range 0 to 2047;
@@ -156,6 +158,10 @@ architecture Behavioral of framebuffer_ctrl_crop_scale is
 
   signal axi_wready_last : std_logic;
   signal input_linebuf_ready : std_logic;
+  
+  attribute mark_debug of input_linebuf_wren : signal is "true";
+  attribute mark_debug of input_linebuf_din : signal is "true";
+  attribute mark_debug of input_linebuf_write_addr : signal is "true";
 
   --Average two pixels for downscaling purposes
   function rgb_average(pixel_1, pixel_2 : std_logic_vector)

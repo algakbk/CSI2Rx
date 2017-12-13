@@ -1,7 +1,7 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
--- Date        : Mon Dec 11 10:36:39 2017
+-- Date        : Wed Dec 13 15:40:26 2017
 -- Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/dvi_pll_1/dvi_pll_sim_netlist.vhdl
@@ -19,6 +19,7 @@ entity dvi_pll_dvi_pll_clk_wiz is
     pixel_clock : out STD_LOGIC;
     dvi_bit_clock : out STD_LOGIC;
     clk400 : out STD_LOGIC;
+    ref_clock : out STD_LOGIC;
     sysclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -31,8 +32,8 @@ architecture STRUCTURE of dvi_pll_dvi_pll_clk_wiz is
   signal clkfbout_dvi_pll : STD_LOGIC;
   signal dvi_bit_clock_dvi_pll : STD_LOGIC;
   signal pixel_clock_dvi_pll : STD_LOGIC;
+  signal ref_clock_dvi_pll : STD_LOGIC;
   signal sysclk_dvi_pll : STD_LOGIC;
-  signal NLW_plle2_adv_inst_CLKOUT3_UNCONNECTED : STD_LOGIC;
   signal NLW_plle2_adv_inst_CLKOUT4_UNCONNECTED : STD_LOGIC;
   signal NLW_plle2_adv_inst_CLKOUT5_UNCONNECTED : STD_LOGIC;
   signal NLW_plle2_adv_inst_DRDY_UNCONNECTED : STD_LOGIC;
@@ -44,6 +45,7 @@ architecture STRUCTURE of dvi_pll_dvi_pll_clk_wiz is
   attribute BOX_TYPE of clkout1_buf : label is "PRIMITIVE";
   attribute BOX_TYPE of clkout2_buf : label is "PRIMITIVE";
   attribute BOX_TYPE of clkout3_buf : label is "PRIMITIVE";
+  attribute BOX_TYPE of clkout4_buf : label is "PRIMITIVE";
   attribute BOX_TYPE of plle2_adv_inst : label is "PRIMITIVE";
 begin
 clkf_buf: unisim.vcomponents.BUFG
@@ -71,6 +73,11 @@ clkout3_buf: unisim.vcomponents.BUFG
       I => clk400_dvi_pll,
       O => clk400
     );
+clkout4_buf: unisim.vcomponents.BUFG
+     port map (
+      I => ref_clock_dvi_pll,
+      O => ref_clock
+    );
 plle2_adv_inst: unisim.vcomponents.PLLE2_ADV
     generic map(
       BANDWIDTH => "OPTIMIZED",
@@ -87,7 +94,7 @@ plle2_adv_inst: unisim.vcomponents.PLLE2_ADV
       CLKOUT2_DIVIDE => 4,
       CLKOUT2_DUTY_CYCLE => 0.500000,
       CLKOUT2_PHASE => 0.000000,
-      CLKOUT3_DIVIDE => 1,
+      CLKOUT3_DIVIDE => 7,
       CLKOUT3_DUTY_CYCLE => 0.500000,
       CLKOUT3_PHASE => 0.000000,
       CLKOUT4_DIVIDE => 1,
@@ -114,7 +121,7 @@ plle2_adv_inst: unisim.vcomponents.PLLE2_ADV
       CLKOUT0 => pixel_clock_dvi_pll,
       CLKOUT1 => dvi_bit_clock_dvi_pll,
       CLKOUT2 => clk400_dvi_pll,
-      CLKOUT3 => NLW_plle2_adv_inst_CLKOUT3_UNCONNECTED,
+      CLKOUT3 => ref_clock_dvi_pll,
       CLKOUT4 => NLW_plle2_adv_inst_CLKOUT4_UNCONNECTED,
       CLKOUT5 => NLW_plle2_adv_inst_CLKOUT5_UNCONNECTED,
       DADDR(6 downto 0) => B"0000000",
@@ -138,6 +145,7 @@ entity dvi_pll is
     pixel_clock : out STD_LOGIC;
     dvi_bit_clock : out STD_LOGIC;
     clk400 : out STD_LOGIC;
+    ref_clock : out STD_LOGIC;
     sysclk : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
@@ -151,6 +159,7 @@ inst: entity work.dvi_pll_dvi_pll_clk_wiz
       clk400 => clk400,
       dvi_bit_clock => dvi_bit_clock,
       pixel_clock => pixel_clock,
+      ref_clock => ref_clock,
       sysclk => sysclk
     );
 end STRUCTURE;

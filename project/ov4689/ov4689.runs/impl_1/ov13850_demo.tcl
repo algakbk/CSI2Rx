@@ -47,27 +47,15 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  create_project -in_memory -part xc7a100tcsg324-2
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
+  set_param xicom.use_bs_reader 1
+  set_param tcl.collectionResultDisplayLimit 0
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/impl_1/ov13850_demo.dcp
   set_property webtalk.parent_dir /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.cache/wt [current_project]
   set_property parent.project_path /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.xpr [current_project]
   set_property ip_output_repo /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.runs/synth_1/ov13850_demo.dcp
-  read_ip -quiet /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer.xci
-  set_property is_locked true [get_files /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/input_line_buffer_1/input_line_buffer.xci]
-  read_ip -quiet /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/camera_pll_1/camera_pll.xci
-  set_property is_locked true [get_files /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/camera_pll_1/camera_pll.xci]
-  read_ip -quiet /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/dvi_pll_1/dvi_pll.xci
-  set_property is_locked true [get_files /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/sources_1/ip/dvi_pll_1/dvi_pll.xci]
-  read_ip -quiet /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if.xci
-  set_property is_locked true [get_files /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/ddr3_if/ddr3_if.xci]
-  read_ip -quiet /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/output_line_buffer.xci
-  set_property is_locked true [get_files /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/output_line_buffer.xci]
-  read_xdc /home/baktiiar/workspace/github/CSI2Rx/project/ov4689/ov4689.srcs/constrs_1/new/ztex.xdc
-  link_design -top ov13850_demo -part xc7a100tcsg324-2
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {

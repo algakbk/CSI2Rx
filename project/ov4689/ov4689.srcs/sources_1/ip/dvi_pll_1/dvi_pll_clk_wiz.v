@@ -59,6 +59,7 @@
 // pixel_clock___148.200______0.000______50.0______144.069____206.670
 // dvi_bit_clock___741.000______0.000______50.0______122.346____206.670
 // __clk400___370.500______0.000______50.0______130.942____206.670
+// ref_clock___211.714______0.000______50.0______138.707____206.670
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -74,6 +75,7 @@ module dvi_pll_clk_wiz
   output        pixel_clock,
   output        dvi_bit_clock,
   output        clk400,
+  output        ref_clock,
   input         sysclk
  );
   // Input buffering
@@ -95,7 +97,7 @@ wire clk_in2_dvi_pll;
   wire        pixel_clock_dvi_pll;
   wire        dvi_bit_clock_dvi_pll;
   wire        clk400_dvi_pll;
-  wire        clk_out4_dvi_pll;
+  wire        ref_clock_dvi_pll;
   wire        clk_out5_dvi_pll;
   wire        clk_out6_dvi_pll;
   wire        clk_out7_dvi_pll;
@@ -107,7 +109,6 @@ wire clk_in2_dvi_pll;
   wire        clkfbout_dvi_pll;
   wire        clkfbout_buf_dvi_pll;
   wire        clkfboutb_unused;
-   wire clkout3_unused;
    wire clkout4_unused;
   wire        clkout5_unused;
   wire        clkout6_unused;
@@ -130,6 +131,9 @@ wire clk_in2_dvi_pll;
     .CLKOUT2_DIVIDE       (4),
     .CLKOUT2_PHASE        (0.000),
     .CLKOUT2_DUTY_CYCLE   (0.500),
+    .CLKOUT3_DIVIDE       (7),
+    .CLKOUT3_PHASE        (0.000),
+    .CLKOUT3_DUTY_CYCLE   (0.500),
     .CLKIN1_PERIOD        (38.462))
   plle2_adv_inst
     // Output clocks
@@ -138,7 +142,7 @@ wire clk_in2_dvi_pll;
     .CLKOUT0             (pixel_clock_dvi_pll),
     .CLKOUT1             (dvi_bit_clock_dvi_pll),
     .CLKOUT2             (clk400_dvi_pll),
-    .CLKOUT3             (clkout3_unused),
+    .CLKOUT3             (ref_clock_dvi_pll),
     .CLKOUT4             (clkout4_unused),
     .CLKOUT5             (clkout5_unused),
      // Input clock control
@@ -183,6 +187,10 @@ wire clk_in2_dvi_pll;
   BUFG clkout3_buf
    (.O   (clk400),
     .I   (clk400_dvi_pll));
+
+  BUFG clkout4_buf
+   (.O   (ref_clock),
+    .I   (ref_clock_dvi_pll));
 
 
 

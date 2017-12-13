@@ -18,6 +18,9 @@ end ov13850_control_top;
 
 architecture Behavioral of ov13850_control_top is
 
+    attribute mark_debug : string;
+    attribute keep : string;
+    
 signal current_cmd : std_logic_vector(23 downto 0);
 signal statecntr : unsigned(17 downto 0) := (others => '0');
 signal cmd_addr :  std_logic_vector(8 downto 0);
@@ -25,6 +28,12 @@ signal cmd_addr :  std_logic_vector(8 downto 0);
 signal i2c_en : std_logic;
 signal i2c_start : std_logic;
 signal i2c_done : std_logic;
+
+  attribute mark_debug of i2c_en : signal is "true";
+  attribute mark_debug of i2c_start : signal is "true";
+  attribute mark_debug of i2c_done : signal is "true";
+
+
 
 constant state_end : integer := 262000;
 

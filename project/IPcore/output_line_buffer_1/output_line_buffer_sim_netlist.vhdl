@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
--- Date        : Mon Dec 11 12:17:55 2017
+-- Date        : Mon Dec 11 12:17:54 2017
 -- Host        : Alga running 64-bit Ubuntu 14.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/baktiiar/workspace/github/CSI2Rx/project/IPcore/output_line_buffer_1/output_line_buffer_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top output_line_buffer -prefix
+--               output_line_buffer_ output_line_buffer_sim_netlist.vhdl
 -- Design      : output_line_buffer
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity output_line_buffer_blk_mem_gen_prim_wrapper is
     dina : in STD_LOGIC_VECTOR ( 35 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of output_line_buffer_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_prim_wrapper";
 end output_line_buffer_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of output_line_buffer_blk_mem_gen_prim_wrapper is
@@ -1092,8 +1090,6 @@ entity output_line_buffer_blk_mem_gen_prim_width is
     dina : in STD_LOGIC_VECTOR ( 35 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of output_line_buffer_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end output_line_buffer_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of output_line_buffer_blk_mem_gen_prim_width is
@@ -1224,8 +1220,6 @@ entity output_line_buffer_blk_mem_gen_generic_cstr is
     dina : in STD_LOGIC_VECTOR ( 127 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of output_line_buffer_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end output_line_buffer_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of output_line_buffer_blk_mem_gen_generic_cstr is
@@ -1294,8 +1288,6 @@ entity output_line_buffer_blk_mem_gen_top is
     dina : in STD_LOGIC_VECTOR ( 127 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of output_line_buffer_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end output_line_buffer_blk_mem_gen_top;
 
 architecture STRUCTURE of output_line_buffer_blk_mem_gen_top is
@@ -1327,8 +1319,6 @@ entity output_line_buffer_blk_mem_gen_v8_3_6_synth is
     dina : in STD_LOGIC_VECTOR ( 127 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of output_line_buffer_blk_mem_gen_v8_3_6_synth : entity is "blk_mem_gen_v8_3_6_synth";
 end output_line_buffer_blk_mem_gen_v8_3_6_synth;
 
 architecture STRUCTURE of output_line_buffer_blk_mem_gen_v8_3_6_synth is
@@ -1561,8 +1551,6 @@ entity output_line_buffer_blk_mem_gen_v8_3_6 is
   attribute C_WRITE_WIDTH_B of output_line_buffer_blk_mem_gen_v8_3_6 : entity is 64;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of output_line_buffer_blk_mem_gen_v8_3_6 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of output_line_buffer_blk_mem_gen_v8_3_6 : entity is "blk_mem_gen_v8_3_6";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of output_line_buffer_blk_mem_gen_v8_3_6 : entity is "yes";
 end output_line_buffer_blk_mem_gen_v8_3_6;

@@ -397,7 +397,7 @@ begin
 						when "0" & x"c7" =>
 							data <= x"5b0902";
 						when "0" & x"c8" =>
-							data <= x"5e0000"; --test pattern off
+							data <= x"5e0080"; --test pattern off
 						when "0" & x"c9" =>
 							data <= x"5e101c";
 						when "0" & x"ca" =>

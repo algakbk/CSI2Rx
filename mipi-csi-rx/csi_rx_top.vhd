@@ -96,6 +96,10 @@ entity csi_rx_4lane is
 end csi_rx_4lane;
 
 architecture Behavioral of csi_rx_4lane is
+
+    attribute mark_debug : string;
+    attribute keep : string;
+    
   signal csi_byte_clock : std_logic;
   signal link_reset_out : std_logic;
   signal wait_for_sync : std_logic;
@@ -111,6 +115,9 @@ architecture Behavioral of csi_rx_4lane is
 
   signal unpack_data : std_logic_vector(39 downto 0);
   signal unpack_data_valid : std_logic;
+  
+    attribute mark_debug of word_clock : signal is "true";
+
 begin
   link : entity work.csi_rx_4_lane_link
     generic map(
